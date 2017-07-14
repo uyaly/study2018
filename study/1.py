@@ -18,17 +18,17 @@ class logintest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         # 创建浏览器对象
-        #  cls.driver = webdriver.Firefox()
-        cls.driver = webdriver.Chrome()
-        # cls.driver = webdriver.Ie()
-        cls.driver.get("http://whcp.asuscomm.com:8019/Default/Index")
+         cls.driver = webdriver.Firefox()
+      # cls.driver = webdriver.Chrome()
+     # cls.driver = webdriver.Ie()
+         cls.driver.get("http://whcp.asuscomm.com:8019/Default/Index")
         # 浏览器最大化
-        cls.driver.maximize_window()
+         cls.driver.maximize_window()
 
         # cls.title = EC.title_is(u'轰扑克皇家俱乐部')
-        print (cls.driver.title)
-        print(" -- set up finished -- ")
-        print
+         print (cls.driver.title)
+         print(" -- set up finished -- ")
+         print
     # 测试一（务必以test开头）
     def test_01login(self):
         self.driver.implicitly_wait(10)
@@ -57,19 +57,19 @@ class logintest(unittest.TestCase):
         self.driver.implicitly_wait(10)
         # 点击新增按钮
         iframe1 = self.driver.switch_to.frame("mainIframe")
-        print(iframe1)
-        # iframe1 = self.driver.find_element_by_tag_name("iframe")
-        # self.driver.switch_to.frame(iframe1)
-        self.driver.find_element_by_xpath(".//*[@id='add_Link']")
-        # self.driver.find_element_by_id('add_Link').click()
+        # self.driver.find_element_by_xpath(".//*[@id='add_Link']").click()
+        self.driver.find_element_by_id('add_Link').click()
         self.driver.implicitly_wait(20)
+        element = WebDriverWait(self.driver,3,0.5).until(EC.presence_of_element_located((,"add_Link")))
+        element.find_element_by_id("add_Link").click()
         # 新增界面
         self.driver.find_element_by_id('_easyui_textbox_input1').send_keys('ce0')
         self.driver.find_element_by_id('_easyui_textbox_input6').send_keys('a123')
-        # self.driver.find_element_by_id('_easyui_textbox_input7').send_keys('a123')
-        # self.driver.find_element_by_id('_easyui_textbox_input2').send_keys('ce0')
-        # self.driver.find_element_by_id('loginOut').click()
-        # self.driver.find_element_by_xpath(".//*[@id='body']/div[6]/div[3]/a[1]/span/span").click()
+        self.driver.implicitly_wait(20)
+        self.driver.find_element_by_id('_easyui_textbox_input7').send_keys('a123')
+        self.driver.find_element_by_id('_easyui_textbox_input2').send_keys('ce0')
+        self.driver.find_element_by_id('loginOut').click()
+        self.driver.find_element_by_xpath(".//*[@id='body']/div[6]/div[3]/a[1]/span/span").click()
 
         print('-- test 02 finished -- ')
 

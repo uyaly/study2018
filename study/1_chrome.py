@@ -3,12 +3,6 @@
 import unittest
 # 引入WebDriver包
 from selenium import webdriver
-# 模拟键盘的操作需要先导入键盘模块
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException
-# 引入WebDriver Keys包
-from selenium.webdriver.common.keys import Keys
 # 定义测试类，名字为logintest
 # 该类必须继承unittest.TestCase基类
 class logintest(unittest.TestCase):
@@ -56,8 +50,7 @@ class logintest(unittest.TestCase):
         self.driver.find_element_by_xpath(".//*[@id='navi']/DIV/DIV/DIV[3]/ul/li[1]/A").click()
         self.driver.implicitly_wait(10)
         # 点击新增按钮
-        iframe1 = self.driver.switch_to.frame("mainIframe")
-        print(iframe1)
+        iframe1 = self.driver.switch_to.frame('mainIframe')
         # iframe1 = self.driver.find_element_by_tag_name("iframe")
         # self.driver.switch_to.frame(iframe1)
         self.driver.find_element_by_xpath(".//*[@id='add_Link']")
