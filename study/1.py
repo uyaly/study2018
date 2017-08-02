@@ -60,7 +60,7 @@ class logintest(unittest.TestCase):
         # self.driver.find_element_by_xpath(".//*[@id='add_Link']").click()
         self.driver.find_element_by_id('add_Link').click()
         self.driver.implicitly_wait(20)
-        element = WebDriverWait(self.driver,3,0.5).until(EC.presence_of_element_located((,"add_Link")))
+        # element = WebDriverWait(self.driver,3,0.5).until(EC.presence_of_element_located(("add_Link")))
         element.find_element_by_id("add_Link").click()
         # 新增界面
         self.driver.find_element_by_id('_easyui_textbox_input1').send_keys('ce0')

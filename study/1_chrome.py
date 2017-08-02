@@ -50,7 +50,7 @@ class logintest(unittest.TestCase):
         self.driver.find_element_by_xpath(".//*[@id='navi']/DIV/DIV/DIV[3]/ul/li[1]/A").click()
         self.driver.implicitly_wait(10)
         # 点击新增按钮
-        iframe1 = self.driver.switch_to.frame('mainIframe')
+        self.driver.switch_to.frame('mainIframe')
         # iframe1 = self.driver.find_element_by_tag_name("iframe")
         # self.driver.switch_to.frame(iframe1)
         self.driver.find_element_by_xpath(".//*[@id='add_Link']")
