@@ -12,7 +12,8 @@ url_list = re.findall('href=\"(.*?)\"', page, re.S)
 url_all = []
 for url in url_list:
     if "http" in url:
-        print url
-        url_all.append(url)
+        # print url
+        url_all.append(url if not isinstance(url, unicode) else url.encode('utf-8'))
+        # url_all.append(url)
 # 最终的url集合
 print url_all
