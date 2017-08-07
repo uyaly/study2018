@@ -10,14 +10,14 @@ def scroll_top():
     if driver.name == "chrome":
         js = "var q = document.bady.scrolltop = 0"
     else:
-        js = "var q=document.documentElement.scrollTop = 0"
+        js = "var q = document.documentElement.scrollTop = 0"
     return driver.execute_script(js)
 # 拉到底部
 def scroll_top():
     if driver.name == "chrome":
         js = "var q = document.bady.scrolltop = 10000"
     else:
-        js = "var q=document.documentElement.scrollTop = 10000"
+        js = "var q = document.documentElement.scrollTop = 10000"
     return driver.execute_script(js)
 # 滚动到底部
 js = "window.scrollTo(0,document.body.scrollHeight)"
