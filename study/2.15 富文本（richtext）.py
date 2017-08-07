@@ -2,7 +2,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
-profileDir = r'C:\Users\think_uyaly\AppData\Roaming\Mozilla\Firefox\Profiles\p7wm71lv.default'
+profileDir = r'C:\Users\Administrator\AppData\Roaming\Mozilla\Firefox\Profiles\331b4lm9.default'
 profile = webdriver.FirefoxProfile(profileDir)
 driver = webdriver.Firefox(profile)
 bolgurl = "http://www.cnblogs.com/"
