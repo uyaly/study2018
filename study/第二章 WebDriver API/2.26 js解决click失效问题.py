@@ -17,8 +17,8 @@ time.sleep(3)
 s = driver.find_element("id", "nr")
 Select(s).select_by_visible_text("每页显示50条")
 # 方法一：先点父元素
-driver.find_element("id", "gxszButton").click()
-driver.find_element("class name", "prefpanelgo").click()
+# driver.find_element("id", "gxszButton").click()
+# driver.find_element("class name", "prefpanelgo").click()
 # 方法二：用js直接去点击
 js = 'document.getElementsByClassName("prefpanelgo")[0].click();'
 driver.execute_script(js)
