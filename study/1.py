@@ -26,7 +26,7 @@ class logintest(unittest.TestCase):
          cls.driver.maximize_window()
 
         # cls.title = EC.title_is(u'轰扑克皇家俱乐部')
-         print (cls.driver.title)
+        #  print (cls.driver.title)
          print(" -- set up finished -- ")
          print
     # 测试一（务必以test开头）
@@ -49,25 +49,27 @@ class logintest(unittest.TestCase):
 
     # 测试二（务必以test开头）
     def test_02(self):
-        pass
         self.driver.implicitly_wait(10)
         # 进入模块
         self.driver.find_element_by_xpath(".//*[@id='navi']/div/div/div[3]/div/a/em").click()
         self.driver.find_element_by_xpath(".//*[@id='navi']/div/div/div[3]/ul/li[1]/a").click()
         self.driver.implicitly_wait(10)
         # 点击新增按钮
+        # js = 'document.getElementById("add_Link").click();'
+        # self.driver.execute_script(js)
         iframe1 = self.driver.find_element_by_id("mainIframe")
         self.driver.switch_to.frame(iframe1)
         # self.driver.find_element_by_xpath(".//*[@id='add_Link']").click()
-        # self.driver.find_element_by_id('add_Link').click()
-        self.driver.find_element_by_css_selector("#add_Link").click()
+        # 感谢QQ：326186713 流年斑驳
+        self.driver.find_element_by_id('add_Link').send_keys(Keys.ENTER)
+        # self.driver.find_element_by_css_selector("#add_Link").click()
         self.driver.implicitly_wait(20)
         # element = WebDriverWait(self.driver,3,0.5).until(EC.presence_of_element_located(("add_Link")))
 
         # 新增界面
-        # self.driver.find_element_by_id('_easyui_textbox_input1').send_keys('ce0')
-        # self.driver.find_element_by_id('_easyui_textbox_input6').send_keys('a123')
-        # self.driver.implicitly_wait(20)
+        self.driver.find_element_by_id('_easyui_textbox_input1').send_keys('ce0')
+        self.driver.find_element_by_id('_easyui_textbox_input6').send_keys('a123')
+        self.driver.implicitly_wait(20)
         # self.driver.find_element_by_id('_easyui_textbox_input7').send_keys('a123')
         # self.driver.find_element_by_id('_easyui_textbox_input2').send_keys('ce0')
         # self.driver.find_element_by_id('loginOut').click()
