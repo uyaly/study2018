@@ -3,6 +3,8 @@
 import unittest
 # 引入WebDriver包
 from selenium import webdriver
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support.select import Select   # 导入select方法
 # 模拟键盘的操作需要先导入键盘模块
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
@@ -63,12 +65,13 @@ class logintest(unittest.TestCase):
         # 感谢QQ：326186713 流年斑驳
         self.driver.find_element_by_id('add_Link').send_keys(Keys.ENTER)
         # self.driver.find_element_by_css_selector("#add_Link").click()
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(3)
         # element = WebDriverWait(self.driver,3,0.5).until(EC.presence_of_element_located(("add_Link")))
 
         # 新增界面
-        self.driver.find_element_by_id('_easyui_textbox_input1').send_keys('ce0')
-        self.driver.find_element_by_id('_easyui_textbox_input6').send_keys('a123')
+        # self.driver.find_element_by_id("_easyui_textbox_input1").send_keys('ce0')
+        self.driver.find_element_by_name("Password").send_keys('a123')
+        # self.driver.find_element_by_xpath(".//*[@id='_easyui_textbox_input6']").send_keys('a123')
         self.driver.implicitly_wait(20)
         # self.driver.find_element_by_id('_easyui_textbox_input7').send_keys('a123')
         # self.driver.find_element_by_id('_easyui_textbox_input2').send_keys('ce0')
