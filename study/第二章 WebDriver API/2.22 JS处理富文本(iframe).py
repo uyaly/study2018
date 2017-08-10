@@ -19,8 +19,7 @@ editbody = u"这里是发帖的正文"
 driver.find_element_by_id("Editor_Edit_txbTitle").send_keys(edittile)
 body = "这里是通过js发的正文内容"
 # js处理iframe问题（js代码太长了，我分成两行了）
-js = 'document.getElementById("Editor_Edit_EditorBody_ifr")' \
-    '.contentWindow.document.body.innerHTML="%s"' % body
+js = 'document.getElementById("Editor_Edit_EditorBody_ifr").contentWindow.document.body.innerHTML="%s"' % body
 driver.execute_script(js)
 # 保存草稿
 driver.find_element_by_id("Editor_Edit_lkbDraft").click()
