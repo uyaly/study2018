@@ -9,6 +9,7 @@ from selenium.webdriver.support.select import Select   # 导入select方法
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
+import time
 # 引入WebDriver Keys包
 from selenium.webdriver.common.keys import Keys
 # 定义测试类，名字为logintest
@@ -21,8 +22,6 @@ class logintest(unittest.TestCase):
     def setUpClass(cls):
         # 创建浏览器对象
          cls.driver = webdriver.Firefox()
-      # cls.driver = webdriver.Chrome()
-     # cls.driver = webdriver.Ie()
          cls.driver.get("http://whcp.asuscomm.com:8019/Default/Index")
         # 浏览器最大化
          cls.driver.maximize_window()
@@ -54,30 +53,27 @@ class logintest(unittest.TestCase):
         self.driver.implicitly_wait(10)
         # 进入模块
         self.driver.find_element_by_xpath(".//*[@id='navi']/div/div/div[3]/div/a/em").click()
-        self.driver.find_element_by_xpath(".//*[@id='navi']/div/div/div[3]/ul/li[1]/a").click()
+        self.driver.find_element_by_xpath(".//*[@id='navi']/div/div/div[3]/ul/li[2]/a").click()
         self.driver.implicitly_wait(10)
         # 点击新增按钮
-        # js = 'document.getElementById("add_Link").click();'
-        # self.driver.execute_script(js)
         iframe1 = self.driver.find_element_by_id("mainIframe")
         self.driver.switch_to.frame(iframe1)
-        # self.driver.find_element_by_xpath(".//*[@id='add_Link']").click()
-        # 感谢QQ：326186713 流年斑驳
+        # 感谢QQ：326186713 流年斑驳XXXXXX,input标签中的按钮要用send_keys(Keys.ENTER)来点击
         self.driver.find_element_by_id('add_Link').send_keys(Keys.ENTER)
-        # self.driver.find_element_by_css_selector("#add_Link").click()
         self.driver.implicitly_wait(3)
-        # element = WebDriverWait(self.driver,3,0.5).until(EC.presence_of_element_located(("add_Link")))
-
+        # 释放iframe，重新回到主页上XXXXXX,iframe一定要切回来
+        self.driver.switch_to.default_content()
         # 新增界面
-        # self.driver.find_element_by_id("_easyui_textbox_input1").send_keys('ce0')
-        self.driver.find_element_by_name("Password").send_keys('a123')
-        # self.driver.find_element_by_xpath(".//*[@id='_easyui_textbox_input6']").send_keys('a123')
-        self.driver.implicitly_wait(20)
-        # self.driver.find_element_by_id('_easyui_textbox_input7').send_keys('a123')
-        # self.driver.find_element_by_id('_easyui_textbox_input2').send_keys('ce0')
-        # self.driver.find_element_by_id('loginOut').click()
-        # self.driver.find_element_by_xpath(".//*[@id='body']/div[6]/div[3]/a[1]/span/span").click()
+        self.driver.find_element_by_id("_easyui_textbox_input1").send_keys('cce0')
+        # 滚动后输入
+        # self.driver.find_element_by_id("_easyui_textbox_input14").send_keys('a123')
+        # self.driver.find_element_by_id("_easyui_textbox_input15").send_keys('a123')
+        # self.driver.find_element_by_id('_easyui_textbox_input9').send_keys('cce0')
+        # # self.driver.find_element_by_id('loginOut').click()
+        # self.driver.find_element_by_id('_easyui_textbox_input11').send_keys('15555555555')
 
+        # self.driver.find_element_by_xpath(".//*[@id='body']/div[6]/div[3]/a[1]/span/span").click()
+        time.sleep(10)
         print('-- test 02 finished -- ')
 
     # tearDownClass方法是执行完所有测试后调用的方法
