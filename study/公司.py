@@ -69,8 +69,11 @@ class logintest(unittest.TestCase):
         self.driver.find_element_by_id("_easyui_textbox_input6").send_keys('a123')
         self.driver.find_element_by_id("_easyui_textbox_input7").send_keys('a123')
         self.driver.find_element_by_id('_easyui_textbox_input2').send_keys('cce0')
+        self.driver.implicitly_wait(10)
         # self.driver.find_element_by_id('loginOut').click()
-        self.driver.find_element_by_xpath(".//*[@id='body']/div[6]/div[3]/a[1]/span/span").click()
+        print self.driver.find_element_by_xpath(".//*[@id='body']/div[6]/div[3]/a[1]").text()
+        self.driver.find_element_by_xpath(".//*[@id='body']/div[6]/div[3]/a[1]").click()
+        # self.driver.find_elements_by_class_name("l-btn l-btn-small")[0].click()
         self.driver.implicitly_wait(10)
         print('-- test 02 finished -- ')
 
