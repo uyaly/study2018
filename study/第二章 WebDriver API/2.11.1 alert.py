@@ -1,6 +1,6 @@
 # coding:utf-8
 from selenium import webdriver
-url = "file:///F:/PycharmProjects/test/eg/2_11.html"
+url = "file:///d:/PycharmProjects/study/eg/2_11.html"
 driver = webdriver.Firefox()
 driver.get(url)
 driver.find_element_by_id("alert").click()

@@ -1,7 +1,7 @@
 # coding:utf-8
 from selenium import webdriver
 import time
-url = "file:///F:/PycharmProjects/test/eg/2_13.html"
+url = "file:///d:/PycharmProjects/study/eg/2_13.html"
 driver = webdriver.Firefox()
 driver.get(url)
 time.sleep(3)

@@ -2,7 +2,7 @@
 from selenium import webdriver
 import time
 driver = webdriver.Firefox()
-driver.get("file:///F:/PycharmProjects/test/eg/2_24.html")
+driver.get("file:///d:/PycharmProjects/study/eg/2_24.html")
 # 纵向底部,通过id来定位，通过控制 scrollTop的值来控制滚动条高度
 js1 = 'document.getElementById("yoyoketang").scrollTop=10000'
 driver.execute_script(js1)
