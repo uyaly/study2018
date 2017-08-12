@@ -21,12 +21,9 @@ class logintest(unittest.TestCase):
     def setUpClass(cls):
         # 创建浏览器对象
          cls.driver = webdriver.Firefox()
-         cls.driver.get("http://whcp.asuscomm.com:8019/Default/Index")
+         cls.driver.get("http://47.52.77.154:8015/Default/Login")
         # 浏览器最大化
          cls.driver.maximize_window()
-
-        # cls.title = EC.title_is(u'轰扑克皇家俱乐部')
-        #  print (cls.driver.title)
          print(" -- set up finished -- ")
          print
     # 测试一（务必以test开头）
@@ -65,15 +62,17 @@ class logintest(unittest.TestCase):
         # 释放iframe，重新回到主页上XXXXXX,iframe一定要切回来
         self.driver.switch_to.default_content()
         # 新增界面
-        self.driver.find_element_by_id("_easyui_textbox_input1").send_keys('cce0')
+        self.driver.find_element_by_id("_easyui_textbox_input1").send_keys('ccd0')
+        self.driver.implicitly_wait(3)
         self.driver.find_element_by_id("_easyui_textbox_input6").send_keys('a123')
+        self.driver.implicitly_wait(5)
         self.driver.find_element_by_id("_easyui_textbox_input7").send_keys('a123')
-        self.driver.find_element_by_id('_easyui_textbox_input2').send_keys('cce0')
+        self.driver.implicitly_wait(3)
+        self.driver.find_element_by_id('_easyui_textbox_input2').send_keys('ccd0')
         self.driver.implicitly_wait(10)
         # self.driver.find_element_by_id('loginOut').click()
-        print self.driver.find_element_by_xpath(".//*[@id='body']/div[6]/div[3]/a[1]").text()
-        self.driver.find_element_by_xpath(".//*[@id='body']/div[6]/div[3]/a[1]").click()
-        # self.driver.find_elements_by_class_name("l-btn l-btn-small")[0].click()
+        self.driver.find_element_by_css_selector("span.l-btn-text").click()
+        self.driver.find_element_by_link_text("确定").click()
         self.driver.implicitly_wait(10)
         print('-- test 02 finished -- ')
 
