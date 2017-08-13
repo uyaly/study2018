@@ -20,7 +20,7 @@ if len(bd) > 1:
 else:
     print "未获取到匹配的词"
 
-
+# class属性中间的空格并不是空字符串，那是间隔符号，表示的是一个元素有多个class的属性名称
 # <div class="bdsug" style="height: auto; display: none;">
 # <ul>
 # <li class="bdsug-store bdsug-overflow" data-key="博客网站">
