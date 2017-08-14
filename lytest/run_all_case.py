@@ -1,6 +1,7 @@
 # coding:utf-8
 import unittest
 import os
+import HTMLTestRunner
 # 用例路径
 case_path = os.path.join(os.getcwd(), "case")
 # 报告存放路径
@@ -17,5 +18,17 @@ def all_case():
 if __name__ == "__main__":
     # discover加载到的用例是一个list集合，需要重新写入到一个list对象testcase里
     # 这样就可以用unittest里面的TextTestRunner这里类的run方法去执行
-    runner = unittest.TextTestRunner()
+    # runner = unittest.TextTestRunner()
+    # runner.run(all_case())
+    # html报告文件路径
+    report_abspath = os.path.join(report_path, "result.html")
+    fp = open(report_abspath, "wb")
+    # 三个参数:--stream:测试报告写入文件的存储区域
+    # --title:测试报告的主题
+    # --description：测试报告的描述
+    runner = HTMLTestRunner.HTMLTestRunner(stream=fp,
+                                           title=u'自动化测试报告,测试结果如下：',
+                                           description=u'用例执行情况：')
+    # 调用add_case函数返回值
     runner.run(all_case())
+    fp.close()
