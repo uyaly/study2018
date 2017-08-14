@@ -2,6 +2,9 @@
 import unittest
 import os
 import HTMLTestRunner
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 # 用例路径
 case_path = os.path.join(os.getcwd(), "case")
 # 报告存放路径

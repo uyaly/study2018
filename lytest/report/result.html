@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>自动化测试报告,测试结果如下：</h1>
-<p class='attribute'><strong>Start Time:</strong> 2017-08-14 17:41:31</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:03.005000</p>
-<p class='attribute'><strong>Status:</strong> Pass 3</p>
+<p class='attribute'><strong>Start Time:</strong> 2017-08-14 21:24:19</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:03.006000</p>
+<p class='attribute'><strong>Status:</strong> Pass 6 Failure 1</p>
 
 <p class='description'>用例执行情况：</p>
 </div>
@@ -246,7 +246,7 @@ function showOutput(id, name) {
         <pre>
         
 pt1.1: start!
-æ§è¡æµè¯ç¨ä¾01
+执行测试用例01
 end!
 
 
@@ -273,7 +273,7 @@ end!
         <pre>
         
 pt1.2: start!
-æ§è¡æµè¯ç¨ä¾02
+执行测试用例02
 end!
 
 
@@ -300,8 +300,60 @@ end!
         <pre>
         
 pt1.3: start!
-æ§è¡æµè¯ç¨ä¾03
+执行测试用例03
 end!
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='failClass'>
+    <td>baidu.test_02.Test</td>
+    <td>4</td>
+    <td>3</td>
+    <td>1</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c2',4)">Detail</a></td>
+</tr>
+
+<tr id='pt2.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test01: 判断 a == b</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt2.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test02: 判断 a in b</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt2.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test03: 判断 a isTrue</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='ft2.4' class='none'>
+    <td class='failCase'><div class='testcase'>test04: 失败案例</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.4')" >
+        fail</a>
+
+    <div id='div_ft2.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.4: Traceback (most recent call last):
+  File "D:\PycharmProjects\study\lytest\case\baidu\test_02.py", line 22, in test04
+    self.assertEqual(a, b ,msg="失败原因： %s !=  %s"%(a,b))
+AssertionError: 失败原因： 上海-悠悠 !=  yoyo
 
 
         </pre>
@@ -313,9 +365,9 @@ end!
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>3</td>
-    <td>3</td>
-    <td>0</td>
+    <td>7</td>
+    <td>6</td>
+    <td>1</td>
     <td>0</td>
     <td>&nbsp;</td>
 </tr>
