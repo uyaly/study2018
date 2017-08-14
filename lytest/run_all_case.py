@@ -2,6 +2,7 @@
 import unittest
 import os
 import HTMLTestRunner
+# 解决UnicodeDecodeError: 'ascii' codec can't decode byte 0xe5 in position 1: ordinal not in range(128)
 import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
