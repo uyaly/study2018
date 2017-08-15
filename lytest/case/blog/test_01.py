@@ -12,12 +12,13 @@ class TetsLogin(unittest.TestCase):
     def tearDown(self):
         self.driver.quit()
     def test_login(self):
+        u'''调用登录类里面的login方法，测试登录用例，元素找不到，抛异常，用例通过'''
         # 调用登录类里面的login方法
         Login_Blog(self.driver).login("uyaly", "ly612101010!")
         time.sleep(3)
         # 定位“名字”
         try:
-            element = self.driver.find_element("id", "lnk_current_user_")
+            element = self.driver.find_element("id", "lnk_current_userXX")
         except NoSuchElementException as msg:
             print u"查找元素异常%s"%msg
         # 点击该元素
