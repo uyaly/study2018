@@ -86,56 +86,27 @@ def send_mail(sender, psw, receiver, smtpserver, report_file):
 if __name__ == "__main__":
     # 测试用例的路径、匹配规则
     # case_path = "D:\\test\\newp\\case"
-    case_path = r"D:\PycharmProjects\test\study\lytest\case"
+    case_path = r"D:\PycharmProjects\test\lytest\case"
     rule = "test*.py"
 
     # 1加载用例
     all_case = add_case(case_path, rule)
     # 生成测试报告的路径
     # report_path = "D:\\test\\newp\\report"
-    report_path = r"D:\PycharmProjects\test\study\lytest\report"
+    report_path = r"D:\PycharmProjects\test\lytest\report"
     # 2执行用例
     run_case(all_case, report_path)
 
-    # 3获取最新的测试报告
+    # 获取最新的测试报告文件
     report_file = get_report_file(report_path)
 
+    # 3获取最新的测试报告
     # 邮箱配置
-    # ----------1.跟发件相关的参数------
-    smtpserver = "smtp.126.com"             # 发件服务器
-    port = 0                                # 端口
-    sender = "uuyaly@126.com"                 # 账号
-    psw = "612101010"                  # 密码
-    receiver = ["uuuyaly@qq.com", "uuyaly@qq.com"]           # 接收人
-    subject = "自动化测试报告"
-    # body = '<p>这个是自动发送的邮件</p>'     # 定义邮件正文为html格式
+    sender = "uuyaly@126.com"
+    psw = "612101010"
+    # 收件人多个时，中间用逗号隔开,如'a@xx.com,b@xx.com'
+    receiver = "uuuyaly@qq.com"
+    smtp_server = 'smtp.126.com'
 
-    # ----------2.编辑邮件的内容------
-    # 读文件
-    with open(report_file, "rb")as fp:
-        mail_body = fp.read()
-        msg = MIMEMultipart()
-        msg['from'] = sender
-        msg['to'] = ";".join(receiver)      # 多收件人list转str
-        msg['subject'] = subject
-        # 正文
-        body = MIMEText(mail_body, "html", "utf-8")
-        msg.attach(body)
-        # 附件
-        att = MIMEText(mail_body, "base64", "utf-8")
-        att["Content-Type"] = "application/octet-stream"
-        att["Content-Disposition"] = 'attachment;filename="test_report.html"'
-        msg.attach(att)
-    # ----------3.发送邮件------
-    # 为了兼容qq邮箱的SSL
-    try:
-        smtp = smtplib.SMTP()
-        smtp.connect(smtpserver)                # 连服务器
-        smtp.login(sender, psw)                 # 登录
-    except:
-        smtp = smtplib.SMTP_SSL(smtpserver, port)
-        smtp.login(sender, psw)                 # 登录
-
-    # smtp.sendmail(sender, receiver, msg.as_string())    # 发送
-    # smtp.quit()                             # 关闭
-    # 授权码 qq（uuu）邮箱密码 kjhpjigpcglmbgde
+    # 4最后一步发送报告，需要发邮件就取消注释
+    # send_mail(sender, psw, receiver, smtp_server, report_file)
