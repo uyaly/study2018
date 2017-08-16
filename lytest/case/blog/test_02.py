@@ -10,6 +10,7 @@ class Login(unittest.TestCase):
         self.driver.get(login_url)
     def test_01(self):
         '''前面输入账号密码，让正确运行到assert这一步，断言故意设置为False不成功'''
+        '''截图'''
         try:
             self.driver.find_element_by_id("input1").send_keys(u"uyaly")
             self.driver.find_element_by_id("input2").send_keys("ly612101010!")
@@ -24,8 +25,7 @@ class Login(unittest.TestCase):
             print(u"异常原因%s"%msg)
             # 图片名称可以加个时间戳
             nowTime = time.strftime("%Y%m%d.%H.%M.%S")
-            self.driver.get_screenshot_as_file('%s.jpg' % nowTime)
-            self.driver.get_screenshot_as_base64()
+            self.driver.get_screenshot_as_file(r"D:\PycharmProjects\test\study\lytest\report\%s.jpg" % nowTime)
             raise
     def tearDown(self):
         self.driver.quit()

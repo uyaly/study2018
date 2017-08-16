@@ -85,14 +85,12 @@ def send_mail(sender, psw, receiver, smtpserver, report_file):
 
 if __name__ == "__main__":
     # 测试用例的路径、匹配规则
-    # case_path = "D:\\test\\newp\\case"
     case_path = r"D:\PycharmProjects\test\study\lytest\case"
     rule = "test*.py"
 
     # 1加载用例
     all_case = add_case(case_path, rule)
     # 生成测试报告的路径
-    # report_path = "D:\\test\\newp\\report"
     report_path = r"D:\PycharmProjects\test\study\lytest\report"
     # 2执行用例
     run_case(all_case, report_path)
