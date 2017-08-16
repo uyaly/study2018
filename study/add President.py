@@ -63,17 +63,20 @@ class logintest(unittest.TestCase):
         # 感谢QQ：326186713 流年斑驳XXXXXX,input标签中的按钮要用send_keys(Keys.ENTER)来点击
         self.driver.find_element_by_id('add_Link').send_keys(Keys.ENTER)
         self.driver.implicitly_wait(3)
-        # 释放iframe，重新回到主页上XXXXXX,iframe一定要切回来
+        # 感谢QQ：326186713 流年斑驳XXXXXX释放iframe，重新回到主页上XXXXXX,iframe一定要切回来
         self.driver.switch_to.default_content()
         # 新增界面
         self.driver.implicitly_wait(3)
-        self.driver.find_element_by_id("_easyui_textbox_input1").send_keys('ccd0')
-        # self.driver.find_element_by_css_selector("#_easyui_textbox_input10").send_keys('ccd0')
-        self.driver.implicitly_wait(3)
+        # self.driver.find_element_by_id("_easyui_textbox_input1").send_keys('ccd0')
+        # self.driver.find_element_by_css_selector("#_easyui_textbox_input1").send_keys('ccd0')
+        self.driver.find_element_by_css_selector("textbox-text.validatebox-text.validatebox-invalid.textbox-prompt").send_keys('ccd0')
+        psw = "$('#input2').val('yoyo')"
+        self.driver.execute_script(psw)
+        self.driver.implicitly_wait(10)
         # 这里要滚动过
-        js1 = 'document.getElementById("form").scrollTop=10000'
-        self.driver.execute_script(js1)
-        self.driver.find_element_by_id("_easyui_textbox_input17").send_keys('cd0')
+        # js1 = 'document.getElementById("form").scrollTop=10000'
+        # self.driver.execute_script(js1)
+        # self.driver.find_element_by_id("_easyui_textbox_input17").send_keys('cd0')
         # self.driver.implicitly_wait(5)
         # self.driver.find_element_by_id("_easyui_textbox_input23").send_keys('a123')
         # self.driver.implicitly_wait(3)
