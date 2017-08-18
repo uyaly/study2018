@@ -9,6 +9,7 @@ from selenium.webdriver.support.select import Select   # 导入select方法
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
+import time
 # 引入WebDriver Keys包
 from selenium.webdriver.common.keys import Keys
 # 定义测试类，名字为logintest
@@ -63,15 +64,15 @@ class logintest(unittest.TestCase):
         self.driver.switch_to.default_content()
         # 新增界面
         self.driver.find_element_by_id("_easyui_textbox_input1").send_keys('ccd0')
-        self.driver.implicitly_wait(3)
+        time.sleep(3)
         self.driver.find_element_by_id("_easyui_textbox_input6").send_keys('a123')
-        self.driver.implicitly_wait(5)
+        time.sleep(3)
         self.driver.find_element_by_id("_easyui_textbox_input7").send_keys('a123')
-        self.driver.implicitly_wait(3)
+        time.sleep(3)
         self.driver.find_element_by_id('_easyui_textbox_input2').send_keys('ccd0')
         self.driver.implicitly_wait(10)
         # self.driver.find_element_by_id('loginOut').click()
-        self.driver.find_element_by_css_selector("span.l-btn-text").click()
+        self.driver.find_elements_by_class_name("l-btn-text")[0].click()
         self.driver.find_element_by_link_text("确定").click()
         self.driver.implicitly_wait(10)
         print('-- test 02 finished -- ')

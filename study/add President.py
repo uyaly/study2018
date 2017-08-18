@@ -66,23 +66,23 @@ class logintest(unittest.TestCase):
         # 感谢QQ：326186713 流年斑驳XXXXXX释放iframe，重新回到主页上XXXXXX,iframe一定要切回来
         self.driver.switch_to.default_content()
         # 新增界面
-        self.driver.implicitly_wait(3)
         # self.driver.find_element_by_id("_easyui_textbox_input1").send_keys('ccd0')
         # self.driver.find_element_by_css_selector("#_easyui_textbox_input1").send_keys('ccd0')
-
+        time.sleep(3)
         self.driver.execute_script("$('#_easyui_textbox_input1').val('ccd0')")
         self.driver.implicitly_wait(10)
         # 这里要滚动过
-        # js1 = 'document.getElementById("form").scrollTop=10000'
-        # self.driver.execute_script(js1)
-        # self.driver.find_element_by_id("_easyui_textbox_input17").send_keys('cd0')
-        # self.driver.implicitly_wait(5)
-        # self.driver.find_element_by_id("_easyui_textbox_input23").send_keys('a123')
-        # self.driver.implicitly_wait(3)
-        # self.driver.find_element_by_id('_easyui_textbox_input24').send_keys('a123')
-        # self.driver.implicitly_wait(3)
-        # self.driver.find_element_by_id("_easyui_textbox_input18").send_keys('ccd0')
-        # self.driver.implicitly_wait(3)
+        js = "window.scrollTo(0,document.body.scrollHeight)"
+        self.driver.execute_script(js)
+
+        self.driver.find_element_by_id("_easyui_textbox_input17").send_keys('cd0')
+        time.sleep(3)
+        self.driver.find_element_by_id("_easyui_textbox_input23").send_keys('a123')
+        time.sleep(3)
+        self.driver.find_element_by_id('_easyui_textbox_input24').send_keys('a123')
+        time.sleep(3)
+        self.driver.find_element_by_id("_easyui_textbox_input18").send_keys('ccd0')
+        time.sleep(3)
         # self.driver.find_element_by_id("_easyui_textbox_input20").send_keys('15555555555')
         # self.driver.implicitly_wait(10)
         # # self.driver.find_element_by_id('loginOut').click()
