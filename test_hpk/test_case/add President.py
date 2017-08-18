@@ -72,10 +72,10 @@ class logintest(unittest.TestCase):
         self.driver.execute_script("$('#_easyui_textbox_input1').val('ccd0')")
         time.sleep(3)
         # 滚动到底部
-        # self.driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+        self.driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
         time.sleep(3)
-        # self.driver.find_element_by_id("_easyui_textbox_input17").send_keys('cd0')
-        # time.sleep(3)
+        self.driver.find_element_by_id("_easyui_textbox_input17").send_keys('cd0')
+        time.sleep(3)
         self.driver.find_element_by_id("_easyui_textbox_input23").send_keys('a123')
         time.sleep(3)
         self.driver.find_element_by_id('_easyui_textbox_input24').send_keys('a123')
