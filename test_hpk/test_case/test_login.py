@@ -3,7 +3,7 @@ from selenium import webdriver
 import unittest
 import time
 import ddt
-from data import ExcelUtil
+from test_hpk.test_data.data import ExcelUtil
 # 引入WebDriver Keys包
 from selenium.webdriver.common.keys import Keys
 # 测试数据

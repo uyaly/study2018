@@ -85,7 +85,7 @@ def send_mail(sender, psw, receiver, smtpserver, report_file):
 
 if __name__ == "__main__":
     # 测试用例的路径、匹配规则
-    case_path = r"D:\PycharmProjects\test\study\test_hpk\test_data"
+    case_path = r"D:\PycharmProjects\test\study\test_hpk\test_case"
     rule = "test*.py"
 
     # 1加载用例
