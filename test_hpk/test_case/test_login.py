@@ -29,11 +29,10 @@ class Bolg(unittest.TestCase):
     def is_login_sucess(self):
         u'''判断是否获取到登录账户名称'''
         try:
-            text = self.driver.find_element_by_id("loginTooltip").text
-            print text
-            return True
+            return self.driver.find_element_by_id("loginTooltip").text
         except:
             return False
+            print "未登录成功"
     @ddt.data(*testData)
     def test_login(self, data):
         u'''登录案例参考'''
