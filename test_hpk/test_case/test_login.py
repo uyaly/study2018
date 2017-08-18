@@ -32,7 +32,6 @@ class Bolg(unittest.TestCase):
             return self.driver.find_element_by_id("loginTooltip").text
         except:
             return False
-            print "未登录成功"
     @ddt.data(*testData)
     def test_login(self, data):
         u'''登录案例参考'''
