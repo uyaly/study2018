@@ -27,7 +27,7 @@ class ExcelUtil():
             return r
 if __name__ == "__main__":
     # 注意：此代码if以上的勿乱改，调用此方法只需修改两个参数，一个是excelPath存放xlsx的路径，另外一个是sheetName的值
-    filePath = "D:\\PycharmProjects\\test\\study\\lytest\\testdata.xlsx"
+    filePath = "D:\\PycharmProjects\\test\\study\\lytest\\test_data.xlsx"
     sheetName = "Sheet1"
     data = ExcelUtil(filePath, sheetName)
     print data.dict_data()

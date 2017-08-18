@@ -69,9 +69,8 @@ class logintest(unittest.TestCase):
         self.driver.implicitly_wait(3)
         # self.driver.find_element_by_id("_easyui_textbox_input1").send_keys('ccd0')
         # self.driver.find_element_by_css_selector("#_easyui_textbox_input1").send_keys('ccd0')
-        self.driver.find_element_by_css_selector("textbox-text.validatebox-text.validatebox-invalid.textbox-prompt").send_keys('ccd0')
-        psw = "$('#input2').val('yoyo')"
-        self.driver.execute_script(psw)
+
+        self.driver.execute_script("$('#_easyui_textbox_input1').val('ccd0')")
         self.driver.implicitly_wait(10)
         # 这里要滚动过
         # js1 = 'document.getElementById("form").scrollTop=10000'
