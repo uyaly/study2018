@@ -70,11 +70,10 @@ class logintest(unittest.TestCase):
         # self.driver.find_element_by_css_selector("#_easyui_textbox_input1").send_keys('ccd0')
         time.sleep(3)
         self.driver.execute_script("$('#_easyui_textbox_input1').val('ccd0')")
-        self.driver.implicitly_wait(10)
-        # 这里要滚动过
-        js = "window.scrollTo(0,document.body.scrollHeight)"
-        self.driver.execute_script(js)
-
+        time.sleep(3)
+        # 滚动到底部
+        self.driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+        time.sleep(3)
         self.driver.find_element_by_id("_easyui_textbox_input17").send_keys('cd0')
         time.sleep(3)
         self.driver.find_element_by_id("_easyui_textbox_input23").send_keys('a123')
@@ -93,10 +92,10 @@ class logintest(unittest.TestCase):
 
     # tearDownClass方法是执行完所有测试后调用的方法
     # 是测试结束后的清除工作
-    @classmethod
-    def tearDownClass(self):
-        # 关闭浏览器
-      self.driver.quit()
+    # @classmethod
+    # def tearDownClass(self):
+    #     # 关闭浏览器
+    #   self.driver.quit()
 
 # 执行测试主函数
 if __name__ == '__main__':
