@@ -3,7 +3,7 @@ from selenium import webdriver
 import unittest
 import time
 import ddt
-from test_hpk.test_data.data import ExcelUtil
+from data import ExcelUtil
 # 引入WebDriver Keys包
 from selenium.webdriver.common.keys import Keys
 # 测试数据
@@ -13,7 +13,7 @@ data = ExcelUtil(filePath, sheetName)
 testData = data.dict_data()
 print testData
 @ddt.ddt
-class Bolg(unittest.TestCase):
+class login(unittest.TestCase):
     u'''登录'''
     def setUp(self):
         self.driver = webdriver.Firefox()

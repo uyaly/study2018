@@ -35,8 +35,8 @@ def add_case(case_path, rule):
 def run_case(all_case, report_path):
     '''执行所有的用例, 并把结果写入测试报告'''
     now = time.strftime("%Y_%m_%d %H_%M_%S")
-    report_abspath = os.path.join(report_path, now + "result.html")
-    # report_abspath = "D:\\web_project\\report\\"+now+"result.html"
+    report_abspath = os.path.join(report_path,  "result.html")
+    # report_abspath = os.path.join(report_path, now + "result.html")       #生成系统时间的报告
     fp = open(report_abspath, "wb")
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp,
                                            title=u'自动化测试报告,测试结果如下：',
