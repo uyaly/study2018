@@ -1,8 +1,10 @@
-import yaml
+# coding:utf-8
+# import yaml
 import os
 
 
 class YamlReader:
+    '''封装一个YamlReader类'''
     def __init__(self, yaml):
         if os.path.exits(yaml):
             self.yaml = yaml
@@ -11,7 +13,7 @@ class YamlReader:
         self._data = None
 
         @property
-        def data(self)
+        def data(self):
             if self._data:
                 return self._data
             else:
