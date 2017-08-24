@@ -9,7 +9,7 @@ LOG_PATH = BAES_PATH + '\\report\\'
 
 
 class Config:
-    '''读取配置'''
+    u'''读取配置'''
     def __init__(self, config=CONFIG_FILE):
         self.config = YamlReader(config).data
 
