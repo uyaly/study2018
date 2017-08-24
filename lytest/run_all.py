@@ -81,12 +81,12 @@ def send_mail(sender, psw, receiver, smtpserver, report_file):
     smtp.login(sender, psw)
     smtp.sendmail(sender, receiver, msg.as_string())
     smtp.quit()
-    print('test report email has send out !')
+    print('3 report email has send out !')
 
 if __name__ == "__main__":
     # 测试用例的路径、匹配规则
     case_path = r"D:\PycharmProjects\test\study\lytest\case"
-    rule = "test*.py"
+    rule = "3*.py"
 
     # 1加载用例
     all_case = add_case(case_path, rule)

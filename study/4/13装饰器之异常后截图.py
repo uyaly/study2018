@@ -16,7 +16,7 @@ def get_screen():
 def screen(func):
     '''截图装饰器'''
 
-    def inner(*args, **kwargs):
+    def inner(*args, **kwargs):3
         try:
             f = func(*args, **kwargs)
             return f

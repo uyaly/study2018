@@ -75,7 +75,7 @@ class logintest(unittest.TestCase):
         self.driver.find_elements_by_class_name("l-btn-text")[0].click()
         self.driver.find_element_by_link_text("确定").click()
         self.driver.implicitly_wait(10)
-        print('-- test 02 finished -- ')
+        print('-- 3 02 finished -- ')
 
     # tearDownClass方法是执行完所有测试后调用的方法
     # 是测试结束后的清除工作

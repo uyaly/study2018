@@ -7,7 +7,7 @@ from data import ExcelUtil
 # 引入WebDriver Keys包
 from selenium.webdriver.common.keys import Keys
 # 测试数据
-filePath = "D:\\PycharmProjects\\test\\study\\test_hpk\\test_data\\testdata.xlsx"
+filePath = "D:\\PycharmProjects\\3\\study\\test_hpk\\test_data\\testdata.xlsx"
 sheetName = "Sheet1"
 data = ExcelUtil(filePath, sheetName)
 testData = data.dict_data()

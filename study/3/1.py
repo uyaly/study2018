@@ -1,7 +1,7 @@
 # coding:utf-8
 import unittest
 class TestCase(unittest.TestCase):
-    # test method names begin 'test*'
+    # 3 method names begin '3*'
     def testAdd(self):
         self.assertEqual((1 + 2), 3)
         self.assertEqual(0 + 1, 1)

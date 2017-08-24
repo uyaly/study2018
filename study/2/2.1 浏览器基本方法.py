@@ -28,7 +28,7 @@ driver.set_window_size(540,960)
 # 窗口最大化
 driver.maximize_window()
 # 截屏
-driver.get_screenshot_as_file("d:\\test.jpg")
+driver.get_screenshot_as_file("d:\\3.jpg")
 # 找到
 # driver.find_element_by_id('txtaccounttext').send_keys("kaka")
 # driver.find_element_by_id('txtpasswordtext').send_keys("a123")

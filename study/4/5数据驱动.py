@@ -5,7 +5,7 @@ import time
 import ddt
 from data import ExcelUtil
 # 测试数据
-filePath = "D:\\PycharmProjects\\test\\study\\lytest\\test_data.xlsx"
+filePath = "D:\\PycharmProjects\\3\\study\\lytest\\test_data.xlsx"
 sheetName = "Sheet1"
 data = ExcelUtil(filePath, sheetName)
 testData = data.dict_data()

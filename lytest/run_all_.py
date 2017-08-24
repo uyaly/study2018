@@ -81,18 +81,18 @@ def send_mail(sender, psw, receiver, smtpserver, report_file):
     smtp.login(sender, psw)
     smtp.sendmail(sender, receiver, msg.as_string())
     smtp.quit()
-    print('test report email has send out !')
+    print('3 report email has send out !')
 
 if __name__ == "__main__":
     # 测试用例的路径、匹配规则
-    # case_path = "D:\\test\\newp\\case"
+    # case_path = "D:\\3\\newp\\case"
     case_path = r"D:\PycharmProjects\test\lytest\case"
-    rule = "test*.py"
+    rule = "3*.py"
 
     # 1加载用例
     all_case = add_case(case_path, rule)
     # 生成测试报告的路径
-    # report_path = "D:\\test\\newp\\report"
+    # report_path = "D:\\3\\newp\\report"
     report_path = r"D:\PycharmProjects\test\lytest\report"
     # 2执行用例
     run_case(all_case, report_path)
