@@ -24,8 +24,8 @@ def add_case(case_path, rule):
                                                    top_level_dir=None)
     # discover方法筛选出来的用例，循环添加到测试套件中
     # for test_suite in discover:
-    #     for test_case in test_suite:
-    #         testunit.addTests(test_case)
+    #     for case in test_suite:
+    #         testunit.addTests(case)
     #         print testunit
     testunit.addTests(discover)
     # 直接加载discover

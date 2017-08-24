@@ -27,7 +27,7 @@ with open(file_path, "rb")as fp:
     # 附件
     att = MIMEText(mail_body, "base64", "utf-8")
     att["Content-Type"] = "application/octet-stream"
-    att["Content-Disposition"] = 'attachment;filename="test_report.html"'
+    att["Content-Disposition"] = 'attachment;filename="report.html"'
     msg.attach(att)
 # ----------3.发送邮件------
 # 为了兼容qq邮箱的SSL
