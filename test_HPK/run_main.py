@@ -24,8 +24,8 @@ def add_case(case_path, rule):
                                                    top_level_dir=None)
     # discover方法筛选出来的用例，循环添加到测试套件中
     # for test_suite in discover:
-    #     for case in test_suite:
-    #         testunit.addTests(case)
+    #     for testcase in test_suite:
+    #         testunit.addTests(testcase)
     #         print testunit
     testunit.addTests(discover)
     # 直接加载discover
@@ -85,13 +85,13 @@ def send_mail(sender, psw, receiver, smtpserver, report_file):
 
 if __name__ == "__main__":
     # 测试用例的路径、匹配规则
-    case_path = r"D:\PycharmProjects\test\study\test_hpk\test_case"
+    case_path = r"D:\PycharmProjects\test\study\test_hpk\testcase"
     rule = "3*.py"
 
     # 1加载用例
     all_case = add_case(case_path, rule)
     # 生成测试报告的路径
-    report_path = r"D:\PycharmProjects\test\study\test_hpk\test_report"
+    report_path = r"D:\PycharmProjects\test\study\test_hpk\report"
     # 2执行用例
     run_case(all_case, report_path)
 
