@@ -7,7 +7,7 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
 # 用例路径
-case_path = os.path.join(os.getcwd(), "case")
+case_path = os.path.join(os.getcwd(), "testcase")
 # 报告存放路径
 report_path = os.path.join(os.getcwd(), "report")
 def all_case():
