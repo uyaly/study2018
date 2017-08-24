@@ -3,7 +3,7 @@ import os
 from utils.file_reader import YamlReader
 
 BASE_PATH = os.path.abspath(os.path.dirname(os.path.abspath(__file__)) + '\..')
-CONFIG_FILE = BASE_PATH + '\\config\\conf.yml'
+CONFIG_FILE = BASE_PATH + '\\config\\conf.yaml'
 DATA_PATH = BASE_PATH + '\\data\\'
 DRIVER_PATH = BASE_PATH + '\\drivers\\'
 LOG_PATH = BASE_PATH + '\\report\\'
