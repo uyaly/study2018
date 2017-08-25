@@ -4,7 +4,7 @@ import unittest
 import ddt
 from selenium import webdriver
 
-from test_hpk.src.test.case import ExcelUtil
+from test.case import ExcelUtil
 
 # 引入WebDriver Keys包
 # 测试数据
