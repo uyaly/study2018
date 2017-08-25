@@ -1,12 +1,15 @@
 # coding:utf-8
 import unittest
-from ly_selenium import browser
-from ly_pageobject import LoginPage, login_url
+
+from study.test_hpk.testcase.ly_selenium import browser
+from pageobject.login import LoginPage
+
+
 class Login_test(unittest.TestCase):
     u'''登录页面的case'''
     def setUp(self):
         self.driver = browser()
-        self.login= LoginPage(self.driver)      #   login参数是LoginPage的实例
+        self.login= LoginPage(self.driver)      # login参数是LoginPage的实例
         self.login.open(login_url)
     def login_case(self, username, psw, expect=True):
         '''登录用例的方法,'''
