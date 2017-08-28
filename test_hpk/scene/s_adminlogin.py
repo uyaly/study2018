@@ -2,18 +2,20 @@
 import unittest
 from utils.config import Config
 from selenium import webdriver
-from testcase.c_login import login
+from testcase.c_login import Login
+from pageobject.login import LoginPage
 
-class adminlogin(unittest.TestCase):
+
+class AdminLogin(unittest.TestCase):
     '''管理员登录场景'''
-    login = login()
 
-    def test01(self):
-        self.url = Config().get('URL')
+    def setUp(self):
+        pass
+    def test_01(self):
         self.username = Config().get('ADMIN')
         self.psw = Config().get('PASSWORD')
-        # self.login= login(self)      # login参数是LoginPage的实例
-        self.login.login_case(self.username, self.psw, '')
+        self.login = LoginPage()  # login参数是LoginPage的实例
+        self.login.login(self.username, self.psw)
 
 
 if __name__ == "__main__":
