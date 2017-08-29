@@ -14,7 +14,7 @@ class AdminLogin(unittest.TestCase):
     def test_01(self):
         self.username = Config().get('ADMIN')
         self.psw = Config().get('PASSWORD')
-        self.login = LoginPage()  # login参数是LoginPage的实例
+        self.login = Login().s_adminlogin  # login参数是LoginPage的实例
         self.login.login(self.username, self.psw)
 
 

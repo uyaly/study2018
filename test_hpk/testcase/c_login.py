@@ -18,16 +18,16 @@ class Login(unittest.TestCase):
         # self.login = LoginPage(self.driver)  # login参数是LoginPage的实例
 
     def test_login_case(self):
+        self.login.input_username(self.username)
+        self.login.input_password(self.psw)
+        self.login.click_submit()
         # 清除当前的输入
-        # self.login.input_username(self.username)
-        # self.login.input_password(self.psw)
-        # self.login.click_submit()
-        self.driver.execute_script("$('#txtaccount').val('')")
-        self.driver.execute_script("$('#txtpassword').val('')")
-        # 输入用户名和密码，进行登录
-        self.driver.execute_script("$('#txtaccount').val(self.username)")
-        self.driver.execute_script("$('#txtpassword').val(self.psw)")
-        self.driver.execute_script("$('#btlogin').click()")
+        # self.driver.execute_script("$('#txtaccount').val('')")
+        # self.driver.execute_script("$('#txtpassword').val('')")
+        # # 输入用户名和密码，进行登录
+        # self.driver.execute_script("$('#txtaccount').val(self.username)")
+        # self.driver.execute_script("$('#txtpassword').val(self.psw)")
+        # self.driver.execute_script("$('#btlogin').click()")
         # 第4步：测试结果,判断是否登录成功
         result = self.login.is_text_in_element(("id", "loginOut"), "退出")
         # 第5步：期望结果
