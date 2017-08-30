@@ -2,8 +2,8 @@
 import unittest
 from utils.config import Config
 from selenium import webdriver
-from testcase.c_login import Login
-from pageobject.login import LoginPage
+from testcase.Case_login import Login
+from pageobject.LoginPage import LoginPage
 
 
 class AdminLogin(unittest.TestCase):
