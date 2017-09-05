@@ -1,8 +1,9 @@
 # coding:utf-8
 import unittest
 
-from study.test_hpk.testcase.ly_selenium import browser
 from pageobject.login import LoginPage
+
+from test_hpk.testcase.ly_selenium import browser
 
 
 class Login_test(unittest.TestCase):
