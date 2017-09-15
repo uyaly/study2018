@@ -11,7 +11,7 @@ class TetsLogin(unittest.TestCase):
         # self.driver = webdriver.Firefox()
         self.driver = webdriver.Chrome()
         self.driver.get(login_url)
-        # self.driver.maximize_window()
+        self.driver.maximize_window()
 
     def test_login(self):
         WebDriverWait(self.driver, 5).until(lambda x: x.find_element_by_xpath(".//*[@id='loginForm']/div[1]/input")).send_keys("")
