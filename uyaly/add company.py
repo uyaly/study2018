@@ -26,7 +26,6 @@ class logintest(unittest.TestCase):
         # 浏览器最大化
          cls.driver.maximize_window()
          print(" -- set up finished -- ")
-         print
     # 测试一（务必以test开头）
     def test_01login(self):
         self.driver.implicitly_wait(10)
