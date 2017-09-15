@@ -7,12 +7,11 @@ login_url = "http://59.172.105.83:81/vmsBS/login.jsp"
 class TetsLogin(unittest.TestCase):
     def setUp(self):
         # self.driver = webdriver.Ie()
-        self.driver = webdriver.Firefox()
+        # self.driver = webdriver.Firefox()
+        self.driver = webdriver.Chrome()
         self.driver.get(login_url)
 
     def test_login(self):
-        u'''调用登录类里面的login方法，测试登录用例，元素找不到，抛异常，用例通过'''
-        # 调用登录类里面的login方法
         time.sleep(3)
         self.driver.find_element_by_xpath(".//*[@id='loginForm']/div[1]/input").send_keys("bsjtest")
 
