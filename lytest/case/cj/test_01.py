@@ -3,16 +3,18 @@ from selenium import webdriver
 import unittest
 import time
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.support.wait import WebDriverWait
 login_url = "http://59.172.105.83:81/vmsBS/login.jsp"
 class TetsLogin(unittest.TestCase):
     def setUp(self):
-        # self.driver = webdriver.Ie()
+        # self.driver = webdriver.Ie()  # 真心找不到元素，不知道原因
         # self.driver = webdriver.Firefox()
         self.driver = webdriver.Chrome()
         self.driver.get(login_url)
+        # self.driver.maximize_window()
 
     def test_login(self):
-        time.sleep(3)
+        WebDriverWait(self.driver, 5).until(lambda x: x.find_element_by_xpath(".//*[@id='loginForm']/div[1]/input")).send_keys("")
         self.driver.find_element_by_xpath(".//*[@id='loginForm']/div[1]/input").send_keys("bsjtest")
 
         self.driver.find_element_by_xpath(".//*[@id='loginForm']/div[2]/input").clear()
@@ -21,12 +23,12 @@ class TetsLogin(unittest.TestCase):
         self.driver.find_element_by_xpath(".//*[@id='loginForm']/div[3]/input").clear()
         self.driver.find_element_by_xpath(".//*[@id='loginForm']/div[3]/input").send_keys("B00013")
 
-        self.driver.find_element_by_class_name("login_btn").click()
+        self.driver.find_element("class name","login_btn").click()
 
-        time.sleep(3)
         # 定位“退出”
         try:
-            element = self.driver.find_element("id", "exitSys")
+            WebDriverWait(self.driver, 5).until(lambda x: x.find_element("id", "exitSys"))
+            # element = self.driver.find_element("id", "exitSys")
         except NoSuchElementException as msg:
             print u"查找元素异常%s"%msg
         # 点击该元素
