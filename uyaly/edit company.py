@@ -14,9 +14,6 @@ import time
 from selenium.webdriver.common.keys import Keys
 # 定义测试类，名字为logintest
 # 该类必须继承unittest.TestCase基类
-
-
-
 class logintest(unittest.TestCase):
     # 使用'@'修饰符，注明该方法是类的方法
     # setUpClass方法是在执行测试之前需要先调用的方法
@@ -28,9 +25,6 @@ class logintest(unittest.TestCase):
          cls.driver.get("http://47.52.77.154:8015/Default/Login")
         # 浏览器最大化
          cls.driver.maximize_window()
-
-        # cls.title = EC.title_is(u'轰扑克皇家俱乐部')
-        #  print (cls.driver.title)
          print(" -- set up finished -- ")
          print
     # 测试一（务必以test开头）
@@ -56,50 +50,49 @@ class logintest(unittest.TestCase):
         self.driver.implicitly_wait(10)
         # 进入模块
         self.driver.find_element_by_xpath(".//*[@id='navi']/div/div/div[3]/div/a/em").click()
-        self.driver.find_element_by_xpath(".//*[@id='navi']/div/div/div[3]/ul/li[2]/a").click()
+        self.driver.find_element_by_xpath(".//*[@id='navi']/div/div/div[3]/ul/li[1]/a").click()
         self.driver.implicitly_wait(10)
         # 点击新增按钮
         # js = 'document.getElementById("add_Link").click();'
         # self.driver.execute_script(js)
         iframe1 = self.driver.find_element_by_id("mainIframe")
         self.driver.switch_to.frame(iframe1)
+        # 找到要编辑的一行
+        # self.driver.find_elements_by_class_name('datagrid-cell-c1-LoginID')
+        delloginid = self.driver.document.getElementsByClassName("datagrid-cell-c1-LoginID")
+        for i in delloginid:
+            if delloginid.value == "ccd0":
+
+            else:
+                i = i+1
+
         # 感谢QQ：326186713 流年斑驳XXXXXX,input标签中的按钮要用send_keys(Keys.ENTER)来点击
-        self.driver.find_element_by_id('add_Link').send_keys(Keys.ENTER)
+        self.driver.find_element_by_id('edit_Link').send_keys(Keys.ENTER)
         self.driver.implicitly_wait(3)
-        # 感谢QQ：326186713 流年斑驳XXXXXX释放iframe，重新回到主页上XXXXXX,iframe一定要切回来
+        # 释放iframe，重新回到主页上XXXXXX,iframe一定要切回来
         self.driver.switch_to.default_content()
-        # 新增界面
+        # 修改界面
         # self.driver.find_element_by_id("_easyui_textbox_input1").send_keys('ccd0')
-        # self.driver.find_element_by_css_selector("#_easyui_textbox_input1").send_keys('ccd0')
-        time.sleep(3)
-        self.driver.execute_script("$('#_easyui_textbox_input1').val('ce0')")
-        time.sleep(3)
-        # 滚动到底部
-        self.driver.execute_script("$('#form>div')[0].scrollTop=500")
-        time.sleep(3)
-        self.driver.find_element_by_id("_easyui_textbox_input8").clear()
-        self.driver.find_element_by_id("_easyui_textbox_input8").send_keys('e0')
-        time.sleep(3)
-        self.driver.find_element_by_id("_easyui_textbox_input14").send_keys('a123')
-        time.sleep(3)
-        self.driver.find_element_by_id('_easyui_textbox_input15').send_keys('a123')
-        time.sleep(3)
-        self.driver.find_element_by_id("_easyui_textbox_input9").send_keys('ce0')
-        time.sleep(3)
-        self.driver.find_element_by_id("_easyui_textbox_input11").send_keys('13000000006')
-        time.sleep(3)
-        # self.driver.find_element_by_id('loginOut').click()
-        self.driver.find_element_by_css_selector("span.l-btn-text").click()
-        self.driver.find_element_by_link_text("确定").click()
+        # time.sleep(3)
+        # self.driver.find_element_by_id("_easyui_textbox_input6").send_keys('a123')
+        # time.sleep(3)
+        # self.driver.find_element_by_id("_easyui_textbox_input7").send_keys('a123')
+        # time.sleep(3)
+        # self.driver.find_element_by_id('_easyui_textbox_input2').send_keys('ccd0')
         # self.driver.implicitly_wait(10)
-        # print('-- 3 02 finished -- ')
+        # self.driver.find_element_by_id('loginOut').click()
+        self.driver.find_elements_by_class_name("l-btn-left")[0].click()
+
+        self.driver.find_element_by_link_text("确定").click()
+        self.driver.implicitly_wait(10)
+        print('-- 3 02 finished -- ')
 
     # tearDownClass方法是执行完所有测试后调用的方法
     # 是测试结束后的清除工作
-    # @classmethod
-    # def tearDownClass(self):
-    #     # 关闭浏览器
-    #   self.driver.quit()
+    @classmethod
+    def tearDownClass(self):
+        # 关闭浏览器
+      self.driver.quit()
 
 # 执行测试主函数
 if __name__ == '__main__':
