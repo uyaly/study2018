@@ -3,6 +3,8 @@ import re
 import sys
 import argparse
 
+# D:\PycharmProjects\test\study\lytest\case\cj>python analyze_log.py  -i 3.log -o xxx.csv
+
 def output_result_console(type, time, status, alarm, send_bufs, recv_bufs):
     if send_buf and recv_buf:
         send_bufs.append(send_buf)
