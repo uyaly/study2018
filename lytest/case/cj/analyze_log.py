@@ -37,7 +37,6 @@ if __name__ == '__main__':
     if args.output:
         csvfile = open(args.output, 'wb')
 
-
     with open(args.input, 'r') as f:
         line = f.readline()
         while line:
