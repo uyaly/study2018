@@ -1,23 +1,47 @@
+import csv
 import re
-
-import argparse
 import sys
+import argparse
+
+def output_result_console(type, time, status, alarm, send_bufs, recv_bufs):
+    if send_buf and recv_buf:
+        send_bufs.append(send_buf)
+        recv_bufs.append(recv_buf)
+    print '''Type: {}\nTime: {}\nStatusber: {}\nAlarm: {}'''.format(type, time, status, alarm)
+    for i in xrange(len(send_bufs)):
+        print 'Send: {}'.format(' '.join(send_bufs[i]))
+        print 'Recv: {}'.format(' '.join(recv_bufs[i]))
+
+def output_result_csv(csvfile, type, time, status, alarm, send_bufs, recv_bufs):
+    if not csvfile:
+        return
+    writter = csv.writer(csvfile)
+    writter.writerow((type, time, status, alarm))
+    for i in xrange(len(send_bufs)):
+        writter.writerow(('Send', ' '.join(send_bufs[i])))
+        writter.writerow(('Recv', ' '.join(recv_bufs[i])))
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('-f', '--file')
+    parser.add_argument('-i', '--input')
+    parser.add_argument('-o', '--output')
     args = parser.parse_args()
 
-    if not args.file:
-        print 'Usage: python analyze_log -f <log_file>'
+    if not args.input:
+        print 'Usage: python analyze_log -i <log_file> [-o <csv_file>]'
         sys.exit(-1)
 
     re_fum = re.compile('(?<= )[A-F0-9]{2}')
 
-    with open(args.file, 'r') as f:
+    csvfile = None
+    if args.output:
+        csvfile = open(args.output, 'wb')
+
+
+    with open(args.input, 'r') as f:
         line = f.readline()
         while line:
-            if not line.startswith('Report'):
+            if not line.startswith('Report')and not line.startswith('Alarm'):
                 line = f.readline()
                 continue
             # get new line
@@ -25,8 +49,8 @@ if __name__ == '__main__':
                 args = line.split(' ')
                 type = args[0]
                 time = args[1]
-                num = args[2]
-                extra = args[4]
+                status = args[2]
+                alarm = args[4]
             except:
                 continue
 
@@ -39,13 +63,8 @@ if __name__ == '__main__':
                 line = f.readline()
                 values = re_fum.findall(line)
                 if not values:
-                    if send_buf and recv_buf:
-                        send_bufs.append(send_buf)
-                        recv_bufs.append(recv_buf)
-                    print '''Type: {}\nTime: {}\nNumber: {}\nExtra: {}'''.format(type, time, num, extra)
-                    for i in xrange(len(send_bufs)):
-                        print 'Send: {}'.format(' '.join(send_bufs[i]))
-                        print 'Recv: {}'.format(' '.join(recv_bufs[i]))
+                    output_result_console(type, time, status, alarm, send_bufs, recv_bufs)
+                    output_result_csv(csvfile, type, time, status, alarm, send_bufs, recv_bufs)
                     break
                 else:
                     if values[0] == '7E':
@@ -61,3 +80,5 @@ if __name__ == '__main__':
                         recv_buf.extend(values)
                     if values[-1] == '7E':
                         is_sending = False
+    if csvfile:
+        csvfile.close()
