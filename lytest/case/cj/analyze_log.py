@@ -3,7 +3,7 @@ import re
 import sys
 import argparse
 
-# D:\PycharmProjects\test\study\lytest\case\cj>python analyze_log.py  -i 3.log -o xxx.csv
+# python D:\PycharmProjects\test\study\lytest\case\cj\analyze_log.py  -i D:\PycharmProjects\test\study\lytest\case\cj\3.log -o C:\Users\ly\Desktop\xxx.csv
 
 def output_result_console(type, time, status, alarm, send_bufs, recv_bufs):
     if send_buf and recv_buf:
