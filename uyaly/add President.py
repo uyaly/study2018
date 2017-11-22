@@ -15,8 +15,6 @@ from selenium.webdriver.common.keys import Keys
 # 定义测试类，名字为logintest
 # 该类必须继承unittest.TestCase基类
 
-
-
 class logintest(unittest.TestCase):
     # 使用'@'修饰符，注明该方法是类的方法
     # setUpClass方法是在执行测试之前需要先调用的方法

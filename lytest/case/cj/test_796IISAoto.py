@@ -51,8 +51,12 @@ class TestLogin(unittest.TestCase):
         # self.driver.find_element("class name","validatebox-text").send_keys(u"鄂A0001")
         # self.driver.find_element_by_css_selector("input.combo-text").send_keys("鄂A0001")
         # self.driver.find_element_by_xpath(".//*[@id='VsearchBar']/div[2]/span/input[1]").send_keys("Keys.ENTER")
-        self.driver.find_element("id", "VsearchBar").click()
-        # self.driver.find_element_by_xpath(".//*[@id='VsearchBar']/div[2]/span/input[1]").click()
+        # self.driver.find_element("id", "VsearchBar").click()
+
+        self.driver.execute_script("$('.combo-text input').eq(0).attr('style','width: 186.4px; height: 21.4px; line-height: 21.4px;display:block;position:static;transform:translate(0px, 0px) scale(1)')")
+        shuru = self.driver.find_element_by_xpath(".//*[@id='VsearchBar']/div[2]/span/input[1]")
+        print shuru.is_displayed()
+        self.driver.find_element_by_xpath(".//*[@id='VsearchBar']/div[2]/span/input[1]").send_keys("鄂A0001")
         self.driver.execute_script("$('input.combo-text.validatebox-text').val('ce0')")
         # a = self.driver.find_elements("class name", "tree-checkbox")
         # 进入拍照
