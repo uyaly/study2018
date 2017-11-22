@@ -47,16 +47,18 @@ class TestLogin(unittest.TestCase):
         self.driver.find_element_by_link_text("指令管理").click()
         self.driver.switch_to.default_content()
         # 输入车牌
+        # WebDriverWait(self.driver, 5).until(lambda x: x.find_element_by_xpath(".//*[@id='VsearchBar']/div[2]/span/input[1]")).send_keys("鄂A00000")
         # self.driver.find_element("class name","validatebox-text").send_keys(u"鄂A0001")
         # self.driver.find_element_by_css_selector("input.combo-text").send_keys("鄂A0001")
         # self.driver.find_element_by_xpath(".//*[@id='VsearchBar']/div[2]/span/input[1]").send_keys("Keys.ENTER")
-        # self.driver.find_element("id", "_easyui_tree_8").click()
-        self.driver.find_element_by_xpath(".//*[@id='_easyui_tree_11']/span[4]").click()
+        self.driver.find_element("id", "VsearchBar").click()
+        # self.driver.find_element_by_xpath(".//*[@id='VsearchBar']/div[2]/span/input[1]").click()
+        self.driver.execute_script("$('input.combo-text.validatebox-text').val('ce0')")
         # a = self.driver.find_elements("class name", "tree-checkbox")
         # 进入拍照
-        self.driver.find_element_by_xpath(".//*[@id='_easyui_tree_6']/span[3]").click()
-        self.driver.find_element_by_xpath(".//*[@id='_easyui_tree_21']/span[4]").click()
-        self.driver.find_element_by_xpath(".//*[@id='_easyui_tree_32']/span[5]").click()
+        self.driver.find_element("id", "_easyui_tree_6").click()
+        self.driver.find_element("id", "_easyui_tree_21").click()
+        self.driver.find_element("id", "_easyui_tree_32").click()
         # 拍照参数设置
         self.driver.find_element("id", "photograph_num").send_keys("1")
         self.driver.find_element("id", "photograph_time").send_keys("0")
