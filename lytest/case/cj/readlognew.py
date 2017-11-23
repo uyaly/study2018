@@ -13,19 +13,8 @@ import xlrd     # 打开excel文件
 file = xlwt.Workbook(encoding='utf-8', style_compression=0)
 # 新建一个sheet
 sheet = file.add_sheet('data')
-
-
-# if __name__ == '__main__':
-#     parser = argparse.ArgumentParser()
-#     parser.add_argument('-f', '--file')
-#     args = parser.parse_args()
-#
-#     # if not args.file:
-#     #     print 'Usage: python analyze_log -f <log_file>'
-#     #     sys.exit(-1)
-#
-#     # re_fum = re.compile('(?<= )[A-F0-9]{2}')
-fopen = open(r"D:\3.log", 'r')
+# fopen = open(r"D:\PycharmProjects\test\study\lytest\case\cj\3.log", 'r')
+fopen = open(r"C:\Users\Administrator\Desktop\teraterm1123.log", 'r')
 lines = fopen.readlines()
 # 新建一个excel文件
 file = xlwt.Workbook(encoding='utf-8', style_compression=0)
