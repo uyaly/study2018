@@ -10,6 +10,7 @@ if sys.getdefaultencoding() != defaultencoding:
     reload(sys)
     sys.setdefaultencoding(defaultencoding)
 
+# python D:\PycharmProjects\test\study\Tools\AutoSentChatroom\AutoSentChatroom.py
 def SentChatRoomsMsg(name, context):
     itchat.get_chatrooms(update=True)
     iRoom = itchat.search_chatrooms(name)
@@ -18,17 +19,17 @@ def SentChatRoomsMsg(name, context):
             userName = room['UserName']
             break
     itchat.send_msg(context, userName)
-    print("发送时间：" + datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n"
-                                                                   "发送到：" + name + "\n"
-                                                                                   "发送内容：" + context + "\n")
+    print(u"发送时间：" + datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n"
+                                                                   u"发送到：" + name + "\n"
+                                                                                   u"发送内容：" + context + "\n")
     print("*********************************************************************************")
     scheduler.print_jobs()
 
 def loginCallback():
-    print("***登录成功***")
+    print(u"***登录成功***")
 
 def exitCallback():
-    print("***已退出***")
+    print(u"***已退出***")
 
 itchat.auto_login(hotReload=True, enableCmdQR=True, loginCallback=loginCallback, exitCallback=exitCallback)
 workbook = xlrd.open_workbook(
@@ -52,10 +53,10 @@ for i in range(1, iRows):
     textList[1] = date_value
     scheduler.add_job(SentChatRoomsMsg, 'date', run_date=date_value,
                       kwargs={"name": name, "context": context})
-    print("任务" + str(index) + ":\n"
-                              "待发送时间：" + date_value + "\n"
-                                                      "待发送到：" + name + "\n"
-                                                                       "待发送内容：" + context + "\n"
+    print(u"任务" + str(index) + ":\n"
+                              u"待发送时间：" + date_value + "\n"
+                                                      u"待发送到：" + name + "\n"
+                                                                       u"待发送内容：" + context + "\n"
                                                                                              "******************************************************************************\n")
     index = index + 1
 
