@@ -14,7 +14,7 @@ file = xlwt.Workbook(encoding='utf-8', style_compression=0)
 # 新建一个sheet
 sheet = file.add_sheet('data')
 # fopen = open(r"D:\PycharmProjects\test\study\lytest\case\cj\3.log", 'r')
-fopen = open(r"C:\Users\Administrator\Desktop\teraterm1123.log", 'r')
+fopen = open(r"C:\Users\Administrator\Desktop\teraterm1127.log", 'r')
 lines = fopen.readlines()
 # 新建一个excel文件
 file = xlwt.Workbook(encoding='utf-8', style_compression=0)

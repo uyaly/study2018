@@ -4,9 +4,9 @@ from selenium import webdriver
 
 class Login_test(unittest.TestCase):
     u'''登录页面的case'''
-    # def setUp(self):
-        # self.driver = webdriver.Firefox()
-        # self.driver.get("http://47.52.77.154:8015/Default/Login")
+    # def setUp(AutoSentChatroom):
+        # AutoSentChatroom.driver = webdriver.Firefox()
+        # AutoSentChatroom.driver.get("http://47.52.77.154:8015/Default/Login")
 
     def test_case(self):
         '''登录用例的方法,'''

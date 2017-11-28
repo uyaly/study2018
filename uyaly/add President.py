@@ -41,9 +41,9 @@ class logintest(unittest.TestCase):
         self.driver.find_element_by_id('txtaccount').send_keys("kaka")
         self.driver.find_element_by_id('txtpassword').send_keys("a123")
         self.driver.find_element_by_id('btlogin').click()
-    # def test_02logout(self):
-    #     self.exit = self.driver.find_element_by_id("loginOut")
-    #     self.assertEqual('退出', exit.text)
+    # def test_02logout(AutoSentChatroom):
+    #     AutoSentChatroom.exit = AutoSentChatroom.driver.find_element_by_id("loginOut")
+    #     AutoSentChatroom.assertEqual('退出', exit.text)
     #     print(exit.get_attribute('type'))
     #     print
     #     print('-- test_01 login finished -- ')
@@ -58,7 +58,7 @@ class logintest(unittest.TestCase):
         self.driver.implicitly_wait(10)
         # 点击新增按钮
         # js = 'document.getElementById("add_Link").click();'
-        # self.driver.execute_script(js)
+        # AutoSentChatroom.driver.execute_script(js)
         iframe1 = self.driver.find_element_by_id("mainIframe")
         self.driver.switch_to.frame(iframe1)
         # 感谢QQ：326186713 流年斑驳XXXXXX,input标签中的按钮要用send_keys(Keys.ENTER)来点击
@@ -67,8 +67,8 @@ class logintest(unittest.TestCase):
         # 感谢QQ：326186713 流年斑驳XXXXXX释放iframe，重新回到主页上XXXXXX,iframe一定要切回来
         self.driver.switch_to.default_content()
         # 新增界面
-        # self.driver.find_element_by_id("_easyui_textbox_input1").send_keys('ccd0')
-        # self.driver.find_element_by_css_selector("#_easyui_textbox_input1").send_keys('ccd0')
+        # AutoSentChatroom.driver.find_element_by_id("_easyui_textbox_input1").send_keys('ccd0')
+        # AutoSentChatroom.driver.find_element_by_css_selector("#_easyui_textbox_input1").send_keys('ccd0')
         time.sleep(3)
         self.driver.execute_script("$('#_easyui_textbox_input1').val('ce0')")
         time.sleep(3)
@@ -86,18 +86,18 @@ class logintest(unittest.TestCase):
         time.sleep(3)
         self.driver.find_element_by_id("_easyui_textbox_input11").send_keys('13000000006')
         time.sleep(3)
-        # self.driver.find_element_by_id('loginOut').click()
+        # AutoSentChatroom.driver.find_element_by_id('loginOut').click()
         self.driver.find_element_by_css_selector("span.l-btn-text").click()
         self.driver.find_element_by_link_text("确定").click()
-        # self.driver.implicitly_wait(10)
+        # AutoSentChatroom.driver.implicitly_wait(10)
         # print('-- 3 02 finished -- ')
 
     # tearDownClass方法是执行完所有测试后调用的方法
     # 是测试结束后的清除工作
     # @classmethod
-    # def tearDownClass(self):
+    # def tearDownClass(AutoSentChatroom):
     #     # 关闭浏览器
-    #   self.driver.quit()
+    #   AutoSentChatroom.driver.quit()
 
 # 执行测试主函数
 if __name__ == '__main__':

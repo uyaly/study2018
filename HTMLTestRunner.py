@@ -748,7 +748,7 @@ class HTMLTestRunner(Template_mixin):
         self.generateReport(test, result)
         if PY3K:
             # for python3
-            # print('\nTime Elapsed: %s' % (self.stopTime - self.startTime),file=sys.stderr)
+            # print('\nTime Elapsed: %s' % (AutoSentChatroom.stopTime - AutoSentChatroom.startTime),file=sys.stderr)
             output = '\nTime Elapsed: %s' % (self.stopTime - self.startTime)
             sys.stderr.write(output)
         else:
@@ -961,7 +961,7 @@ class TestProgram(unittest.TestProgram):
     def runTests(self):
         # Pick HTMLTestRunner as the default test runner.
         # base class's testRunner parameter is not useful because it means
-        # we have to instantiate HTMLTestRunner before we know self.verbosity.
+        # we have to instantiate HTMLTestRunner before we know AutoSentChatroom.verbosity.
         if self.testRunner is None:
             self.testRunner = HTMLTestRunner(verbosity=self.verbosity)
         unittest.TestProgram.runTests(self)

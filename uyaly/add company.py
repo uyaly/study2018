@@ -36,9 +36,9 @@ class logintest(unittest.TestCase):
         self.driver.find_element_by_id('txtaccount').send_keys("kaka")
         self.driver.find_element_by_id('txtpassword').send_keys("a123")
         self.driver.find_element_by_id('btlogin').click()
-    # def test_02logout(self):
-    #     self.exit = self.driver.find_element_by_id("loginOut")
-    #     self.assertEqual('退出', exit.text)
+    # def test_02logout(AutoSentChatroom):
+    #     AutoSentChatroom.exit = AutoSentChatroom.driver.find_element_by_id("loginOut")
+    #     AutoSentChatroom.assertEqual('退出', exit.text)
     #     print(exit.get_attribute('type'))
     #     print
     #     print('-- test_01 login finished -- ')
@@ -53,7 +53,7 @@ class logintest(unittest.TestCase):
         self.driver.implicitly_wait(10)
         # 点击新增按钮
         # js = 'document.getElementById("add_Link").click();'
-        # self.driver.execute_script(js)
+        # AutoSentChatroom.driver.execute_script(js)
         iframe1 = self.driver.find_element_by_id("mainIframe")
         self.driver.switch_to.frame(iframe1)
         # 感谢QQ：326186713 流年斑驳XXXXXX,input标签中的按钮要用send_keys(Keys.ENTER)来点击
@@ -70,7 +70,7 @@ class logintest(unittest.TestCase):
         time.sleep(3)
         self.driver.find_element_by_id('_easyui_textbox_input2').send_keys('ccd0')
         self.driver.implicitly_wait(10)
-        # self.driver.find_element_by_id('loginOut').click()
+        # AutoSentChatroom.driver.find_element_by_id('loginOut').click()
         self.driver.find_elements_by_class_name("l-btn-text")[0].click()
         self.driver.find_element_by_link_text("确定").click()
         self.driver.implicitly_wait(10)
