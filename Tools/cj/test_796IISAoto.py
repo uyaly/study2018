@@ -45,19 +45,20 @@ class TestLogin(unittest.TestCase):
         # 进入指令管理
         self.driver.find_elements("class name", "panel-title")[4].click()
         self.driver.find_element_by_link_text("指令管理").click()
-        self.driver.switch_to.default_content()
-        # 输入车牌
+        # self.driver.switch_to.default_content()
+        # 切换iframe
         # WebDriverWait(AutoSentChatroom.driver, 5).until(lambda x: x.find_element_by_xpath(".//*[@id='VsearchBar']/div[2]/span/input[1]")).send_keys("鄂A00000")
-        # AutoSentChatroom.driver.find_element("class name","validatebox-text").send_keys(u"鄂A0001")
-        # AutoSentChatroom.driver.find_element_by_css_selector("input.combo-text").send_keys("鄂A0001")
-        # AutoSentChatroom.driver.find_element_by_xpath(".//*[@id='VsearchBar']/div[2]/span/input[1]").send_keys("Keys.ENTER")
-        # AutoSentChatroom.driver.find_element("id", "VsearchBar").click()
-
-        self.driver.execute_script("$('.combo-text input').eq(0).attr('style','width: 186.4px; height: 21.4px; line-height: 21.4px;display:block;position:static;transform:translate(0px, 0px) scale(1)')")
-        shuru = self.driver.find_element_by_xpath(".//*[@id='VsearchBar']/div[2]/span/input[1]")
-        print shuru.is_displayed()
-        self.driver.find_element_by_xpath(".//*[@id='VsearchBar']/div[2]/span/input[1]").send_keys("鄂A0001")
-        self.driver.execute_script("$('input.combo-text.validatebox-text').val('ce0')")
+        time.sleep(3)
+        # frame2 = self.driver.find_element("class name", "sys_main_iframe")
+        WebDriverWait(self.driver, 5).until(lambda x: x.find_element_by_class_name("sys_main_iframe"))
+        frame2 = self.driver.find_element_by_class_name("sys_main_iframe")
+        self.driver.switch_to.frame(frame2)
+        # 输入车牌
+        self.driver.find_element("class name","validatebox-text").send_keys(u"鄂A0001")
+        self.driver.find_element_by_xpath(".//*[@id='VsearchBar']/div[2]/span/input[1]").send_keys("Keys.ENTER")
+        # 切回
+        self.driver.switch_to.default_content()
+        # self.driver.execute_script("$('input.combo-text.validatebox-text').val('ce0')")
         # a = AutoSentChatroom.driver.find_elements("class name", "tree-checkbox")
         # 进入拍照
         self.driver.find_element("id", "_easyui_tree_6").click()
