@@ -1,0 +1,4 @@
+2017-09-06 12:28:40,977 - __main__ - INFO - Information
+2017-09-06 12:28:40,977 - __main__ - WARNING - warning
+2017-09-06 12:49:23,456 - __main__ - INFO - Inside funtion age()
+2017-09-06 12:49:23,456 - __main__ - INFO - In the try Block
