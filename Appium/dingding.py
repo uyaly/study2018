@@ -22,15 +22,18 @@ contexts = driver.contexts
 print contexts
 # 切换到webview
 driver.switch_to.context(contexts[1])
+# driver.switch_to.context('com.android.quicksearchbox')
 # 获取当前的环境，看是否切换成功
 now = driver.current_context
+print "******************"
 print now
-
+print "******************"
 # 切回native
 # driver.switch_to.context(contexts[0])
 driver.switch_to.context("NATIVE_APP") # 这样也是可以的
 # 获取当前的环境，看是否切换成功
 now1 = driver.current_context
+print "******************"
 print now1
-
+print "******************"
 driver.quit()

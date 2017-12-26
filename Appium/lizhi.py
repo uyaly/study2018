@@ -29,7 +29,7 @@ driver.find_element_by_id("com.yibasan.lizhifm:id/btn_download").click()
 tittle = driver.find_elements_by_id("com.yibasan.lizhifm:id/simple_program_item_text_name")
 radio = driver.find_elements_by_id("com.yibasan.lizhifm:id/view_select_status")
 for i in range(len(tittle)):
-    if radio
+    # if radio
     print tittle[i].text
     i = i+1
 # 点击【全选】
