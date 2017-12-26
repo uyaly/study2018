@@ -23,4 +23,4 @@ driver.find_element_by_id("com.yibasan.lizhifm:id/user_fans_user_head").click()
 
 # android.widget.TextView
 driver.find_element_by_link_text(u"声音").click()
-driver.quit()
+# driver.quit()

@@ -27,10 +27,10 @@ now = driver.current_context
 print now
 
 # 切回native
-driver.switch_to.context(contexts[0])
-# driver.switch_to.context("NATIVE_APP") # 这样也是可以的
+# driver.switch_to.context(contexts[0])
+driver.switch_to.context("NATIVE_APP") # 这样也是可以的
 # 获取当前的环境，看是否切换成功
-now = driver.current_context
-print now
+now1 = driver.current_context
+print now1
 
 driver.quit()
