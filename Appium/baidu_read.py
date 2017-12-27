@@ -17,14 +17,23 @@ print contexts
 # 切换到webview
 time.sleep(3)
 driver.switch_to.context(contexts[1])
-# driver.switch_to.context(u'WEBVIEW_com.baidu.yuedu')
-# 获取当前的环境，看是否切换成功
 now = driver.current_context
 print now
+
+# for i in range(len(contexts)):
+#     print "循环"+ str(i)
+#     print contexts[i]
+# driver.switch_to.context(contexts[1])
+# driver.switch_to.context(u'WEBVIEW_com.baidu.yuedu')
+#     driver.switch_to.context(contexts[i])
+# # 获取当前的环境，看是否切换成功
+#     now = driver.current_context
+#     print now
+#     i = i+1
 # 切回native
-driver.switch_to.context(contexts[0])
+# driver.switch_to.context(contexts[0])
 # driver.switch_to.context(u"NATIVE_APP") # 这样也是可以的
 # 获取当前的环境，看是否切换成功
-now = driver.current_context
-print now
+# now = driver.current_context
+# print now
 driver.quit()
