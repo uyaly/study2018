@@ -29,14 +29,13 @@ driver.find_element_by_id("com.yibasan.lizhifm:id/btn_download").click()
 tittle = driver.find_elements_by_id("com.yibasan.lizhifm:id/simple_program_item_text_name")
 radio = driver.find_elements_by_id("com.yibasan.lizhifm:id/view_select_status")
 for i in range(len(tittle)):
-    # if radio
-    print tittle[i].text
+    if radio[i].is_selected() == False:
+        print tittle[i].text
     i = i+1
 # 点击【全选】
 driver.find_element_by_id("com.yibasan.lizhifm:id/view_select_all").click()
 # 点击【开始下载】
-# driver.find_element_by_id("com.yibasan.lizhifm:id/download_pop_window_done_layout").click()
+driver.find_element_by_id("com.yibasan.lizhifm:id/download_pop_window_done_layout").click()
+time.sleep(5)
 driver.quit()
-
-
 
