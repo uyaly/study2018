@@ -27,6 +27,10 @@ def driver():
     g = str(f)
     appPackageclass = (g[2:-3])
 
+    # print "appLocation:"+ appLocation
+    # print "appLocation" + readDeviceId
+    # print "appLocation" + deviceId
+
     desired_caps = {
 
                     'platformName': 'Android',
@@ -35,7 +39,7 @@ def driver():
 
                     'appPackage': appPackage,
 
-                    'appActivity':appPackageclass,
+                    'appActivity': appPackageclass,
 
                     'unicodeKeyboard': True,
 
@@ -44,4 +48,5 @@ def driver():
                     }
 
     driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
-driver()
+
+    # driver()
