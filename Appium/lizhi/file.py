@@ -1,6 +1,5 @@
 # coding:utf-8
 # !/usr/bin/env Python
-# coding=utf-8
 from appium import webdriver
 import time
 from appium.webdriver.common.touch_action import TouchAction
@@ -40,10 +39,10 @@ driver.find_element_by_id("com.android.fileexplorer:id/more").click()
 driver.find_element_by_name("排序").click()
 driver.find_element_by_name("修改时间").click()
 title = [
-        "Day165. I like to hang.m4a",
-        "Day165. I like to hang解释.m4a",
-        "Day165K. Home for a bat解释.m4a",
-        "Day165K. Home for a bat.m4a"
+        u"Day165. I like to hang.m4a",
+        u"Day165. I like to hang解释.m4a",
+        u"Day165K. Home for a bat解释.m4a",
+        u"Day165K. Home for a bat.m4a"
          ]
 # 长按文件重命名
 lists = driver.find_elements_by_id("com.android.fileexplorer:id/file_name")
