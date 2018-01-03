@@ -1,7 +1,10 @@
 # coding:utf-8
+# !/usr/bin/env Python
+# coding=utf-8
 from appium import webdriver
 import time
 from appium.webdriver.common.touch_action import TouchAction
+
 
 desired_caps = {
                 # 这里是声明android还是ios的环境
@@ -13,7 +16,11 @@ desired_caps = {
                 # apk包名
                 'appPackage': 'com.android.fileexplorer',
                 # apk的launcherActivity
-                'appActivity': 'com.android.fileexplorer.FileExplorerTabActivity'
+                'appActivity': 'com.android.fileexplorer.FileExplorerTabActivity',
+                # unicodeKeyboard是使用unicode编码方式发送字符串
+                'unicodeKeyboard': True,
+                # resetKeyboard是将键盘隐藏起来
+                'resetKeyboard': True
                 }
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
 # 休眠15秒等待页面加载完成
