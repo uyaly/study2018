@@ -60,7 +60,7 @@ for i in range(len(tittle)):
     try:
         download.click()
         # print tittle[i].text
-        titles.append(xxx[i].text)
+        titles.append(tittle[i].text)
     # 执行xx1xx的点击动作，元素没有，会报错.如果元素存在则说明也不会发生
     except:
         # print "第" + str(i+1) + "行未下载"
