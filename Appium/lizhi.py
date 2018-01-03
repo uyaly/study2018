@@ -26,22 +26,26 @@ driver.find_element_by_id("com.yibasan.lizhifm:id/user_fans_user_head").click()
 # 点击【声音】
 driver.find_elements_by_class_name("android.widget.TextView")[11].click()
 # 点击【下载】
-driver.find_element_by_id("com.yibasan.lizhifm:id/btn_download").click()
+download = driver.find_element_by_id("com.yibasan.lizhifm:id/btn_download")
+download.click()
 # 找未下载项，提取标题
 tittle = driver.find_elements_by_id("com.yibasan.lizhifm:id/simple_program_item_text_name")
-radio = driver.find_elements_by_id("com.yibasan.lizhifm:id/view_select_status")
+# radio = driver.find_elements_by_id("com.yibasan.lizhifm:id/view_select_status")
 for i in range(len(tittle)):
-    if radio[i].is_selected() == False:
+    print tittle[i].text
+    tittle[i].click()
+    # 点击【开始下载】
+    driver.find_element_by_id("com.yibasan.lizhifm:id/download_pop_window_done_layout").click()
+    time.sleep(2)
+    try:
+        download.click()
         print tittle[i].text
+    # 执行xx1xx的点击动作，元素没有，会报错.如果元素存在则说明也不会发生
+    except:
+        # print "第" + str(i+1) + "行未下载"
+        pass
     i = i+1
-# 点击【全选】
-driver.find_element_by_id("com.yibasan.lizhifm:id/view_select_all").click()
-# 点击【开始下载】
-driver.find_element_by_id("com.yibasan.lizhifm:id/download_pop_window_done_layout").click()
-time.sleep(5)
+
+    # 点击【全选】
+# driver.find_element_by_id("com.yibasan.lizhifm:id/view_select_all").click()
 driver.quit()
-
-
-
-
-

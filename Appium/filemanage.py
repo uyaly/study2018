@@ -1,7 +1,7 @@
 # coding:utf-8
 from appium import webdriver
 import time
-
+from appium.webdriver.common.touch_action import TouchAction
 
 desired_caps = {
                 # 这里是声明android还是ios的环境
@@ -32,15 +32,26 @@ driver.find_element_by_name("download").click()
 driver.find_element_by_id("com.android.fileexplorer:id/more").click()
 driver.find_element_by_name("排序").click()
 driver.find_element_by_name("修改时间").click()
+title = [
+        "Day165. I like to hang.m4a",
+        "Day165. I like to hang解释.m4a",
+        "Day165K. Home for a bat解释.m4a",
+        "Day165K. Home for a bat.m4a"
+         ]
 # 长按文件重命名
 lists = driver.find_elements_by_id("com.android.fileexplorer:id/file_name")
 for i in range(len(lists)):
     print lists[i].text
     if lists[i].text.find("_sd.m4a") > 0:
-        driver.tap([(176, 543), (889, 601)], 3500)
-        driver.find_element_by_name("更多").click()
+        # 长按
+        action1 = TouchAction(driver)
+        action1.long_press(lists[i]).wait(10000).perform()
+        # 更多-重命名
+        driver.find_elements_by_class_name("android.widget.Button")[6].click()
         driver.find_element_by_name("重命名").click()
-        driver.find_element_by_id("com.android.fileexplorer:id/text").send_keys("Day160K.The name of the story is《Homes》解释")
-
+        driver.find_element_by_id("com.android.fileexplorer:id/text").clear()
+        driver.find_element_by_id("com.android.fileexplorer:id/text").send_keys(title[i])
+        driver.find_element_by_name("确定").click()
+        i = i+1
 time.sleep(5)
 driver.quit()
