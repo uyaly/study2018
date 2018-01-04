@@ -45,7 +45,7 @@ title = [
         u"Day166. I like to jump.m4a"
          ]
 
-title = sorted(title, reverse=True)
+title = [i for i in reversed(title)]
 # 长按文件重命名
 lists = driver.find_elements_by_id("com.android.fileexplorer:id/file_name")
 for i in range(len(lists)):
