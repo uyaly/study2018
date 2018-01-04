@@ -39,11 +39,13 @@ driver.find_element_by_id("com.android.fileexplorer:id/more").click()
 driver.find_element_by_name("排序").click()
 driver.find_element_by_name("修改时间").click()
 title = [
-        u"Day165. I like to hang.m4a",
-        u"Day165. I like to hang解释.m4a",
-        u"Day165K. Home for a bat解释.m4a",
-        u"Day165K. Home for a bat.m4a"
+        u"Day166K. Home for a bee解释.m4a",
+        u"Day166. I like to jump解释.m4a",
+        u"Day166K. Home for a bee.m4a",
+        u"Day166. I like to jump.m4a"
          ]
+
+title = sorted(title, reverse=True)
 # 长按文件重命名
 lists = driver.find_elements_by_id("com.android.fileexplorer:id/file_name")
 for i in range(len(lists)):

@@ -61,11 +61,14 @@ for i in range(len(tittle)):
         download.click()
         # print tittle[i].text
         titles.append(tittle[i].text)
+
     # 执行xx1xx的点击动作，元素没有，会报错.如果元素存在则说明也不会发生
     except:
         # print "第" + str(i+1) + "行未下载"
         pass
     i = i+1
+titles = sorted(titles, reverse=True)
+print titles
 driver.quit()
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps2)
 # 休眠15秒等待页面加载完成
