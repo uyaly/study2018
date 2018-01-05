@@ -51,23 +51,23 @@ download.click()
 # 找未下载项，提取标题
 tittle = driver.find_elements_by_id("com.yibasan.lizhifm:id/simple_program_item_text_name")
 # radio = driver.find_elements_by_id("com.yibasan.lizhifm:id/view_select_status")
-for i in range(len(tittle)):
+for n in range(len(tittle)):
     # print tittle[i].text
-    tittle[i].click()
+    tittle[n].click()
     # 点击【开始下载】
     driver.find_element_by_id("com.yibasan.lizhifm:id/download_pop_window_done_layout").click()
 
     try:
         download.click()
         # print tittle[i].text
-        titles.append(str(tittle[i].text) + ".m4a")
+        titles.append(tittle[n].text + ".m4a")
         time.sleep(2)
     # 执行xx1xx的点击动作，元素没有，会报错.如果元素存在则说明也不会发生
     except:
         # print "第" + str(i+1) + "行未下载"
         pass
-    i = i+1
-titles = [n for n in reversed(titles)]
+    n = n+1
+titles = [i + ".m4a" for i in reversed(titles)]
 print titles
 driver.quit()
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps2)
@@ -87,12 +87,7 @@ driver.find_element_by_name("download").click()
 driver.find_element_by_id("com.android.fileexplorer:id/more").click()
 driver.find_element_by_name("排序").click()
 driver.find_element_by_name("修改时间").click()
-# titles = [
-#         u"Day165. I like to hang.m4a",
-#         u"Day165. I like to hang解释.m4a",
-#         u"Day165K. Home for a bat解释.m4a",
-#         u"Day165K. Home for a bat.m4a"
-#          ]
+
 # 长按文件重命名
 lists = driver.find_elements_by_id("com.android.fileexplorer:id/file_name")
 for i in range(len(lists)):

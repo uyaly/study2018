@@ -6,14 +6,18 @@ import time
 import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
-
+titles = []
 title = [
-        u"Day166K. Home for a bee解释.m4a",
-        u"Day166. I like to jump解释.m4a",
-        u"Day166K. Home for a bee.m4a",
-        u"Day166. I like to jump.m4a"
+        "Day166K. Home for a bee解释.",
+        u"Day166. I like to jump解释",
+        u"Day166K. Home for a bee.",
+        u"Day166. I like to jump."
          ]
+for j in range(len(title)):
+    titles.append(title[j] + ".m4a")
+    j = j+1
 # 反序排列
-title = [i for i in reversed(title)]
 
-print title
+title = [i + ".m4a" for i in reversed(title)]
+for i in title:
+    print i
