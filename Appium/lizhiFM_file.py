@@ -56,18 +56,18 @@ for i in range(len(tittle)):
     tittle[i].click()
     # 点击【开始下载】
     driver.find_element_by_id("com.yibasan.lizhifm:id/download_pop_window_done_layout").click()
-    time.sleep(2)
+
     try:
         download.click()
         # print tittle[i].text
-        titles.append(tittle[i].text)
-
+        titles.append(str(tittle[i].text) + ".m4a")
+        time.sleep(2)
     # 执行xx1xx的点击动作，元素没有，会报错.如果元素存在则说明也不会发生
     except:
         # print "第" + str(i+1) + "行未下载"
         pass
     i = i+1
-titles = sorted(titles, reverse=True)
+titles = [n for n in reversed(titles)]
 print titles
 driver.quit()
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps2)

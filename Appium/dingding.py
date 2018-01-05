@@ -16,24 +16,18 @@ desired_caps = {
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
 # 休眠15秒等待页面加载完成
 time.sleep(5)
+try:
+    # 输入密码
+    driver.find_element_by_id("com.alibaba.android.rimet:id/et_pwd_login").send_keys("123456")
+    # 点击登录按钮
+    driver.find_element_by_id("com.alibaba.android.rimet:id/btn_next").click()
+except:
+    pass
+time.sleep(5)
 driver.find_element_by_id("com.alibaba.android.rimet:id/home_bottom_tab_button_work").click()
-# driver.find_elements_by_class_name("android.widget.RelativeLayout")[6].click()
-contexts = driver.contexts
-print contexts
-# 切换到webview
-driver.switch_to.context(contexts[1])
-# driver.switch_to.context('com.android.quicksearchbox')
-# 获取当前的环境，看是否切换成功
-now = driver.current_context
-print "******************"
-print now
-print "******************"
-# 切回native
-# driver.switch_to.context(contexts[0])
-driver.switch_to.context("NATIVE_APP") # 这样也是可以的
-# 获取当前的环境，看是否切换成功
-now1 = driver.current_context
-print "******************"
-print now1
-print "******************"
+driver.find_element_by_android_uiautomator('new UiSelector().description("考勤打卡")').click()
+driver.find_element_by_android_uiautomator('new UiSelector().description("下班打卡")').click()
+
+
+time.sleep(5)
 driver.quit()
