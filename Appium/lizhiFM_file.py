@@ -52,23 +52,28 @@ download.click()
 tittle = driver.find_elements_by_id("com.yibasan.lizhifm:id/simple_program_item_text_name")
 # radio = driver.find_elements_by_id("com.yibasan.lizhifm:id/view_select_status")
 for n in range(len(tittle)):
-    # print tittle[i].text
+    # print tittle[n].text
     tittle[n].click()
+    titles.append(tittle[n].text)
+    # print titles
     # 点击【开始下载】
     driver.find_element_by_id("com.yibasan.lizhifm:id/download_pop_window_done_layout").click()
 
     try:
         download.click()
         # print tittle[i].text
-        titles.append(tittle[n].text + ".m4a")
+        titles.append(tittle[n].text)
         time.sleep(2)
     # 执行xx1xx的点击动作，元素没有，会报错.如果元素存在则说明也不会发生
     except:
         # print "第" + str(i+1) + "行未下载"
         pass
     n = n+1
+# print "**************"
 titles = [i + ".m4a" for i in reversed(titles)]
-print titles
+# print titles
+
+
 driver.quit()
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps2)
 # 休眠15秒等待页面加载完成
@@ -91,18 +96,21 @@ driver.find_element_by_name("修改时间").click()
 # 长按文件重命名
 lists = driver.find_elements_by_id("com.android.fileexplorer:id/file_name")
 for i in range(len(lists)):
-    # print lists[i].text
+    print lists[i].text
     # 找到待改名项
     if lists[i].text.find("_sd.m4a") > 0:
-        # 长按
-        action1 = TouchAction(driver)
-        action1.long_press(lists[i]).wait(10000).perform()
-        # 更多-重命名
-        driver.find_elements_by_class_name("android.widget.Button")[6].click()
-        driver.find_element_by_name("重命名").click()
-        driver.find_element_by_id("com.android.fileexplorer:id/text").clear()
-        driver.find_element_by_id("com.android.fileexplorer:id/text").send_keys(titles[i])
-        driver.find_element_by_name("确定").click()
-        i = i+1
+        print "重命名后的标题："
+        for k in titles:
+            print k
+            # 长按
+            action1 = TouchAction(driver)
+            action1.long_press(lists[i]).wait(10000).perform()
+            # 更多-重命名
+            driver.find_elements_by_class_name("android.widget.Button")[6].click()
+            driver.find_element_by_name("重命名").click()
+            driver.find_element_by_id("com.android.fileexplorer:id/text").clear()
+            driver.find_element_by_id("com.android.fileexplorer:id/text").send_keys(k)
+            driver.find_element_by_name("确定").click()
+        # i = i+1
 time.sleep(5)
 driver.quit()
