@@ -28,23 +28,37 @@ driver.find_elements_by_class_name("android.widget.TextView")[11].click()
 # 点击【下载】
 download = driver.find_element_by_id("com.yibasan.lizhifm:id/btn_download")
 download.click()
-# 找未下载项，提取标题
-tittle = driver.find_elements_by_id("com.yibasan.lizhifm:id/simple_program_item_text_name")
+# 找标题项，提取标题
+titles = driver.find_elements_by_id("com.yibasan.lizhifm:id/simple_program_item_text_name")
 # radio = driver.find_elements_by_id("com.yibasan.lizhifm:id/view_select_status")
-for i in range(len(tittle)):
-    print tittle[i].text
-    tittle[i].click()
-    # 点击【开始下载】
-    driver.find_element_by_id("com.yibasan.lizhifm:id/download_pop_window_done_layout").click()
-    time.sleep(2)
-    try:
-        download.click()
-        print tittle[i].text
-    # 执行xx1xx的点击动作，元素没有，会报错.如果元素存在则说明也不会发生
-    except:
-        # print "第" + str(i+1) + "行未下载"
-        pass
-    i = i+1
+for i in range(len(titles)):
+    print titles[i].text
+    # ac = driver.current_activity
+    # print(ac)
+    # .activities.fm.ChoiceUserVoiceDownloadActivity
+    # 增加一个正在下载为0的判断
+    # if driver.find_element(id, "com.yibasan.lizhifm:id/txt_downloading_count_title").is_displayed():
+try:
+    if driver.find_element_by_name("正在下载(0)").is_displayed():
+        print "正在下载0"
+        driver.quit()
+    else:
+        print "控件未出现"
+except:
+    pass
+
+
+    # tittle[i].click()
+    # # 点击【开始下载】
+    # driver.find_element_by_id("com.yibasan.lizhifm:id/download_pop_window_done_layout").click()
+    # time.sleep(2)
+    # try:
+    #     download.click()
+    #     print tittle[i].text
+    # # 执行xx1xx的点击动作，元素没有，会报错.如果元素存在则说明也不会发生
+    # except:
+    #     # print "第" + str(i+1) + "行未下载"
+    #     pass
 
     # 点击【全选】
 # driver.find_element_by_id("com.yibasan.lizhifm:id/view_select_all").click()
