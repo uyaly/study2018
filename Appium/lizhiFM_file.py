@@ -35,46 +35,49 @@ desired_caps2 = {
                 # resetKeyboard是将键盘隐藏起来
                 'resetKeyboard': True
             }
-driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps1)
-# 休眠15秒等待页面加载完成
-time.sleep(10)
-# button = driver.find_elements_by_class_name("android.widget.LinearLayout")
-driver.find_element_by_id("com.yibasan.lizhifm:id/header_user_icon").click()
-driver.find_element_by_id("com.yibasan.lizhifm:id/followLabel").click()
-driver.find_element_by_id("com.yibasan.lizhifm:id/user_fans_user_head").click()
-# android.widget.TextView
-# 点击【声音】
-driver.find_elements_by_class_name("android.widget.TextView")[11].click()
-# 点击【下载】
-download = driver.find_element_by_id("com.yibasan.lizhifm:id/btn_download")
-download.click()
-# 找未下载项，提取标题
-tittle = driver.find_elements_by_id("com.yibasan.lizhifm:id/simple_program_item_text_name")
-# radio = driver.find_elements_by_id("com.yibasan.lizhifm:id/view_select_status")
-for n in range(len(tittle)):
-    # print tittle[n].text
-    tittle[n].click()
-    titles.append(tittle[n].text)
-    # print titles
-    # 点击【开始下载】
-    driver.find_element_by_id("com.yibasan.lizhifm:id/download_pop_window_done_layout").click()
-
-    try:
-        download.click()
-        # print tittle[i].text
-        titles.append(tittle[n].text)
-        time.sleep(2)
-    # 执行xx1xx的点击动作，元素没有，会报错.如果元素存在则说明也不会发生
-    except:
-        # print "第" + str(i+1) + "行未下载"
-        pass
-    n = n+1
+# driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps1)
+# # 休眠15秒等待页面加载完成
+# time.sleep(10)
+# driver.find_element_by_id("com.yibasan.lizhifm:id/header_user_icon").click()
+# driver.find_element_by_id("com.yibasan.lizhifm:id/followLabel").click()
+# driver.find_element_by_id("com.yibasan.lizhifm:id/user_fans_user_head").click()
+# # 点击【声音】
+# driver.find_elements_by_class_name("android.widget.TextView")[11].click()
+# # 点击【下载】
+# download = driver.find_element_by_id("com.yibasan.lizhifm:id/btn_download")
+# download.click()
+# # 找未下载项，提取标题
+# tittle = driver.find_elements_by_id("com.yibasan.lizhifm:id/simple_program_item_text_name")
+# for n in range(len(tittle)):
+#     tittle[n].click()
+#     titles.append(tittle[n].text)
+#     # 点击【开始下载】
+#     driver.find_element_by_id("com.yibasan.lizhifm:id/download_pop_window_done_layout").click()
+#
+#     try:
+#         download.click()
+#         titles.append(tittle[n].text)
+#         time.sleep(2)
+#     # 执行xx1xx的点击动作，元素没有，会报错.如果元素存在则说明也不会发生
+#     except:
+#         # print "第" + str(i+1) + "行未下载"
+#         pass
+#     n = n+1
 # print "**************"
+titles = [
+        "Day171. Come and see the baby bird解释",
+        "Day171. Come and see the baby bird.",
+        "Day170. The baby animals解释",
+        "Day170. The baby animals."
+         ]
+
 titles = [i + ".m4a" for i in reversed(titles)]
 # print titles
+# 增加一个正在下载为0的判断
 
+# 关闭荔枝FM
+# driver.quit()
 
-driver.quit()
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps2)
 # 休眠15秒等待页面加载完成
 time.sleep(5)
@@ -98,10 +101,10 @@ lists = driver.find_elements_by_id("com.android.fileexplorer:id/file_name")
 for i in range(len(lists)):
     print lists[i].text
     # 找到待改名项
-    if lists[i].text.find("_sd.m4a") > 0:
-        print "重命名后的标题："
-        for k in titles:
-            print k
+    print "重命名后的标题："
+    for k in titles:
+        print k
+        if lists[i].text.find("_sd.m4a") > 0:
             # 长按
             action1 = TouchAction(driver)
             action1.long_press(lists[i]).wait(10000).perform()
@@ -111,6 +114,6 @@ for i in range(len(lists)):
             driver.find_element_by_id("com.android.fileexplorer:id/text").clear()
             driver.find_element_by_id("com.android.fileexplorer:id/text").send_keys(k)
             driver.find_element_by_name("确定").click()
-        # i = i+1
+        i = i + 1
 time.sleep(5)
 driver.quit()
