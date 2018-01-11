@@ -62,25 +62,26 @@ for n in range(len(tittle)):
     except:
         # print "第" + str(i+1) + "行未下载"
         pass
-    n = n+1
 # print "**************"
-# titles = [
-#         "Day171. Come and see the baby bird解释",
-#         "Day171. Come and see the baby bird.",
-#         "Day170. The baby animals解释",
-#         "Day170. The baby animals."
-#          ]
+titles = [
+            u"Day173. Come and see the baby ducking解释",
+            u"Day173. Come and see the baby ducking."
+         ]
 
 titles = [i + ".m4a" for i in reversed(titles)]
 # print titles
 # 增加一个正在下载为0的判断
-down = driver.find_element_by_id("com.yibasan.lizhifm:id/txt_downloading_count_title")
-# if down.text == "正在下载(0)":
-print down.text
-driver.wait_activity(down,5,2)
-
-# 关闭荔枝FM
-driver.quit()
+for i in 30:
+    try:
+        if driver.find_element_by_name("正在下载(0)").is_displayed():
+            print "正在下载0"
+            # 关闭荔枝FM
+            driver.quit()
+        else:
+            print "控件未出现,等待1秒"
+            time.sleep(1)
+    except:
+        pass
 
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps2)
 # 休眠15秒等待页面加载完成

@@ -38,7 +38,10 @@ driver.find_element_by_name("download").click()
 driver.find_element_by_id("com.android.fileexplorer:id/more").click()
 driver.find_element_by_name("排序").click()
 driver.find_element_by_name("修改时间").click()
-title = [u'Day167K. Home for a spider.m4a', u'Day167K. Home for a spider解释.m4a', u'Day167. I like to slide.m4a', u'Day167. I like to slide解释.m4a']
+titles = [
+        u"Day173. Come and see the baby ducking解释",
+        ]
+titles = [i + ".m4a" for i in reversed(titles)]
 # 长按文件重命名
 lists = driver.find_elements_by_id("com.android.fileexplorer:id/file_name")
 for i in range(len(lists)):
@@ -51,8 +54,7 @@ for i in range(len(lists)):
         driver.find_elements_by_class_name("android.widget.Button")[6].click()
         driver.find_element_by_name("重命名").click()
         driver.find_element_by_id("com.android.fileexplorer:id/text").clear()
-        driver.find_element_by_id("com.android.fileexplorer:id/text").send_keys(title[i])
+        driver.find_element_by_id("com.android.fileexplorer:id/text").send_keys(titles[i])
         driver.find_element_by_name("确定").click()
-        i = i+1
 time.sleep(5)
 driver.quit()

@@ -38,14 +38,14 @@ for i in range(len(titles)):
     # .activities.fm.ChoiceUserVoiceDownloadActivity
     # 增加一个正在下载为0的判断
     # if driver.find_element(id, "com.yibasan.lizhifm:id/txt_downloading_count_title").is_displayed():
-try:
-    if driver.find_element_by_name("正在下载(0)").is_displayed():
-        print "正在下载0"
-        driver.quit()
-    else:
-        print "控件未出现"
-except:
-    pass
+# try:
+#     if driver.find_element_by_name("正在下载(0)").is_displayed():
+#         print "正在下载0"
+#         driver.quit()
+#     else:
+#         print "控件未出现"
+# except:
+#     pass
 
 
     # tittle[i].click()
