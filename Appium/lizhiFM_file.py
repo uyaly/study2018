@@ -63,18 +63,18 @@ for n in range(len(tittle)):
         # print "第" + str(i+1) + "行未下载"
         pass
 # print "**************"
-titles = [
-            u"Day173. Come and see the baby ducking解释",
-            u"Day173. Come and see the baby ducking."
-         ]
+# titles = [
+#             u"Day173. Come and see the baby ducking解释",
+#             u"Day173. Come and see the baby ducking."
+#          ]
 
 titles = [i + ".m4a" for i in reversed(titles)]
 # print titles
 # 增加一个正在下载为0的判断
-for i in 30:
+for i in range(0, 60):
     try:
         if driver.find_element_by_name("正在下载(0)").is_displayed():
-            print "正在下载0"
+            # print "正在下载0"
             # 关闭荔枝FM
             driver.quit()
         else:
@@ -104,7 +104,7 @@ driver.find_element_by_name("修改时间").click()
 # 长按文件重命名
 lists = driver.find_elements_by_id("com.android.fileexplorer:id/file_name")
 for i in range(len(lists)):
-    print lists[i].text
+    # print lists[i].text
     # 找到待改名项
     if lists[i].text.find("_sd.m4a") > 0:
         # 长按
