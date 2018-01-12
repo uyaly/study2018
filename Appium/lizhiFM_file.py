@@ -41,20 +41,21 @@ time.sleep(10)
 driver.find_element_by_id("com.yibasan.lizhifm:id/header_user_icon").click()
 driver.find_element_by_id("com.yibasan.lizhifm:id/followLabel").click()
 driver.find_element_by_id("com.yibasan.lizhifm:id/user_fans_user_head").click()
-# 点击【声音】
+# 点击进入【声音】
 driver.find_elements_by_class_name("android.widget.TextView")[11].click()
-# 点击【下载】
+# 点击进入【下载】
 download = driver.find_element_by_id("com.yibasan.lizhifm:id/btn_download")
 download.click()
 # 找未下载项，提取标题
 tittle = driver.find_elements_by_id("com.yibasan.lizhifm:id/simple_program_item_text_name")
 for n in range(len(tittle)):
     tittle[n].click()
-    titles.append(tittle[n].text)
+    # titles.append(tittle[n].text)
     # 点击【开始下载】
     driver.find_element_by_id("com.yibasan.lizhifm:id/download_pop_window_done_layout").click()
-
     try:
+        # 如果开始下载会返回，download可以点击，再次进入下载列表，记录标题；
+        # 否则抛异常，什么都做继续for循环
         download.click()
         titles.append(tittle[n].text)
         time.sleep(2)
@@ -62,12 +63,6 @@ for n in range(len(tittle)):
     except:
         # print "第" + str(i+1) + "行未下载"
         pass
-# print "**************"
-# titles = [
-#             u"Day173. Come and see the baby ducking解释",
-#             u"Day173. Come and see the baby ducking."
-#          ]
-
 titles = [i + ".m4a" for i in reversed(titles)]
 # print titles
 # 增加一个正在下载为0的判断
