@@ -53,37 +53,50 @@ class TestLogin(unittest.TestCase):
         frame2 = self.driver.find_element_by_class_name("sys_main_iframe")
         print frame2.text
         self.driver.switch_to.frame(frame2)
-        time.sleep(3)
+
         # 选中测试车辆
         # self.driver.find_element("class name", "combo-text").send_keys(u"鄂A0001")
         # self.driver.find_element("class name", "combo-text").send_keys(Keys.ENTER)
         car = self.driver.find_elements("class name", "tree-title")
         checkbox = self.driver.find_elements("class name", "tree-checkbox")
-        i = 0
         for i in range(len(car)):
             # print car[i].text
             if car[i].text == "    "+ brand:
                 # print car[i].text + u"找到的车"
                 checkbox[i].click()
-            i = i+1
-
-        # self.driver.execute_script("$('input.combo-text.validatebox-text').val('ce0')")
 
         # 选择指令
-        # self.driver.find_element("id", "_easyui_tree_6").click()
-        # self.driver.find_element("id", "_easyui_tree_21").click()
-        # self.driver.find_element("id", "_easyui_tree_32").click()
+        self.driver.find_element("id", "_easyui_tree_6").click()
+        time.sleep(2)
+        self.driver.find_element("id", "_easyui_tree_21").click()
+        time.sleep(2)
+        self.driver.find_element("id", "_easyui_tree_26").click()
+        # 找到要测试的数据
+        rows = self.driver.find_element("class name", "datagrid-btable")
+        # print rows[0].text
+        # print rows[1].text
+        rows.click()
+
+        # rows = self.driver.find_elements("class name", "datagrid-cell")
+        # print len(rows)
+        # for o in range(len(rows)):
+        #     if rows[o].text == brand:
+        #         rows[o].click()
+        #         print rows[o].text + u"选中要测试的数据"
+        #     else:
+        #         print rows[o].text + u"不是要测试的数据"
+
         # # 拍照参数设置
-        # self.driver.find_element("id", "photograph_num").send_keys("1")
-        # self.driver.find_element("id", "photograph_time").send_keys("0")
-        # self.driver.find_element("class name", "l-btn-left").click()
+        self.driver.find_element("id", "photograph_num").send_keys("5")
+        self.driver.find_element("id", "photograph_time").send_keys("1")
+        self.driver.find_element("class name", "l-btn-left").click()
         # 切回
         self.driver.switch_to.default_content()
 
 
-    @classmethod
-    def tearDown(cls):
-        cls.driver.quit()
+    # @classmethod
+    # def tearDown(cls):
+    #     cls.driver.quit()
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
