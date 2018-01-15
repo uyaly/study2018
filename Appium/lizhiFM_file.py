@@ -62,7 +62,8 @@ for n in range(len(tittle)):
     # 执行xx1xx的点击动作，元素没有，会报错.如果元素存在则说明也不会发生
     except:
         # print "第" + str(i+1) + "行未下载"
-        pass
+        break   # 遇到第一个未下载项，跳出for循环
+        # pass
 titles = [i + ".m4a" for i in reversed(titles)]
 # print titles
 # 增加一个正在下载为0的判断
