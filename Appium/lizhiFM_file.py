@@ -99,7 +99,8 @@ driver.find_element_by_name("修改时间").click()
 
 # 长按文件重命名
 lists = driver.find_elements_by_id("com.android.fileexplorer:id/file_name")
-for i in range(len(lists)):
+# for循环下载的音频文件数量的次数
+for i in range(len(titles)):
     # print lists[i].text
     # 找到待改名项
     if lists[i].text.find("_sd.m4a") > 0:
