@@ -4,7 +4,7 @@
 from appium import webdriver
 import time
 from appium.webdriver.common.touch_action import TouchAction
-
+# 前提是小米的安卓手机安装荔枝登录uyaly用户，用到荔枝FM和小米的文件管理两个APP
 titles = []
 desired_caps1 = {
                 # 这里是声明android还是ios的环境
