@@ -5,11 +5,11 @@ import time
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
-login_url = "http://59.172.105.83:81/vmsBS/login.jsp"
-username = "bsjtest"
-password = "cyl@123456"
-group = "B00013"
-brand = u"鄂AC28U2"
+login_url = "http://192.168.3.116:7001/vmsBS/home.do"
+username = "system"
+password = "system@123"
+group = "B"
+brand = u"鄂ASP010"
 
 class TestLogin(unittest.TestCase):
 
