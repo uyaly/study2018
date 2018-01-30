@@ -1,6 +1,6 @@
 # coding:utf-8
 import requests
-url = "http://www.kuaidi.com"
+url = "http://www.kuaidi.com/index-ajaxselectcourierinfo-1202247993797-yunda.html"
 headers = { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0" }
 # get方法加个ser-Agent就可以了
 s = requests.session()
