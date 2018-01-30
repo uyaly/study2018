@@ -2,7 +2,7 @@
 import requests
 # 先打开登录首页，获取部分cookie
 url = "http://localhost:8080/jenkins/j_acegi_security_check"
-headers = { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0" }
+headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0"}
 # get方法其它加个ser-Agent就可以了
 d = {"from": "",
      "j_password": "f7bcd85ebab14e2fbb6d76cc99bc5c6a",
