@@ -65,7 +65,7 @@ for n in range(len(tittle)):
         break   # 遇到第一个未下载项，跳出for循环
         # pass
 titles = [i + ".m4a" for i in reversed(titles)]
-# print titles
+print titles
 # 增加一个正在下载为0的判断
 for i in range(0, 60):
     try:
