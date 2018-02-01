@@ -14,6 +14,7 @@ print data[0]
 get_result = data[0]['context']
 # 获取已签收状态
 print get_result
+print data[0]['time']
 if u"已签收" in get_result:
     print "快递单已签收成功"
 else:
