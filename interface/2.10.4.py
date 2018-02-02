@@ -9,7 +9,7 @@ headers = { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/2
 # get方法其它加个ser-Agent就可以了
 s = requests.session()
 r = s.get(url, headers=headers,verify=False)
-print s.cookies
+# print s.cookies
 
 # 添加登录需要的两个cookie
 c = requests.cookies.RequestsCookieJar()
@@ -18,7 +18,7 @@ c.set('.Cnblogs.AspNetCore.Cookies', 'CfDJ8N7AeFYNSk1Put6Iydpme2ZoY8lL7UPsLjF1FL
 c.set('AlwaysCreateItemsAsActive', "True")
 c.set('AdminCookieAlwaysExpandAdvanced', "True")
 s.cookies.update(c)
-print s.cookies
+# print s.cookies
 
 # -----------登录全部走cookie登录---
 # 第二步：保存草稿
@@ -41,8 +41,8 @@ print r2.url
 
 #  第三步：正则提取需要的参数值
 import re
-postid = re.findall(r"postid=(.+?)&", r2.url)
-print postid # 这里是list
+postid = re.findall(r"postid=(.+?)&", r2.url)   # 加了验证，登录不了了-___-
+print postid  # 这里是list
 #  提取为字符串
 print postid[0]
 

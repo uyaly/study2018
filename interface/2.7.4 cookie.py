@@ -12,7 +12,7 @@ headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0)Gecko/20100101 Firefox/44.0"} # get方法其它加个ser-Agent就可以了
 s = requests.session()
 r = s.get(url, headers=headers,verify=False)
-print s.cookies
+# print s.cookies
 
 # 添加登录需要的两个cookie
 c = requests.cookies.RequestsCookieJar()
@@ -23,13 +23,13 @@ c.set('.Cnblogs.AspNetCore.Cookies',
 c.set('AlwaysCreateItemsAsActive', "True")
 c.set('AdminCookieAlwaysExpandAdvanced', "True")
 s.cookies.update(c)
-print s.cookies
+# print s.cookies
 
 # 登录成功后保存编辑内容
 r1 = s.get("https://i.cnblogs.com/EditPosts.aspx?opt=1", headers=headers, verify=False)
 
 # 保存草稿箱
-url2= "https://i.cnblogs.com/EditPosts.aspx?opt=1"
+url2 = "https://i.cnblogs.com/EditPosts.aspx?opt=1"
 body = {"__VIEWSTATE": "",
         "__VIEWSTATEGENERATOR":"FE27D343",
         "Editor$Edit$txbTitle":"这是3111",
