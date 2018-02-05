@@ -1,5 +1,4 @@
 # coding:utf-8
-from urllib2 import urlopen
 import urllib.request
 import re
 import json
