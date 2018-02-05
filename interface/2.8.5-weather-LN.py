@@ -25,4 +25,4 @@ json_str = json.loads(str_json)
 print(json_str)
 
 #测试取json值。
-print(json_str["od"]["od1"]
+print(json_str["od"]["od1"])
