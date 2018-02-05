@@ -1,4 +1,5 @@
 # coding:utf-8
+from urllib2 import urlopen
 import urllib.request
 import re
 import json
@@ -24,5 +25,5 @@ json_str = json.loads(str_json)
 
 print(json_str)
 
-#测试取json值。
+# 测试取json值。
 print(json_str["od"]["od1"])
