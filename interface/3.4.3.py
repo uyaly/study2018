@@ -25,8 +25,8 @@ class Test_Kuaidi(unittest.TestCase):
         # 断言：测试结果与期望结果对比
         self.assertEqual(u"韵达快递", result['company'])
         self.assertIn(u"已签收", get_result)
-    def test_tiantian(self):
-        danhao = '560697415000'
+    def test_EMS(self):
+        danhao = '9892123883980'
         kd = 'tiantian'
         # 这里对url的单号参数了
         self.url = "http://www.kuaidi.com/index-ajaxselectcourierinfo-%s-%s.html" %(danhao,kd)
@@ -41,7 +41,7 @@ class Test_Kuaidi(unittest.TestCase):
         get_result = data[0]['context'] # 获取已签收状态
         print(get_result)
         # 断言：测试结果与期望结果对比
-        self.assertEqual(u"天天快递", result['company'])
+        self.assertEqual(u"邮政快递", result['company'])
         self.assertIn(u"已签收", get_result)
 if __name__ == "__main__":
     unittest.main()
