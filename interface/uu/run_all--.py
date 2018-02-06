@@ -1,8 +1,12 @@
 # coding:utf-8
 import unittest
 import os
-import utils.HTMLTestRunner3
-
+import utils.HTMLTestRunner
+# import HTMLTestRunner
+# ascii编码报错问题加上以下三行
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 # 用例路径
 case_path = os.path.join(os.getcwd(), "case")
 # 报告存放路径
@@ -16,7 +20,7 @@ discover = unittest.defaultTestLoader.discover(case_path,
 
 
 fp = open(report_abspath, "wb")
-runner = HTMLTestRunner3.HTMLTestRunner(stream=fp,
+runner = HTMLTestRunner.HTMLTestRunner(stream=fp,
                                        title=u'接口自动化测试报告',
                                        description=u'用例执行情况：')
 
