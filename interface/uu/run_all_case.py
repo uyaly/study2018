@@ -1,7 +1,9 @@
 # coding:utf-8
-import unittest
-import HTMLTestRunner3
 import os
+import unittest
+
+from study.interface.uu.utils import HTMLTestRunner
+
 
 def all_case():
     # 待执行用例的目录
@@ -20,9 +22,9 @@ def all_case():
     # print(testcase)
     # return testcase
     fp = open(report_abspath, "wb")
-    runner = HTMLTestRunner3.HTMLTestRunner(stream=fp,
-                                       title=u'自动化测试报告,测试结果如下：',
-                                       description=u'用例执行情况：')
+    runner = HTMLTestRunner.HTMLTestRunner(stream=fp,
+                                           title=u'自动化测试报告,测试结果如下：',
+                                           description=u'用例执行情况：')
 
 if __name__ == "__main__":
     # 返回实例

@@ -1,15 +1,22 @@
 # coding:utf-8
 import unittest
-import time
-class Test(unittest.TestCase):
+
+class Test1(unittest.TestCase):
     def setUp(self):
-        print "start!"
+        print("start!")
+
     def tearDown(self):
-        time.sleep(1)
-        print "end!"
-    def test01(self):
-        u'''测试登录用例，账号：XX 密码 xx'''
-        print "执行测试用例01"
-    def test02(self):
-        u'''测试登搜索用例，关键词：xxx'''
-        print "执行测试用例02"
+        print("end!")
+
+    def test_01(self):
+        a = 1
+        b = 2
+        self.assertTrue(3, a+b)
+
+    def test_02(self):
+        a = 3
+        b = 2
+        self.assertTrue(6, a*b)
+
+if __name__ == "__main__":
+    unittest.main()
