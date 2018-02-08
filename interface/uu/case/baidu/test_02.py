@@ -23,13 +23,18 @@ class Test1(unittest.TestCase):
 
         url = "http://59.172.105.83:81/vmsBS/monitor/login.do"
 
-        payload = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"username\"\r\n\r\nsystem\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"password\"\r\n\r\nsystem@123\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"orgCode\"\r\n\r\nB\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--"
+        # payload = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"username\"\r\n\r\nsystem\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"password\"\r\n\r\nsystem@123\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"orgCode\"\r\n\r\nB\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--"
+        payload = {"username":"system","password":"system@123","orgCode":"B"}
+        # headers = {
+            # 'content-type': "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW",
+            # 'Cache-Control': "no-cache",
+            # 'Postman-Token': "653764e1-3b08-bfb1-9747-1db251b405ff"
+            # }
         headers = {
-            'content-type': "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW",
-            'Cache-Control': "no-cache",
-            'Postman-Token': "653764e1-3b08-bfb1-9747-1db251b405ff"
-            }
-
+                    "content-type": "application/x-www-form-urlencoded",
+                    "Cache-Control": "no-cache",
+                    "Postman-Token": "653764e1-3b08-bfb1-9747-1db251b405ff"
+                    }
         response = requests.request("POST", url, data=payload, headers=headers)
 
         print(response.text)
