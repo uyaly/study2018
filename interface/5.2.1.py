@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 yoyo = open("5.2.1.html")
 
 # 5.2.1
-print yoyo.read()
+# print yoyo.read()
 
 # 5.2.2
 soup = BeautifulSoup(yoyo)
