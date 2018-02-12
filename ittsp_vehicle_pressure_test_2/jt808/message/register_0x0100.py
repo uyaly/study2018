@@ -1,3 +1,4 @@
+# coding:utf-8
 from jt808.tools import config
 from jt808.tools import tools
 

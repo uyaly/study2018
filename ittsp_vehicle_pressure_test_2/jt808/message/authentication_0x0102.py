@@ -1,4 +1,5 @@
-##鉴权
+# coding:utf-8
+# 鉴权
 
 from jt808.tools import tools
 

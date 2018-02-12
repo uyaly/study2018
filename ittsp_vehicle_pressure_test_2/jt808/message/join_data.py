@@ -1,3 +1,4 @@
+# coding:utf-8
 class JoinData:
     def __init__(self, sim):
         if 12 == len(sim):
