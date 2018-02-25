@@ -1,6 +1,8 @@
 # coding:utf-8
 from appium import webdriver
 import time
+from appium.webdriver.common.touch_action import TouchAction
+
 
 
 desired_caps = {
@@ -18,6 +20,26 @@ desired_caps = {
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
 # 休眠15秒等待页面加载完成
 time.sleep(10)
+# 获得机器屏幕大小x,y
+def getSize():
+    x = driver.get_window_size()['width']
+    y = driver.get_window_size()['height']
+    return (x, y)
+# 屏幕向上滑动
+def swipeUp(t):
+    l = getSize()
+    x1 = int(l[0] * 0.5)  #x坐标
+    y1 = int(l[1] * 0.75)   #起始y坐标
+    y2 = int(l[1] * 0.25)   #终点y坐标
+    driver.swipe(x1, y1, x1, y2,t)
+# 屏幕向下滑动
+def swipeDown(t):
+    l = getSize()
+    x1 = int(l[0] * 0.5)  #x坐标
+    y1 = int(l[1] * 0.25)   #起始y坐标
+    y2 = int(l[1] * 0.75)   #终点y坐标
+    driver.swipe(x1, y1, x1, y2,t)
+
 # button = driver.find_elements_by_class_name("android.widget.LinearLayout")
 driver.find_element_by_id("com.yibasan.lizhifm:id/header_user_icon").click()
 driver.find_element_by_id("com.yibasan.lizhifm:id/followLabel").click()
@@ -29,8 +51,13 @@ driver.find_elements_by_class_name("android.widget.TextView")[11].click()
 download = driver.find_element_by_id("com.yibasan.lizhifm:id/btn_download")
 download.click()
 # 找标题项，提取标题
-titles = driver.find_elements_by_id("com.yibasan.lizhifm:id/simple_program_item_text_name")
-# radio = driver.find_elements_by_id("com.yibasan.lizhifm:id/view_select_status")
+for k in range(3):
+    titles = driver.find_elements_by_id("com.yibasan.lizhifm:id/simple_program_item_text_name")
+    # 调用向下滑动
+    swipeUp(2000)
+    # titles = []
+    titles.append(titles)
+
 for i in range(len(titles)):
     print titles[i].text
     # ac = driver.current_activity
