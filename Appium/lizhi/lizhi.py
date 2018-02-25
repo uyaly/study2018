@@ -58,6 +58,7 @@ for k in range(3):
     # titles = []
     titles.append(titles)
 
+
 for i in range(len(titles)):
     print titles[i].text
     # ac = driver.current_activity
