@@ -113,10 +113,10 @@ headers = {
 # print(pet.text)
 
 
-payload = {
-            "telephone":telephone,
-            "access_token":access_token1,
-           }
-vehicle = requests.request("post", url1 + "/base/vehicle/list", data=payload, headers=headers)
-print(u"13.我的电动车:")
-print(vehicle.text)
+# payload = {
+#             "telephone":telephone,
+#             "access_token":access_token1,
+#            }
+# vehicle = requests.request("post", url1 + "/base/vehicle/list", data=payload, headers=headers)
+# print(u"13.我的电动车:")
+# print(vehicle.text)
