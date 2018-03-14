@@ -3,8 +3,6 @@ from appium import webdriver
 import time
 from appium.webdriver.common.touch_action import TouchAction
 
-
-
 desired_caps = {
                 # 这里是声明android还是ios的环境
                 'platformName': 'Android',
@@ -51,16 +49,27 @@ driver.find_elements_by_class_name("android.widget.TextView")[11].click()
 download = driver.find_element_by_id("com.yibasan.lizhifm:id/btn_download")
 download.click()
 # 找标题项，提取标题
-for k in range(3):
+for k in range(20):
     titles = driver.find_elements_by_id("com.yibasan.lizhifm:id/simple_program_item_text_name")
+    print titles[k].text
+    titles[k].click()
     # 调用向下滑动
-    swipeUp(2000)
+    try:
+        titles.append(titles)
+    except:
+        pass
+    if k%7 == 0 and k !=0:
+        swipeUp(200)
+        time.sleep(2)
+        swipeUp(54)
+
+    # TouchAction(driver).press(x=590,y=700).move_to(x=50,y=700).release().perform()
     # titles = []
-    titles.append(titles)
+    # titles.append(titles)
 
 
-for i in range(len(titles)):
-    print titles[i].text
+# for i in range(len(titles)):
+#     print titles[i].text
     # ac = driver.current_activity
     # print(ac)
     # .activities.fm.ChoiceUserVoiceDownloadActivity

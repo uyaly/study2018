@@ -3,7 +3,7 @@ import os,sys
 import psutil
 import threading
 import time
-from Tkinter import *
+from tkinter import *
 
 CAR_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(CAR_PATH)

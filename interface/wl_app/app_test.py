@@ -3,7 +3,7 @@ import requests
 url = "http://192.168.3.65:14011"
 url1 = "http://192.168.3.65:14012/ilinkapp"
 
-access_token1 = "5548b806-a369-4faf-9633-e6dc5e3075f8"
+access_token1 = "3dcabfce-7fd7-4b27-8a87-02f1134026aa"
 chipId = "596051"
 alarmId = "128"
 telephone = "13800000007"
@@ -25,22 +25,22 @@ headers = {
 #
 # querystring = {
 #             "id":chipId,
-#             "type":"2",
+#             # "type":"2",
 #             "access_token":access_token1
 #            }
 # carriers = requests.request("GET", url1 + "/user/carriers/details", headers=headers, params=querystring)
 # print(u"3.获取芯片载体信息详情:")
 # print(carriers.text)
 
-# payload = {
-#             "chipId":chipId,
-#             "startTime":"2018-02-10",
-#             "endTime":"2018-02-13",
-#             "access_token":access_token1
-#            }
-# defence_set = requests.request("post", url1 + "/defence/set", data=payload, headers=headers)
-# print(u"4.设防:")
-# print(defence_set.text)
+payload = {
+            "chipId":chipId,
+            "startTime":"2018-02-10",
+            "endTime":"2018-02-13",
+            "access_token":access_token1
+           }
+defence_set = requests.request("post", url1 + "/defence/set", data=payload, headers=headers)
+print(u"4.设防:")
+print(defence_set.text)
 
 
 # payload = {
