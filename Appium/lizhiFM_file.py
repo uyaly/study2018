@@ -6,6 +6,10 @@ import time
 from appium.webdriver.common.touch_action import TouchAction
 # 前提是小米的安卓手机安装荔枝登录uyaly用户，用到荔枝FM和小米的文件管理两个APP
 from screensize import swipeUpLiZhi
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
+
 titles = []
 titleAll = []
 
@@ -56,27 +60,26 @@ for j in range(100):
     if j % 7 == 0 and j != 0:
         swipeUpLiZhi(driver, n=2)
         l = l+1
+    # t = tittle[j-7*l]
     tittle[j-7*l].click()
     # 点击【开始下载】
     driver.find_element_by_id("com.yibasan.lizhifm:id/download_pop_window_done_layout").click()
-    # if tittle[j-7*l].text in titleAll:
-    #      print "第" + str(j+1) + "行已重复:"
-    #      print tittle[j-7*l].text
-    # else:
     try:
     # 如果开始下载会返回，download可以点击，再次进入下载列表，记录标题；
     # 否则抛异常，什么都做继续for循环
         download.click()
         titles.append(tittle[j-7*l].text)
-        print "第" + str(j+1) + "行已下载:"
+        print "第" + str(j+1) + "行已下载:" + (tittle[j-7*l].text)
         # time.sleep(2)
         # 执行xx1xx的点击动作，元素没有，会报错.如果元素存在则说明也不会发生
     except:
-        titleAll.append(tittle[j-7*l].text)
-        print "第" + str(j+1) + "行未下载:"
-        print tittle[j-7*l].text
-        # break   # 遇到第一个未下载项，跳出for循环
-titles = [i + ".m4a" for i in reversed(titles)]
+        if tittle[j-7*l].text in titleAll and tittle[j-7*l].text is not "":
+            print "第" + str(j+1) + "行本次已重复:" + tittle[j-7*l].text
+        else:
+            titleAll.append(tittle[j-7*l].text)
+            print "第" + str(j+1) + "行未下载:" + (tittle[j-7*l].text)
+            # break   # 遇到第一个未下载项，跳出for循环
+titles = [i + ".mp3" for i in reversed(titles)]
 print titles
 # 增加一个正在下载为0的判断
 for i in range(0, 60):
@@ -116,7 +119,7 @@ lists = driver.find_elements_by_id("com.android.fileexplorer:id/file_name")
 for i in range(len(titles)):
     # print lists[i].text
     # 找到待改名项
-    if lists[i].text.find("_sd.m4a") > 0:
+    if lists[i].text.find("_hd.mp3") > 0:
         # 长按
         action1 = TouchAction(driver)
         action1.long_press(lists[i]).wait(10000).perform()
