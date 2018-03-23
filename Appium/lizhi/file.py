@@ -39,14 +39,19 @@ driver.find_element_by_id("com.android.fileexplorer:id/more").click()
 driver.find_element_by_name("排序").click()
 driver.find_element_by_name("修改时间").click()
 titles = [
-        u"Day173. Come and see the baby ducking解释",
+        u"She went on the slide 解释",
+        u"She went on the slide",
+        u"See -saw解释",
+        u"See-saw",
+        u"She went on the see-saw解释",
+        u"She went on the see-saw"
         ]
-titles = [i + ".m4a" for i in reversed(titles)]
+titles = [i + ".mp3" for i in reversed(titles)]
 # 长按文件重命名
 lists = driver.find_elements_by_id("com.android.fileexplorer:id/file_name")
 for i in range(len(lists)):
     print lists[i].text
-    if lists[i].text.find("_sd.m4a") > 0:
+    if lists[i].text.find("_hd.mp3") > 0:
         # 长按
         action1 = TouchAction(driver)
         action1.long_press(lists[i]).wait(10000).perform()
