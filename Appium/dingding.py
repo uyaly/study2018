@@ -14,7 +14,7 @@ desired_caps = {
                 'appActivity': 'com.alibaba.android.rimet.biz.SplashActivity'
                 }
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
-# 休眠15秒等待页面加载完成
+
 time.sleep(5)
 try:
     # 输入密码
@@ -26,8 +26,10 @@ except:
 time.sleep(5)
 driver.find_element_by_id("com.alibaba.android.rimet:id/home_bottom_tab_button_work").click()
 driver.find_element_by_android_uiautomator('new UiSelector().description("考勤打卡")').click()
+# print driver.context
+time.sleep(10)
 driver.find_element_by_android_uiautomator('new UiSelector().description("下班打卡")').click()
-
+# driver.find_element_by_accessibility_id("下班打卡").click()
 
 time.sleep(5)
-driver.quit()
+# driver.quit()
