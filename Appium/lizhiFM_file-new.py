@@ -67,10 +67,10 @@ for j in range(len(tittle)):
         # 否则抛异常，什么都做继续for循环
             download.click()
             titles.append(tittle[j].text)
-            print "第" + str(j+1) + "行已下载:" + (tittle[j].text)
+            print u"第" + str(j+1) + u"行已下载:" + (tittle[j].text)
     # 执行xx1xx的点击动作，元素没有，会报错.如果元素存在则说明也不会发生
     except:
-        print "第" + str(j+1) + "行未下载:" + (tittle[j].text)
+        print u"第" + str(j+1) + u"行未下载:" + (tittle[j].text)
         break   # 遇到第一个未下载项，跳出for循环
 titles = [i + ".mp3" for i in reversed(titles)]
 print titles
@@ -78,12 +78,12 @@ print titles
 # 增加一个正在下载为0的判断
 for i in range(0, 60):
     try:
-        if driver.find_element_by_name("正在下载(0)").is_displayed():
+        if driver.find_element_by_name(u"正在下载(0)").is_displayed():
             # print "正在下载0"
             # 关闭荔枝FM
             driver.quit()
         else:
-            print "控件未出现,等待1秒"
+            # print u"控件未出现,等待1秒"
             time.sleep(1)
     except:
         pass
@@ -127,4 +127,4 @@ if titles != []:
     time.sleep(5)
     driver.quit()
 else:
-    print("下载了0个文件")
+    print(u"下载了0个文件")
