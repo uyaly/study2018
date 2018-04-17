@@ -54,7 +54,6 @@ download.click()
 # # 全选
 # driver.find_elements_by_id("com.yibasan.lizhifm:id/view_select_all")
 
-
 # 找未下载项，提取标题
 tittle = driver.find_elements_by_id("com.yibasan.lizhifm:id/simple_program_item_text_name")
 for j in range(len(tittle)):
