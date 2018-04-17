@@ -10,6 +10,7 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 titles = []
 titleAll = []
+
 desired_caps1 = {
                 # 这里是声明android还是ios的环境
                 'platformName': 'Android',
