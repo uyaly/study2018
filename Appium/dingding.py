@@ -30,6 +30,5 @@ driver.find_element_by_android_uiautomator('new UiSelector().description("考勤
 time.sleep(10)
 driver.find_element_by_android_uiautomator('new UiSelector().description("下班打卡")').click()
 # driver.find_element_by_accessibility_id("下班打卡").click()
-
 time.sleep(5)
-# driver.quit()
+driver.quit()
