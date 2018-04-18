@@ -4,8 +4,6 @@
     <list default="true" id="dc8a5560-63ab-43fc-9ddf-37f0be1628c2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Appium/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Appium/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Appium/dingding.py" afterPath="$PROJECT_DIR$/Appium/dingding.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Appium/test2_1.py" afterPath="$PROJECT_DIR$/Appium/test2_1.py" />
     </list>
     <ignored path="study.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -153,6 +151,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Appium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Appium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -541,7 +557,13 @@
       <option name="project" value="LOCAL" />
       <updated>1523963314889</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="修改dingding自动化">
+      <created>1524012019460</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1524012019460</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -625,7 +647,8 @@
     <MESSAGE value="修改荔枝FM的文件管理APP自动化" />
     <MESSAGE value="修改钉钉APP自动化" />
     <MESSAGE value="修改lizhiFM自动化" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改lizhiFM自动化" />
+    <MESSAGE value="修改dingding自动化" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改dingding自动化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
