@@ -126,4 +126,4 @@ if titles != []:
     time.sleep(5)
     driver.quit()
 else:
-    print(u"下载了0个文件")
+    print("0 files have been downloaded")
