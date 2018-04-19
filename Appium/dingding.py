@@ -32,6 +32,7 @@ except:
 time.sleep(5)
 
 driver.find_element_by_id("com.alibaba.android.rimet:id/home_bottom_tab_button_work").click()
+time.sleep(2)
 driver.find_element_by_android_uiautomator('new UiSelector().description("考勤打卡")').click()
 time.sleep(10)
 if (t.hour < 8 or t.hour == 8):
@@ -39,7 +40,7 @@ if (t.hour < 8 or t.hour == 8):
         driver.find_element_by_android_uiautomator('new UiSelector().description("上班打卡")').click()
         print(u"上班手动打卡成功")
     except:
-        print(u"上班自动打卡成功")
+        print(u"上班急速打卡成功")
         pass
 else:
     try:
