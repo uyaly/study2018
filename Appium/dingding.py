@@ -38,16 +38,16 @@ time.sleep(10)
 if (t.hour < 8 or t.hour == 8):
     try:
         driver.find_element_by_android_uiautomator('new UiSelector().description("上班打卡")').click()
-        print("Go to work, Manual punch the clock, success")
+        print("*** Go to work, Manual punch the clock, success ***")
     except:
-        print("Go to work, quickly punch the clock, success")
+        print("*** Go to work, quickly punch the clock, success ***")
         pass
 else:
     try:
         driver.find_element_by_android_uiautomator('new UiSelector().description("下班打卡")').click()
-        print("Go off work，Manual punch the clock, success")
+        print("*** Go off work，Manual punch the clock, success ***")
     except:
-        print("No operation")
+        print("*** No operation ***")
         pass
 time.sleep(5)
 driver.quit()
