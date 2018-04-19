@@ -27,7 +27,7 @@ try:
     # 点击登录按钮
     driver.find_element_by_id("com.alibaba.android.rimet:id/btn_next").click()
 except:
-    print(u"默认登录")
+    print("Default login")
     pass
 time.sleep(5)
 
@@ -38,16 +38,16 @@ time.sleep(10)
 if (t.hour < 8 or t.hour == 8):
     try:
         driver.find_element_by_android_uiautomator('new UiSelector().description("上班打卡")').click()
-        print(u"上班手动打卡成功")
+        print("Go to work, Manual punch the clock, success")
     except:
-        print(u"上班急速打卡成功")
+        print("Go to work, quickly punch the clock, success")
         pass
 else:
     try:
         driver.find_element_by_android_uiautomator('new UiSelector().description("下班打卡")').click()
-        print(u"下班手动打卡成功")
+        print("Go off work，Manual punch the clock, success")
     except:
-        print(u"无操作")
+        print("No operation")
         pass
 time.sleep(5)
 driver.quit()

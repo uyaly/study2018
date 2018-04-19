@@ -66,13 +66,13 @@ for j in range(len(tittle)):
         # 否则抛异常，什么都做继续for循环
             download.click()
             titles.append(tittle[j].text)
-            print u"第" + str(j+1) + u"行已下载:" + (tittle[j].text)
+            print str(j+1) + "line has been downloaded:" + (tittle[j].text)
     # 执行xx1xx的点击动作，元素没有，会报错.如果元素存在则说明也不会发生
     except:
-        print u"第" + str(j+1) + u"行未下载:" + (tittle[j].text)
+        # print str(j+1) + "is not downloaded:" + (tittle[j].text)
         break   # 遇到第一个未下载项，跳出for循环
 titles = [i + ".mp3" for i in reversed(titles)]
-print titles
+# print titles
 
 # 增加一个正在下载为0的判断
 for i in range(0, 60):

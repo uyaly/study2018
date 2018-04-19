@@ -34,8 +34,8 @@
       <file leaf-file-name="dingding.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dingding.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.045388">
-              <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.9956076">
+              <caret line="42" column="61" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
               <folding>
                 <element signature="e#15#43#0" expanded="true" />
               </folding>
@@ -67,8 +67,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="633" />
-    <option name="width" value="1287" />
+    <option name="x" value="1166" />
+    <option name="width" value="754" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -373,10 +373,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="633" y="0" width="1287" height="1040" extended-state="1" />
+    <frame x="1166" y="0" width="754" height="1040" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27301842" sideWeight="0.488" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.476257" sideWeight="0.488" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37114537" sideWeight="0.5141732" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -835,8 +835,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dingding.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.045388">
-          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.9956076">
+          <caret line="42" column="61" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
           <folding>
             <element signature="e#15#43#0" expanded="true" />
           </folding>
