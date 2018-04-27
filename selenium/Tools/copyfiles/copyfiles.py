@@ -34,13 +34,13 @@ class copyfiles():
         oldpath = data.dict_data()
 
         for i in range(len(oldpath)):
-            print oldpath
-            print oldpath[i].split(".")
+            print oldpath[i]
+            print str(oldpath[i]).split(".")
             # aa,bb=oldpath.split(".")
             # aa,bb=i.split(".")
             # if 'python' in aa.lower():
                 # oldname= u"E:\\notes\\python\\资料\\"+aa+"."+bb
-            # newname=u"E:\\files\\"+ aa+"." + bb
+            newname=u"E:\\files\\"+ aa+"." + bb
             # shutil.copyfile(oldpath,newname)
 if __name__ == "__main__":
     # 注意：此代码if以上的勿乱改，调用此方法只需修改两个参数，一个是excelPath存放xlsx的路径，另外一个是sheetName的值
@@ -49,3 +49,5 @@ if __name__ == "__main__":
     newPath = r"E:\4"
     data = copyfiles(filePath, sheetName)
     data.shutil(newPath)
+    # a = "111.222"
+    # print a.split(".")
