@@ -30,6 +30,7 @@ except:
     print("Default login")
     pass
 time.sleep(5)
+# print ("打卡时间"+ str(t))
 
 driver.find_element_by_id("com.alibaba.android.rimet:id/home_bottom_tab_button_work").click()
 time.sleep(2)
@@ -38,14 +39,22 @@ time.sleep(10)
 if (t.hour < 8 or t.hour == 8):
     try:
         driver.find_element_by_android_uiautomator('new UiSelector().description("上班打卡")').click()
-        print("*** Go to work, Manual punch the clock, success ***")
+        print("*** Go to work, Manual punch the clock, success at" + str(t) + "***")
     except:
-        print("*** Go to work, quickly punch the clock, success ***")
+        print("*** Go to work, quickly punch the clock, success at" + str(t) + "***")
+        pass
+elif(t.hour < 21 or t.hour > 8):
+    try:
+        driver.find_element_by_android_uiautomator('new UiSelector().description("下班打卡")').click()
+        print("*** Go off work, Manual punch the clock, success at" + str(t) + "***")
+    except:
+        print("*** No operation ***")
         pass
 else:
     try:
-        driver.find_element_by_android_uiautomator('new UiSelector().description("下班打卡")').click()
-        print("*** Go off work, Manual punch the clock, success ***")
+        driver.find_element_by_android_uiautomator('new UiSelector().description("更新打卡")').click()
+        driver.find_element_by_name(u"确定").click()
+        print("*** Go off work, Update punch the clock, success at" + str(t) + "***")
     except:
         print("*** No operation ***")
         pass
