@@ -66,7 +66,7 @@ for j in range(len(tittle)):
         # 否则抛异常，什么都做继续for循环
             download.click()
             titles.append(tittle[j].text)
-            print "*** " + str(j+1) + "line has been downloaded:" + (tittle[j].text) + " ***"
+            print "*** " + str(j+1) + " line has been downloaded:" + (tittle[j].text) + " ***"
     # 执行xx1xx的点击动作，元素没有，会报错.如果元素存在则说明也不会发生
     except:
         # print str(j+1) + "is not downloaded:" + (tittle[j].text)
