@@ -1,7 +1,6 @@
 # coding:utf-8
 import requests
-url = "http://192.168.3.65:14011"
-url1 = "http://192.168.3.65:14012/ilinkapp"
+url = "http://192.168.3.54:14010/iot/login.do"
 
 access_token1 = "3dcabfce-7fd7-4b27-8a87-02f1134026aa"
 chipId = "596051"
