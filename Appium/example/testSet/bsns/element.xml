@@ -1,0 +1,10 @@
+<activity name = "GuideActivity"><!--activity名称-->
+
+       <element name="welcome"> <!-- 元素对象 -->
+            <name>Welcome</name><!-- 元素名称 -->
+            <type>RelativeLayout</type><!-- 元素类型 input/button -->
+            <pathtype>ID</pathtype><!-- 获取元素的模式 ID/XPATH/CLASSNAME/NAME-->
+            <pathvalue>ag_ll_dotlayout</pathvalue><!-- 元素定位路径 -->
+        </element>
+
+</activity >
