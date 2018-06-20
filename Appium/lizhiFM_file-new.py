@@ -42,8 +42,39 @@ desired_caps2 = {
             }
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps1)
 # 休眠15秒等待页面加载完成
-time.sleep(10)
+try:
+    driver.wait_activity("允许", 5)
+    # 允许
+    driver.find_element_by_name("允许").click()
+except:
+    pass
+driver.wait_activity("com.yibasan.lizhifm:id/header_no_user", 1)
+# 点击头像
+driver.find_element_by_id("com.yibasan.lizhifm:id/header_no_user").click()
+# 手机登录
+driver.find_element_by_id("com.yibasan.lizhifm:id/login_by_phone").click()
+driver.tap([(500, 349), (984, 511)], 500)
+time.sleep(5)
+driver.tap([(210, 1300)], 10)  # 1
+driver.tap([(440, 1600)], 10)  # 8
+driver.tap([(440, 1800)], 10)  # 0
+driver.tap([(700, 1500)], 10)  # 6
+driver.tap([(500, 1300)], 10)  # 2
+driver.tap([(210, 1500)], 10)  # 4
+driver.tap([(500, 1300)], 10)  # 2
+driver.tap([(210, 1600)], 10)  # 7
+driver.tap([(800, 1300)], 10)  # 3
+driver.tap([(440, 1600)], 10)  # 8
+driver.tap([(440, 1500)], 10)  # 5
+driver.find_element_by_name("确认").click()
+
+# 输入密码
+driver.wait_activity("com.yibasan.lizhifm:id/edit_text", 1)
+driver.find_element_by_id("com.yibasan.lizhifm:id/edit_text").send_keys("612101010")
+driver.find_element_by_name("登录").click()
+# 点击头像
 driver.find_element_by_id("com.yibasan.lizhifm:id/header_user_icon").click()
+# 关注
 driver.find_element_by_id("com.yibasan.lizhifm:id/followLabel").click()
 driver.find_element_by_id("com.yibasan.lizhifm:id/user_fans_user_head").click()
 # 点击进入【声音】
@@ -51,9 +82,9 @@ driver.find_elements_by_class_name("android.widget.TextView")[11].click()
 # 点击进入【下载】
 download = driver.find_element_by_id("com.yibasan.lizhifm:id/btn_download")
 download.click()
-# # 全选
-# driver.find_elements_by_id("com.yibasan.lizhifm:id/view_select_all")
-
+# # # 全选
+# # driver.find_elements_by_id("com.yibasan.lizhifm:id/view_select_all")
+#
 # 找未下载项，提取标题
 tittle = driver.find_elements_by_id("com.yibasan.lizhifm:id/simple_program_item_text_name")
 for j in range(len(tittle)):
@@ -86,7 +117,8 @@ for i in range(0, 60):
             time.sleep(1)
     except:
         pass
-# driver.quit()
+
+
 if titles != []:
     time.sleep(5)
     driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps2)
@@ -116,7 +148,7 @@ if titles != []:
         if lists[i].text.find("_hd.mp3") > 0:
             # 长按
             action1 = TouchAction(driver)
-            action1.long_press(lists[i]).wait(10000).perform()
+            action1.long_press(lists[i]).wait(1000).perform()
             # 更多-重命名
             driver.find_elements_by_class_name("android.widget.Button")[6].click()
             driver.find_element_by_name("重命名").click()

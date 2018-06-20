@@ -19,39 +19,67 @@ desired_caps = {
                 'appActivity': 'com.alibaba.android.rimet.biz.SplashActivity'
                 }
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
-time.sleep(5)
 
 try:
-    # 输入密码
+    # 允许
+    driver.wait_activity("允许", 2)
+    driver.find_element_by_name("允许").click()
+except:
+    pass
+
+try:
+    # 进入登录
+    driver.find_element_by_id("com.alibaba.android.rimet:id/login_slide_btn").click()
+    # 输入账号密码
+    driver.find_element_by_id("com.alibaba.android.rimet:id/et_phone_input").send_keys("18062427385")
     driver.find_element_by_id("com.alibaba.android.rimet:id/et_pwd_login").send_keys("123456")
     # 点击登录按钮
     driver.find_element_by_id("com.alibaba.android.rimet:id/btn_next").click()
+    driver.find_element_by_name("查看详情").click()
+    # 同意
+    driver.wait_activity("同意", 2)
+    driver.find_element_by_android_uiautomator('new UiSelector().description("同意")').click()
 except:
     print("Default login")
     pass
-time.sleep(5)
-# print ("打卡时间"+ str(t))
 
+try:
+    driver.wait_activity("允许", 2)
+    # 允许
+    driver.find_element_by_name("允许").click()
+    driver.wait_activity("允许", 2)
+    # 允许
+    driver.find_element_by_name("允许").click()
+except:
+    pass
+
+driver.wait_activity("com.alibaba.android.rimet:id/home_bottom_tab_button_work", 10)
 driver.find_element_by_id("com.alibaba.android.rimet:id/home_bottom_tab_button_work").click()
-time.sleep(2)
+driver.wait_activity("考勤打卡", 2)
 driver.find_element_by_android_uiautomator('new UiSelector().description("考勤打卡")').click()
-time.sleep(10)
-if (t.hour < 8 or t.hour == 8):
+driver.wait_activity("我知道了", 10)
+driver.find_element_by_name("我知道了").click()
+if (t.hour < 10 and t.hour > 7):
     try:
+        driver.wait_activity("上班打卡", 2)
         driver.find_element_by_android_uiautomator('new UiSelector().description("上班打卡")').click()
         print("*** Go to work, Manual punch the clock, success at" + str(t) + "***")
     except:
         print("*** Go to work, quickly punch the clock, success at" + str(t) + "***")
         pass
-else:
+elif (t.hour < 22 and t.hour > 17):
     try:
+        driver.wait_activity("下班打卡", 2)
         driver.find_element_by_android_uiautomator('new UiSelector().description("下班打卡")').click()
         print("*** Go off work, Manual punch the clock, success at" + str(t) + "***")
     except:
+        driver.wait_activity("更新打卡", 2)
         driver.find_element_by_android_uiautomator('new UiSelector().description("更新打卡")').click()
         driver.find_element_by_name(u"确定").click()
         print("*** Go off work, Update punch the clock, success at" + str(t) + "***")
         # print("*** No operation ***")
         pass
+else:
+    pass
 time.sleep(5)
 driver.quit()
