@@ -73,6 +73,7 @@ driver.wait_activity("com.yibasan.lizhifm:id/edit_text", 1)
 driver.find_element_by_id("com.yibasan.lizhifm:id/edit_text").send_keys("612101010")
 driver.find_element_by_name("登录").click()
 # 点击头像
+driver.wait_activity("com.yibasan.lizhifm:id/header_user_icon", 2)
 driver.find_element_by_id("com.yibasan.lizhifm:id/header_user_icon").click()
 # 关注
 driver.find_element_by_id("com.yibasan.lizhifm:id/followLabel").click()
@@ -87,7 +88,8 @@ download.click()
 #
 # 找未下载项，提取标题
 tittle = driver.find_elements_by_id("com.yibasan.lizhifm:id/simple_program_item_text_name")
-for j in range(len(tittle)):
+# for j in range(len(tittle)):
+for j in range(2):
     # 点击标题
     tittle[j].click()
     # 开始下载
@@ -104,19 +106,21 @@ for j in range(len(tittle)):
         break   # 遇到第一个未下载项，跳出for循环
 titles = [i + ".mp3" for i in reversed(titles)]
 # print titles
-
+# 等待下载完毕，等60秒
+driver.wait_activity(u"正在下载(0)", 60)
+driver.quit()
 # 增加一个正在下载为0的判断
-for i in range(0, 60):
-    try:
-        if driver.find_element_by_name(u"正在下载(0)").is_displayed():
-            # print "正在下载0"
-            # 关闭荔枝FM
-            driver.quit()
-        else:
-            # print u"控件未出现,等待1秒"
-            time.sleep(1)
-    except:
-        pass
+# for i in range(0, 60):
+#     try:
+#         if driver.find_element_by_name(u"正在下载(0)").is_displayed():
+#             # print "正在下载0"
+#             # 关闭荔枝FM
+#             driver.quit()
+#         else:
+#             # print u"控件未出现,等待1秒"
+#             time.sleep(1)
+#     except:
+#         pass
 
 
 if titles != []:
