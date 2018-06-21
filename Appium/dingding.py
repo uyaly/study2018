@@ -80,6 +80,6 @@ elif (t.hour < 22 and t.hour > 17):
         # print("*** No operation ***")
         pass
 else:
+    print("*** No operation ***")
     pass
-time.sleep(5)
 driver.quit()
