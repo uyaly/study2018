@@ -57,8 +57,12 @@ driver.wait_activity("com.alibaba.android.rimet:id/home_bottom_tab_button_work",
 driver.find_element_by_id("com.alibaba.android.rimet:id/home_bottom_tab_button_work").click()
 driver.wait_activity("考勤打卡", 2)
 driver.find_element_by_android_uiautomator('new UiSelector().description("考勤打卡")').click()
-driver.wait_activity("我知道了", 10)
-driver.find_element_by_name("我知道了").click()
+try:
+    driver.wait_activity("我知道了", 10)
+    driver.find_element_by_name("我知道了").click()
+except:
+    pass
+
 if (t.hour < 10 and t.hour > 7):
     try:
         driver.wait_activity("上班打卡", 2)

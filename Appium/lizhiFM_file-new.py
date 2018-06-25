@@ -48,33 +48,39 @@ try:
     driver.find_element_by_name("允许").click()
 except:
     pass
-driver.wait_activity("com.yibasan.lizhifm:id/header_no_user", 1)
 # 点击头像
-driver.find_element_by_id("com.yibasan.lizhifm:id/header_no_user").click()
-# 手机登录
-driver.find_element_by_id("com.yibasan.lizhifm:id/login_by_phone").click()
-driver.tap([(500, 349), (984, 511)], 500)
-time.sleep(5)
-driver.tap([(210, 1300)], 10)  # 1
-driver.tap([(440, 1600)], 10)  # 8
-driver.tap([(440, 1800)], 10)  # 0
-driver.tap([(700, 1500)], 10)  # 6
-driver.tap([(500, 1300)], 10)  # 2
-driver.tap([(210, 1500)], 10)  # 4
-driver.tap([(500, 1300)], 10)  # 2
-driver.tap([(210, 1600)], 10)  # 7
-driver.tap([(800, 1300)], 10)  # 3
-driver.tap([(440, 1600)], 10)  # 8
-driver.tap([(440, 1500)], 10)  # 5
-driver.find_element_by_name("确认").click()
+try:
+    driver.wait_activity("com.yibasan.lizhifm:id/header_user_icon", 1)
+    driver.find_element_by_id("com.yibasan.lizhifm:id/header_user_icon").click()
+except:
+    driver.wait_activity("com.yibasan.lizhifm:id/header_no_user", 1)
+    driver.find_element_by_id("com.yibasan.lizhifm:id/header_no_user").click()
+    # 手机登录
+    driver.find_element_by_id("com.yibasan.lizhifm:id/login_by_phone").click()
+    driver.tap([(500, 349), (984, 511)], 500)
+    time.sleep(5)
+    driver.tap([(210, 1300)], 10)  # 1
+    driver.tap([(440, 1600)], 10)  # 8
+    driver.tap([(440, 1800)], 10)  # 0
+    driver.tap([(700, 1500)], 10)  # 6
+    driver.tap([(500, 1300)], 10)  # 2
+    driver.tap([(210, 1500)], 10)  # 4
+    driver.tap([(500, 1300)], 10)  # 2
+    driver.tap([(210, 1600)], 10)  # 7
+    driver.tap([(800, 1300)], 10)  # 3
+    driver.tap([(440, 1600)], 10)  # 8
+    driver.tap([(440, 1500)], 10)  # 5
+    driver.find_element_by_name("确认").click()
 
-# 输入密码
-driver.wait_activity("com.yibasan.lizhifm:id/edit_text", 1)
-driver.find_element_by_id("com.yibasan.lizhifm:id/edit_text").send_keys("612101010")
-driver.find_element_by_name("登录").click()
-# 点击头像
-driver.wait_activity("com.yibasan.lizhifm:id/header_user_icon", 2)
-driver.find_element_by_id("com.yibasan.lizhifm:id/header_user_icon").click()
+    # 输入密码
+    driver.wait_activity("com.yibasan.lizhifm:id/edit_text", 1)
+    driver.find_element_by_id("com.yibasan.lizhifm:id/edit_text").send_keys("612101010")
+    driver.find_element_by_name("登录").click()
+    # 点击头像
+    driver.wait_activity("com.yibasan.lizhifm:id/header_user_icon", 2)
+    driver.find_element_by_id("com.yibasan.lizhifm:id/header_user_icon").click()
+    pass
+
 # 关注
 driver.find_element_by_id("com.yibasan.lizhifm:id/followLabel").click()
 driver.find_element_by_id("com.yibasan.lizhifm:id/user_fans_user_head").click()

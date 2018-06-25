@@ -43,10 +43,12 @@ desired_caps2 = {
             }
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps1)
 # 休眠15秒等待页面加载完成
-time.sleep(10)
-driver.find_element_by_id("com.yibasan.lizhifm:id/header_user_icon").click()
+# time.sleep(10)
+
+
 driver.find_element_by_id("com.yibasan.lizhifm:id/followLabel").click()
 driver.find_element_by_id("com.yibasan.lizhifm:id/user_fans_user_head").click()
+
 # 点击进入【声音】
 driver.find_elements_by_class_name("android.widget.TextView")[11].click()
 # 点击进入【下载】
