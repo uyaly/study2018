@@ -31,7 +31,7 @@ def booklist():
         name = subdirs[i]
         lenth = len(subdirs[i])
         namedirs.append(name[9:lenth])
-    return render_template('home.html', namelist=namedirs)
+    return render_template('home.html',lenth = len(subdirs), namelist=namedirs)
 
     # print u"扫描的子目录是:"
     # for subdir in subdirs:
@@ -39,7 +39,7 @@ def booklist():
 @app.route('/<name>', methods=['GET'])
 def book_name(name):
     # return render_template('static.html?name= %s' % name)
-    return render_template('book.html', name=name)
+    return render_template('book_app.html', name=name)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port = 8000, debug=True)

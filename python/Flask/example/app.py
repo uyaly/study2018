@@ -1,4 +1,5 @@
-
+#!/usr/bin/env python
+#  encoding:UTF-8
 from flask import Flask,request,render_template
 
 app = Flask(__name__)
@@ -20,4 +21,4 @@ def signin():
     return render_template('form.html', message='Bad username or password', username=username)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
