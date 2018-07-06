@@ -19,34 +19,47 @@
   <title>{{name}}</title>
 </head>
 <table class="table1">
-    	<tr>
-    		<td><img src='../static/{{name}}/0.jpg'/>
-            <div id='div1'>
-				<audio controls="controls" width="219" height="50">
-					<source src="../static/{{name}}/0_A.mp3" type="audio/mp3"></source>
-				</audio>
-			</div>
+	{% for m in range(12)  %}
+		{% if(loop.index0 % 4 == 0)  %}
+			<tr>
+				<td nowrap=true><img src='../static/{{name}}/{{loop.index0}}.jpg'/><br>
+					<div style="width:300px;height:30px;margin:0px auto;">
+						<div style="width:50%;padding:0;margin:0;float:left;box-sizing:border-box;"><audio src="../static/{{name}}/{{loop.index0}}_A.mp3"  controls="controls" preload id="music_{{loop.index0}}_A" class="button" hidden> </audio>
+						<button id="{{loop.index0}}_A" style="width:80px;height:30px;" onclick='a("music_{{loop.index0}}_A");'>打卡</button></div>
+						<div style="width:50%;padding:0;margin:0;float:left;box-sizing:border-box;"><audio src="../static/{{name}}/{{loop.index0}}_B.mp3"  controls="controls" preload id="music_{{loop.index0}}_B" class="button" hidden> </audio>
+						<button id="{{loop.index0}}_B" style="width:80px;height:30px;" onclick='a("music_{{loop.index0}}_B");'>解释</button></div>
+					</div>
+				</td>
+		{% endif  %}
+		{% if(loop.index0 % 4 > 0)  %}
+			<td nowrap=true><img src='../static/{{name}}/{{loop.index0}}.jpg'/><br>
+					<div style="width:300px;height:30px;margin:0px auto;">
+						<div style="width:50%;padding:0;margin:0;float:left;box-sizing:border-box;"><audio src="../static/{{name}}/{{loop.index0}}_A.mp3"  controls="controls" preload id="music_{{loop.index0}}_A" class="button" hidden> </audio>
+						<button id="{{loop.index0}}_A" style="width:80px;height:30px;" onclick='a("music_{{loop.index0}}_A");'>打卡</button></div>
+						<div style="width:50%;padding:0;margin:0;float:left;box-sizing:border-box;"><audio src="../static/{{name}}/{{loop.index0}}_B.mp3"  controls="controls" preload id="music_{{loop.index0}}_B" class="button" hidden> </audio>
+						<button id="{{loop.index0}}_B" style="width:80px;height:30px;" onclick='a("music_{{loop.index0}}_B");'>解释</button></div>
+					</div>
 			</td>
+				{% if(loop.index0 % 4 == 3)  %}
+					</tr>
+				{% endif  %}
+		{% endif  %}
 
-    		<td><img src='../static/{{name}}/1.jpg' />
-			</td>
 
-    		<td><img src='../static/{{name}}/2.jpg' />
-			</td>
+	{% endfor %}
 
-    		<td><img src='../static/{{name}}/3.jpg' />
-			</td>
-    	</tr>
-    	<tr>
-    		<td><img src='../static/{{name}}/4.jpg' /></td>
-    		<td><img src='../static/{{name}}/5.jpg' /></td>
-    		<td><img src='../static/{{name}}/6.jpg' /></td>
-    		<td><img src='../static/{{name}}/7.jpg' /></td>
-    	</tr>
-    	<tr>
-    		<td><img src='../static/{{name}}/8.jpg' /></td>
-    		<td><img src='../static/{{name}}/9.jpg' /></td>
-    		<td><img src='../static/{{name}}/10.jpg' /></td>
-    		<td><img src='../static/{{name}}/11.jpg' /></td>
-    	</tr>
 </table>
+
+<script type="text/javascript">
+ function a(id){
+ 	 var isPlaying = false;
+     var audio = document.getElementById(id);
+     if(audio.paused){
+         audio.play();// 播放
+
+     }
+     else{
+     	 audio.pause();
+     }
+   }
+</script>
