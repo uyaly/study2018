@@ -71,7 +71,7 @@ if (t.hour < 10 and t.hour > 7):
     except:
         print("*** Go to work, quickly punch the clock, success at" + str(t) + "***")
         pass
-elif (t.hour < 22 and t.hour > 17):
+elif (t.hour < 22 and t.hour >= 17):
     try:
         driver.wait_activity("下班打卡", 2)
         driver.find_element_by_android_uiautomator('new UiSelector().description("下班打卡")').click()
