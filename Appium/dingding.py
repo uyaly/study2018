@@ -29,18 +29,24 @@ except:
 
 try:
     # 进入登录
-    driver.find_element_by_id("com.alibaba.android.rimet:id/login_slide_btn").click()
+    # driver.find_element_by_id("com.alibaba.android.rimet:id/login_slide_btn").click()
     # 输入账号密码
     driver.find_element_by_id("com.alibaba.android.rimet:id/et_phone_input").send_keys("18062427385")
     driver.find_element_by_id("com.alibaba.android.rimet:id/et_pwd_login").send_keys("123456")
     # 点击登录按钮
     driver.find_element_by_id("com.alibaba.android.rimet:id/btn_next").click()
+
+except:
+    print("Default login")
+    pass
+
+try:
     driver.find_element_by_name("查看详情").click()
     # 同意
     driver.wait_activity("同意", 2)
     driver.find_element_by_android_uiautomator('new UiSelector().description("同意")').click()
 except:
-    print("Default login")
+    print("****01")
     pass
 
 try:

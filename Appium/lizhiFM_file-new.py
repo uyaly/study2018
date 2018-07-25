@@ -80,7 +80,7 @@ except:
     driver.wait_activity("com.yibasan.lizhifm:id/header_user_icon", 2)
     driver.find_element_by_id("com.yibasan.lizhifm:id/header_user_icon").click()
     pass
-
+driver.wait_activity("com.yibasan.lizhifm:id/followLabel", 10)
 # 关注
 driver.find_element_by_id("com.yibasan.lizhifm:id/followLabel").click()
 driver.find_element_by_id("com.yibasan.lizhifm:id/user_fans_user_head").click()
