@@ -95,7 +95,7 @@ download.click()
 # 找未下载项，提取标题
 tittle = driver.find_elements_by_id("com.yibasan.lizhifm:id/simple_program_item_text_name")
 # for j in range(len(tittle)):
-for j in range(2):
+for j in range(6):
     # 点击标题
     tittle[j].click()
     # 开始下载
