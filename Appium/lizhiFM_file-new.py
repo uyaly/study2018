@@ -128,7 +128,6 @@ driver.quit()
 #     except:
 #         pass
 
-
 if titles != []:
     time.sleep(5)
     driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps2)
