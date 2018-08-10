@@ -46,7 +46,6 @@ try:
     driver.wait_activity("同意", 2)
     driver.find_element_by_android_uiautomator('new UiSelector().description("同意")').click()
 except:
-    print("****01")
     pass
 
 try:
@@ -92,4 +91,14 @@ elif (t.hour < 22 and t.hour >= 17):
 else:
     print("*** No operation ***")
     pass
+
+# 登出
+driver.find_element_by_name(u"返回").click()
+driver.wait_activity("返回", 5)
+driver.find_element_by_name(u"返回").click()
+driver.find_element_by_name(u"我的").click()
+driver.swipe(0, 1622, 0, 530, 500)
+driver.find_element_by_id("com.alibaba.android.rimet:id/rl_setting").click() # 设置
+driver.find_element_by_name(u"退出登录").click()
+driver.find_element_by_name(u"确认").click()
 driver.quit()

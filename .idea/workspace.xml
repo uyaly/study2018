@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc8a5560-63ab-43fc-9ddf-37f0be1628c2" name="Default" comment="flask">
+    <list default="true" id="dc8a5560-63ab-43fc-9ddf-37f0be1628c2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Appium/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Appium/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Appium/dingding.py" afterPath="$PROJECT_DIR$/Appium/dingding.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Appium/lizhiFM_file-new.py" afterPath="$PROJECT_DIR$/Appium/lizhiFM_file-new.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/.idea/workspace.xml" afterPath="$PROJECT_DIR$/python/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interface/.idea/workspace.xml" afterPath="$PROJECT_DIR$/interface/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/book/app.py" afterPath="$PROJECT_DIR$/python/book/app.py" />
     </list>
     <ignored path="study.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,13 +27,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/python/book/app.py">
+      <file leaf-file-name="dingding.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Appium/dingding.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2125">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.52840906">
+              <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
               <folding>
-                <element signature="e#17#46#0" expanded="true" />
+                <element signature="e#15#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,8 +76,6 @@
         <option value="$PROJECT_DIR$/interface/wl_app/app.py" />
         <option value="$PROJECT_DIR$/Appium/lizhiFM_file.py" />
         <option value="$PROJECT_DIR$/Appium/test2_1.py" />
-        <option value="$PROJECT_DIR$/Appium/lizhiFM_file-new.py" />
-        <option value="$PROJECT_DIR$/Appium/dingding.py" />
         <option value="$PROJECT_DIR$/selenium/Tools/copyfiles/copyfiles.py" />
         <option value="$PROJECT_DIR$/interface/wl_app/add_car.py" />
         <option value="$PROJECT_DIR$/interface/wl_app/app_test.py" />
@@ -91,13 +89,15 @@
         <option value="$PROJECT_DIR$/python/book/request.py" />
         <option value="$PROJECT_DIR$/python/EncodingAESKey/WXBizMsgCrypt.py" />
         <option value="$PROJECT_DIR$/python/EncodingAESKey/Sample.py" />
+        <option value="$PROJECT_DIR$/Appium/lizhiFM_file-new.py" />
         <option value="$PROJECT_DIR$/python/book/app.py" />
+        <option value="$PROJECT_DIR$/Appium/dingding.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="804" />
-    <option name="width" value="1116" />
+    <option name="x" value="624" />
+    <option name="width" value="1296" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -125,6 +125,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -159,7 +160,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -177,24 +177,7 @@
       <recent name="D:\PycharmProjects\test\study\Tools\AutoSentChatroom" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Sample">
-    <configuration default="false" name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/book" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="study" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/book/app.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.dingding">
     <configuration default="false" name="request" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -266,6 +249,23 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="dingding" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Appium" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="study" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Appium/dingding.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -391,19 +391,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.app" />
-      <item index="1" class="java.lang.String" itemvalue="Python.request" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Sample" />
-      <item index="3" class="java.lang.String" itemvalue="Python.WXBizMsgCrypt" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in study" />
+      <item index="0" class="java.lang.String" itemvalue="Python.request" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Sample" />
+      <item index="2" class="java.lang.String" itemvalue="Python.WXBizMsgCrypt" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in study" />
+      <item index="4" class="java.lang.String" itemvalue="Python.dingding" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Sample" />
-        <item index="1" class="java.lang.String" itemvalue="Python.WXBizMsgCrypt" />
-        <item index="2" class="java.lang.String" itemvalue="Python.request" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in study" />
-        <item index="4" class="java.lang.String" itemvalue="Python.app" />
+        <item index="0" class="java.lang.String" itemvalue="Python.dingding" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Sample" />
+        <item index="2" class="java.lang.String" itemvalue="Python.WXBizMsgCrypt" />
+        <item index="3" class="java.lang.String" itemvalue="Python.request" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in study" />
       </list>
     </recent_temporary>
   </component>
@@ -417,24 +417,6 @@
       <created>1503995181187</created>
       <option name="number" value="Default" />
       <updated>1503995181187</updated>
-    </task>
-    <task id="LOCAL-00004" summary="---">
-      <created>1511405278488</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1511405278488</updated>
-    </task>
-    <task id="LOCAL-00005" summary="---">
-      <created>1512013430874</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1512013430874</updated>
-    </task>
-    <task id="LOCAL-00006" summary="---">
-      <created>1512028211116</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1512028211116</updated>
     </task>
     <task id="LOCAL-00007" summary="---">
       <created>1512098312459</created>
@@ -712,7 +694,25 @@
       <option name="project" value="LOCAL" />
       <updated>1531130322651</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="flask">
+      <created>1532484623101</created>
+      <option name="number" value="00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1532484623102</updated>
+    </task>
+    <task id="LOCAL-00054" summary="荔枝 循环7次">
+      <created>1532911116245</created>
+      <option name="number" value="00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1532911116246</updated>
+    </task>
+    <task id="LOCAL-00055" summary="update">
+      <created>1533176547460</created>
+      <option name="number" value="00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1533176547461</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -757,10 +757,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="804" y="0" width="1116" height="1040" extended-state="0" />
+    <frame x="624" y="0" width="1296" height="1040" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20408164" sideWeight="0.4955947" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20349762" sideWeight="0.4955947" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -811,9 +811,11 @@
     <MESSAGE value="修改荔枝FM和dingding" />
     <MESSAGE value="flask学习" />
     <MESSAGE value="--" />
-    <MESSAGE value="flask" />
     <MESSAGE value="dingding修改下班17点打卡" />
-    <option name="LAST_COMMIT_MESSAGE" value="dingding修改下班17点打卡" />
+    <MESSAGE value="flask" />
+    <MESSAGE value="荔枝 循环7次" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1126,20 +1128,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Appium/lizhiFM_file-new.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Appium/dingding.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05698324">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/book/templates/book.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6891892">
@@ -1182,12 +1170,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Appium/lizhiFM_file-new.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5221843">
+          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python/book/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2125">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
           <folding>
             <element signature="e#17#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appium/dingding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52840906">
+          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+          <folding>
+            <element signature="e#15#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
