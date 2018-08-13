@@ -72,6 +72,7 @@ if (t.hour < 10 and t.hour > 7):
     try:
         driver.wait_activity("上班打卡", 5)
         driver.find_element_by_android_uiautomator('new UiSelector().description("上班打卡")').click()
+        driver.tap([(440, 1500)], 10)  # 确认打卡成功
         print("*** Go to work, Manual punch the clock, success at" + str(t) + "***")
     except:
         print("*** Go to work, quickly punch the clock, success at" + str(t) + "***")
@@ -80,11 +81,13 @@ elif (t.hour < 22 and t.hour >= 17):
     try:
         driver.wait_activity("下班打卡", 5)
         driver.find_element_by_android_uiautomator('new UiSelector().description("下班打卡")').click()
+        driver.tap([(440, 1500)], 10)  # 确认打卡成功
         print("*** Go off work, Manual punch the clock, success at" + str(t) + "***")
     except:
         driver.wait_activity("更新打卡", 5)
         driver.find_element_by_android_uiautomator('new UiSelector().description("更新打卡")').click()
         driver.find_element_by_name(u"确定").click()
+        driver.tap([(440, 1500)], 10)  # 确认打卡成功
         print("*** Go off work, Update punch the clock, success at" + str(t) + "***")
         # print("*** No operation ***")
         pass
@@ -93,7 +96,6 @@ else:
     pass
 
 # 登出
-driver.find_element_by_name(u"返回").click()
 driver.wait_activity("返回", 5)
 driver.find_element_by_name(u"返回").click()
 driver.find_element_by_name(u"我的").click()
