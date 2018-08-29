@@ -1,13 +1,13 @@
 # coding:utf-8
-# import sys
+import sys
 import unittest
-# import ddt
+import ddt
 from selenium import webdriver
 import time
-# reload(sys)
-# sys.setdefaultencoding('utf-8')
-# log = Log()
-# @ddt.ddt
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
+@ddt.ddt
 class lizhi(unittest.TestCase):
     u'''lizhi'''
 
@@ -16,16 +16,14 @@ class lizhi(unittest.TestCase):
         self.driver = webdriver.Firefox()
         self.driver.get("https://www.lizhi.fm/user/2590902823435862060")
 
-
     def test01_download(self):
         u'''下载'''
-        # play = self.driver.find_elements_by_class_name("leftPlayBtn")
-        play = self.driver.find_elements_by_class_name("radio-list-item-index")
+        play = self.driver.find_elements_by_class_name("leftPlayBtn")
+        # play = self.driver.find_elements_by_class_name("radio-list-item-index")
         for i in range(len(play)):
             print(play[i].text)
-        play[0].click()
-
-
+        play[5].click()
+        time.sleep(5)
 
     @classmethod
     def tearDownClass(self):
