@@ -22,7 +22,8 @@ desired_caps1 = {
                 # apk包名
                 'appPackage': 'com.yibasan.lizhifm',
                 # apk的launcherActivity
-                'appActivity': 'com.yibasan.lizhifm.activities.EntryPointActivity'
+                'appActivity': 'com.yibasan.lizhifm.activities.EntryPointActivity',
+                'appWaitActivity': 'com.yibasan.lizhifm.activities.EntryPointActivity'
                 }
 
 desired_caps2 = {

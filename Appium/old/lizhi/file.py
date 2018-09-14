@@ -8,7 +8,8 @@ desired_caps = {
                 # 这里是声明android还是ios的环境
                 'platformName': 'Android',
                 # 手机设备名称，通过adb devices查看
-                'deviceName': '11642f40',
+                # 'deviceName': '11642f40',
+                'deviceName': 'cc2ae2f4', # 测试机小米4
                 # android系统的版本号
                 'platformVersion': '6.0.1',
                 # apk包名

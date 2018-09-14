@@ -100,6 +100,7 @@ except:
 # 登出
 driver.wait_activity("返回", 5)
 driver.find_element_by_name(u"返回").click()
+driver.wait_activity("我的", 5)
 driver.find_element_by_name(u"我的").click()
 driver.swipe(0, 1622, 0, 530, 500)
 driver.find_element_by_id("com.alibaba.android.rimet:id/rl_setting").click() # 设置
