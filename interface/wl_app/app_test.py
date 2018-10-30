@@ -1,8 +1,8 @@
 # coding:utf-8
 import requests
-url = "http://192.168.3.54:14010/iot/login.do"
-
-access_token1 = "3dcabfce-7fd7-4b27-8a87-02f1134026aa"
+url = "https://rongwei.rtisp.cn:14009"
+url1 = "https://192.168.3.183:14009"
+# access_token1 = "3dcabfce-7fd7-4b27-8a87-02f1134026aa"
 chipId = "596051"
 alarmId = "128"
 telephone = "13800000007"
@@ -10,17 +10,17 @@ headers = {
     'content-type': "application/x-www-form-urlencoded",
     'Cache-Control': "no-cache",
     }
-
-# payload = {"password":"000000",
-#            "username":"13800000007",
-#            "grant_type":"password",
-#            "scope":"app",
-#            "client_secret":"secret",
-#            "client_id":"client",
-#            }
-# login = requests.request("POST", url + "/oauth/token", data=payload, headers=headers)
-# print(u"1.登录验证:")
-# print(login.text)
+# 18271672781
+payload = {"password":"000000",
+           "username":"18271672781",
+           "grant_type":"password",
+           "scope":"app",
+           "client_secret":"secret",
+           "client_id":"client",
+           }
+login = requests.request("POST", url1 + "/oauth/token", data=payload, headers=headers)
+print(u"1.登录验证:")
+print(login.text)
 #
 # querystring = {
 #             "id":chipId,
@@ -31,15 +31,15 @@ headers = {
 # print(u"3.获取芯片载体信息详情:")
 # print(carriers.text)
 
-payload = {
-            "chipId":chipId,
-            "startTime":"2018-02-10",
-            "endTime":"2018-02-13",
-            "access_token":access_token1
-           }
-defence_set = requests.request("post", url1 + "/defence/set", data=payload, headers=headers)
-print(u"4.设防:")
-print(defence_set.text)
+# payload = {
+#             "chipId":chipId,
+#             "startTime":"2018-02-10",
+#             "endTime":"2018-02-13",
+#             "access_token":access_token1
+#            }
+# defence_set = requests.request("post", url1 + "/defence/set", data=payload, headers=headers)
+# print(u"4.设防:")
+# print(defence_set.text)
 
 
 # payload = {
