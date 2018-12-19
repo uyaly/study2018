@@ -22,4 +22,4 @@ def test_three():
     b = "hello world"
     assert a in b
 if __name__ == "__main__":
-    pytest.main(["-s", "test_fixt.py"])
+    pytest.main(["-s", "test_fixt-.py"])

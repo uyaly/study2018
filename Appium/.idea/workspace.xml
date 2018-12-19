@@ -24,12 +24,32 @@
       <file leaf-file-name="dingding.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dingding.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8020478">
-              <caret line="80" column="6" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.6587031">
+              <caret line="97" column="4" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
               <folding>
                 <element signature="e#15#43#0" expanded="true" />
-                <marker date="1544777852310" expanded="true" signature="1803:1835" placeholder="..." />
+                <marker date="1545182515490" expanded="true" signature="1924:1956" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="qiyeweixin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qiyeweixin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="22" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="qiyeweixin-new.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qiyeweixin-new.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="46" column="62" selection-start-line="46" selection-start-column="62" selection-end-line="46" selection-end-column="62" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,15 +88,17 @@
         <option value="$PROJECT_DIR$/weixin.py" />
         <option value="$PROJECT_DIR$/lizhiFM_file-new.py" />
         <option value="$PROJECT_DIR$/old/lizhi/file.py" />
-        <option value="$PROJECT_DIR$/qiyeweixin.py" />
         <option value="$PROJECT_DIR$/dingdingTest.py" />
+        <option value="$PROJECT_DIR$/qiyeweixin.py" />
+        <option value="$PROJECT_DIR$/qiyeweixin-new.py" />
         <option value="$PROJECT_DIR$/dingding.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="461" />
-    <option name="width" value="1458" />
+    <option name="x" value="627" />
+    <option name="y" value="3" />
+    <option name="width" value="1193" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -104,7 +126,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -125,24 +146,25 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pytest_study" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\test\study\Appium" />
+      <recent name="D:\PycharmProjects\test\study\Appium" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\PycharmProjects\test\study\Appium\old\lizhi" />
       <recent name="E:\PycharmProjects\test\study\Appium\monkeyrunner" />
       <recent name="E:\PycharmProjects\test\study\Appium\example\testSet" />
       <recent name="E:\PycharmProjects\test\study\Appium\old" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\PycharmProjects\test\study\Appium" />
-      <recent name="D:\PycharmProjects\test\study\Appium" />
     </key>
   </component>
   <component name="RunManager" selected="Python.dingding (1)">
@@ -159,23 +181,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Appium" />
       <option name="SCRIPT_NAME" value="E:\PycharmProjects\test\study\Appium\dingding-bak.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="baidu_read" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Appium" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/baidu_read.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -227,6 +232,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Appium" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dingding.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="qiyeweixin-new" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Appium" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qiyeweixin-new.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -355,18 +377,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.dingding" />
-      <item index="1" class="java.lang.String" itemvalue="Python.baidu_read" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Case21_ADD" />
-      <item index="3" class="java.lang.String" itemvalue="Python.dingdingTest" />
-      <item index="4" class="java.lang.String" itemvalue="Python.dingding (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Case21_ADD" />
+      <item index="2" class="java.lang.String" itemvalue="Python.dingdingTest" />
+      <item index="3" class="java.lang.String" itemvalue="Python.dingding (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.qiyeweixin-new" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.dingding (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.dingding" />
-        <item index="2" class="java.lang.String" itemvalue="Python.dingdingTest" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Case21_ADD" />
-        <item index="4" class="java.lang.String" itemvalue="Python.baidu_read" />
+        <item index="1" class="java.lang.String" itemvalue="Python.qiyeweixin-new" />
+        <item index="2" class="java.lang.String" itemvalue="Python.dingding" />
+        <item index="3" class="java.lang.String" itemvalue="Python.dingdingTest" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Case21_ADD" />
       </list>
     </recent_temporary>
   </component>
@@ -384,10 +406,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="461" y="0" width="1458" height="1040" extended-state="0" />
+    <frame x="627" y="3" width="1193" height="1040" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17183098" sideWeight="0.488" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2865801" sideWeight="0.488" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23237886" sideWeight="0.51690143" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -491,11 +513,26 @@
           <line>69</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/dingding.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/dingding.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/dingding.py</url>
+          <line>72</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="90" />
+      <option name="time" value="93" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -505,13 +542,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/old/lizhiFM_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/screensize.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -861,18 +891,26 @@
     <entry file="file://$PROJECT_DIR$/qiyeweixin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="22" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qiyeweixin-new.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="62" selection-start-line="46" selection-start-column="62" selection-end-line="46" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dingding.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8020478">
-          <caret line="80" column="6" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.6587031">
+          <caret line="97" column="4" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
           <folding>
             <element signature="e#15#43#0" expanded="true" />
-            <marker date="1544777852310" expanded="true" signature="1803:1835" placeholder="..." />
+            <marker date="1545182515490" expanded="true" signature="1924:1956" placeholder="..." />
           </folding>
         </state>
       </provider>

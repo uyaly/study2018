@@ -2,22 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc8a5560-63ab-43fc-9ddf-37f0be1628c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interface/wl_app/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interface/wl_app/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interface/wl_app/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interface/wl_app/.idea/wl_app.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interface/wl_app/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pytest_study/.pytest_cache/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pytest_study/.pytest_cache/v/cache/lastfailed" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pytest_study/.pytest_cache/v/cache/nodeids" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pytest_study/old/test_class.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pytest_study/old/test_fixt.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pytest_study/old/test_sample.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Appium/Appium.docx" afterPath="$PROJECT_DIR$/Appium/Appium.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pytest_study/conftest1/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pytest_study/conftest1/conftest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pytest_study/conftest1/test_fixt.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pytest_study/conftest1/test_fixt1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pytest_study/conftest1/test_fixt2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pytest_study/conftest2/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pytest_study/conftest2/test_f1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pytest_study/conftest2/test_yield2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pytest_study/old/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pytest_study/old/test_fixt-.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/Mysql.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pytest_study/old/test_fixt.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Appium/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Appium/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Appium/dingding.py" afterPath="$PROJECT_DIR$/Appium/dingding.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Appium/qiyeweixin.py" afterPath="$PROJECT_DIR$/Appium/qiyeweixin.py" />
     </list>
     <ignored path="study.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +36,28 @@
     <favorites_list name="study" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="test_class.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pytest_study/old/test_class.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_sample.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pytest_study/old/test_sample.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.07589286">
+              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -93,13 +113,15 @@
         <option value="$PROJECT_DIR$/selenium/temp_ly/lizhiFM_download/lizhiFM_download.py" />
         <option value="$PROJECT_DIR$/selenium/Tools/lizhiFM_download.py" />
         <option value="$PROJECT_DIR$/interface/wl_app/app_test.py" />
+        <option value="$PROJECT_DIR$/python/Mysql.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="305" />
-    <option name="width" value="1384" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -126,8 +148,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -157,38 +177,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="selenium" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="study" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="study" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="study" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="study" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="temp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -238,12 +226,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value=".pytest_cache" />
+              <option name="myItemId" value="conftest2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pytest_study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conftest1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -263,24 +271,7 @@
       <recent name="E:\PycharmProjects\test\study\python\Flask" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.app_test">
-    <configuration default="false" name="dingding" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Appium" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="study" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Appium/dingding.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.test_sample">
     <configuration default="false" name="Unittests in lizhiFM_download" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -355,6 +346,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="study" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/wl_app/app_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test_sample" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytest_study/old" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="study" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytest_study/old/test_sample.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -482,19 +490,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.dingding" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in lizhiFM_download" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in lizhiFM_download (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.页面解析PhantomJS" />
-      <item index="4" class="java.lang.String" itemvalue="Python.app_test" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in lizhiFM_download" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in lizhiFM_download (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.页面解析PhantomJS" />
+      <item index="3" class="java.lang.String" itemvalue="Python.app_test" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test_sample" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.app_test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.页面解析PhantomJS" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in lizhiFM_download (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in lizhiFM_download" />
-        <item index="4" class="java.lang.String" itemvalue="Python.dingding" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test_sample" />
+        <item index="1" class="java.lang.String" itemvalue="Python.app_test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.页面解析PhantomJS" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in lizhiFM_download (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in lizhiFM_download" />
       </list>
     </recent_temporary>
   </component>
@@ -508,12 +516,6 @@
       <created>1503995181187</created>
       <option name="number" value="Default" />
       <updated>1503995181187</updated>
-    </task>
-    <task id="LOCAL-00013" summary="修改荔枝FM的文件管理APP自动化">
-      <created>1521789834992</created>
-      <option name="number" value="00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1521789834992</updated>
     </task>
     <task id="LOCAL-00014" summary="修改荔枝FM的文件管理APP自动化">
       <created>1521797160309</created>
@@ -803,7 +805,13 @@
       <option name="project" value="LOCAL" />
       <updated>1540861671261</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="update">
+      <created>1545027429508</created>
+      <option name="number" value="00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1545027429509</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -848,10 +856,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="305" y="0" width="1384" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25705793" sideWeight="0.4955947" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14225501" sideWeight="0.4955947" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -922,10 +930,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/interface/uu/case/baidu/test_02.py">
+    <entry file="file://$PROJECT_DIR$/pytest_study/old/test_sample.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1207,7 +1216,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1219,35 +1227,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pytest_study/old/test_fixt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pytest_study/old/test_class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pytest_study/old/test_sample.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pytest_study/.idea/.name">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1287,6 +1270,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2125">
           <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytest_study/old/test_class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/Mysql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3107861">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytest_study/old/test_sample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07589286">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
           <folding />
         </state>
       </provider>

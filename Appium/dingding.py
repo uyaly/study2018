@@ -24,7 +24,13 @@ driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
 # time.sleep(5)
 try:
     # 进入登录
+    driver.wait_activity(u"登录", 10)
     # driver.find_element_by_id("com.alibaba.android.rimet:id/login_slide_btn").click()
+    driver.find_element_by_name(u"登录").click()
+except:
+    print("没有登录页面")
+    pass
+try:
     # 输入账号密码
     driver.wait_activity("com.alibaba.android.rimet:id/et_phone_input", 10)
     driver.find_element_by_id("com.alibaba.android.rimet:id/et_phone_input").send_keys("18062427385")
@@ -33,18 +39,19 @@ try:
     driver.find_element_by_id("com.alibaba.android.rimet:id/btn_next").click()
     # driver.find_element_by_android_uiautomator('new UiSelector().description("同意")').click()
     # driver.find_elements_by_class_name("android.view.View")[231].click()
-    # time.sleep(3)
-    # driver.tap([(1000, 1800)], 10)  # 点击右下角“同意”
+    time.sleep(3)
+    driver.tap([(1000, 1800)], 10)  # 点击右下角“同意”
 except:
     print("Default login")
     pass
 
 # driver.tap([(520, 1800)], 10)
-time.sleep(5)
+time.sleep(3)
 driver.wait_activity("com.alibaba.android.rimet:id/home_bottom_tab_icon_group", 10)
 driver.find_elements_by_id("com.alibaba.android.rimet:id/home_bottom_tab_icon_group")[2].click()  # 点击“长江智联”
 # print("长江智联进去的页面list：")
 # print(driver.contexts)
+time.sleep(2)
 driver.tap([(415, 1067)], 10)  # 点击“考勤打卡”
 # print("考勤打卡进去的页面list：")
 # print(driver.contexts)
@@ -83,7 +90,7 @@ else:
 #     print("***打卡成功***")
 # except:
 #     pass
-
+time.sleep(5)
 # 登出
 driver.wait_activity("返回", 5)
 driver.find_element_by_name(u"返回").click()
