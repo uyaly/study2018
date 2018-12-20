@@ -1,5 +1,17 @@
 # coding:utf-8
 import requests
+import urllib3
+# 禁用安全请求警告
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+url = "https://passport.cnblogs.com/user/signin"
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0"
+    }
+
+#使用这个方法就OK了
+urllib3.disable_warnings()
+
 url = "https://rongwei.rtisp.cn:14009"
 url1 = "https://192.168.3.183:14009"
 # access_token1 = "3dcabfce-7fd7-4b27-8a87-02f1134026aa"
@@ -12,13 +24,13 @@ headers = {
     }
 # 18271672781
 payload = {"password":"000000",
-           "username":"18271672781",
+           "username":"18062427385",
            "grant_type":"password",
            "scope":"app",
            "client_secret":"secret",
            "client_id":"client",
            }
-login = requests.request("POST", url1 + "/oauth/token", data=payload, headers=headers)
+login = requests.request("POST", url1 + "/oauth/token", verify=False, data=payload, headers=headers)
 print(u"1.登录验证:")
 print(login.text)
 #
