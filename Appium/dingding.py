@@ -52,51 +52,64 @@ driver.find_elements_by_id("com.alibaba.android.rimet:id/home_bottom_tab_icon_gr
 # print("长江智联进去的页面list：")
 # print(driver.contexts)
 time.sleep(2)
-driver.tap([(415, 1067)], 10)  # 点击“考勤打卡”
-# print("考勤打卡进去的页面list：")
-# print(driver.contexts)
-# 允许
-# time.sleep(5)
-# driver.wait_activity("ndroid.widget.Button", 5)
-# driver.find_elements_by_class_name("android.widget.Button")[1].click()   # 点击 允许
+try:
+    driver.wait_activity("考勤打卡", 5)
+    driver.find_element_by_android_uiautomator('new UiSelector().description("考勤打卡")').click()
+except:
+    print("考勤打卡进不去")
+    print("考勤打卡进去的页面list：")
+    print(driver.contexts)
+    driver.tap([(415, 1067)], 10)  # 点击“考勤打卡”
+    pass
+
+try:
+    # 允许
+    time.sleep(5)
+    driver.wait_activity("ndroid.widget.Button", 5)
+    driver.find_elements_by_class_name("android.widget.Button")[1].click()   # 点击 允许
+except:
+    print("点击 允许 失败")
+    pass
 
 time.sleep(10)
-if (t.hour < 10 and t.hour > 7):
+if (t.hour < 9 and t.hour > 7):
     try:
-        driver.tap([(600, 680)], 10)  # 点击“上班打卡”
-        print("*** Go to work, Manual punch the clock, success at" + str(t) + "***")
+        driver.wait_activity("上班打卡", 5)
+        driver.find_element_by_android_uiautomator('new UiSelector().description("上班打卡")').click()
+        print("*** Go to work, Manual punch the clock, success at " + time.strftime("%H:%M:%S", time.localtime()) + " ***")
     except:
-        # 找不到
-        print("*** Go to work, quickly punch the clock, success at" + str(t) + "***")
+        # 上班打卡，点击失败，急速打卡？
+        l = driver.find_elements_by_class_name("android.view.View")
+        # for i in range(len(l)):
+            # print(str(i) + ":" + l[i].get_attribute("name"))
+        if l[18].get_attribute("name") == "极速打卡":
+            print(l[17].get_attribute("name") + l[18].get_attribute("name"))
+            print("*** Go to work, quickly punch the clock, success at " + l[17].get_attribute("name") + " ***")
         pass
 
 elif (t.hour < 22 and t.hour >= 17):
     try:
-        driver.tap([(550, 150)], 10)  # 点击“下班打卡”
-        print("*** Go off work, Manual punch the clock, success at" + str(t) + "***")
+        driver.wait_activity("下班打卡", 10)
+        driver.find_element_by_android_uiautomator('new UiSelector().description("下班打卡")').click()
+        print("*** Go off work, Manual punch the clock, success at " + time.strftime("%H:%M:%S", time.localtime()) + " ***")
     except:
-        driver.tap([(415, 1491)], 10)  # 点击“更新打卡”
+        driver.wait_activity("更新打卡", 5)
+        driver.find_element_by_android_uiautomator('new UiSelector().description("更新打卡")').click()
         driver.wait_activity(u"确定", 5)
         driver.find_element_by_name(u"确定").click()
-        print("*** Go off work, Update punch the clock, success at" + str(t) + "***")
-
+        print("*** Go off work, Update punch the clock, success at " + time.strftime("%H:%M:%S", time.localtime()) + " ***")
         pass
 else:
     print("*** No operation ***")
     pass
 
-# try:
-#     driver.tap([(440, 1500)], 10)  # 确认打卡成功
-#     print("***打卡成功***")
-# except:
-#     pass
 time.sleep(5)
 # 登出
 driver.wait_activity("返回", 5)
-driver.find_element_by_name(u"返回").click()
+driver.find_element_by_accessibility_id(u"返回").click()
 
 try:
-    driver.find_element_by_name(u"返回").click()
+    driver.find_element_by_accessibility_id(u"返回").click()
 except:
     print("***返回成功，准备退出***")
     pass
@@ -104,7 +117,7 @@ except:
 driver.wait_activity("我的", 5)
 driver.find_element_by_name(u"我的").click()
 driver.swipe(0, 1622, 0, 530, 500)
-driver.find_element_by_id("com.alibaba.android.rimet:id/rl_setting").click()  # 设置
+driver.find_element_by_id("com.alibaba.android.rimet:id/rl_setting").click()  # 点击 设置
 driver.find_element_by_name(u"退出登录").click()
 driver.find_element_by_name(u"确认").click()
 # 结束
