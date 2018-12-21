@@ -57,9 +57,9 @@ try:
     driver.find_element_by_android_uiautomator('new UiSelector().description("考勤打卡")').click()
 except:
     print("考勤打卡进不去")
-    print("考勤打卡进去的页面list：")
-    print(driver.contexts)
-    driver.tap([(415, 1067)], 10)  # 点击“考勤打卡”
+    # print("考勤打卡进去的页面list：")
+    # print(driver.contexts)
+    # driver.tap([(415, 1067)], 10)  # 点击“考勤打卡”
     pass
 
 try:
@@ -72,32 +72,36 @@ except:
     pass
 
 time.sleep(10)
-if (t.hour < 9 and t.hour > 7):
+if (t.hour < 9 and t.hour > 7):  # 上班时间
     try:
         driver.wait_activity("上班打卡", 5)
-        driver.find_element_by_android_uiautomator('new UiSelector().description("上班打卡")').click()
-        print("*** Go to work, Manual punch the clock, success at " + time.strftime("%H:%M:%S", time.localtime()) + " ***")
+        driver.find_element_by_android_uiautomator('new UiSelector().description("上班打卡")').click()  # 点击上班打卡
+        print("*** " + time.strftime("%H:%M:%S", time.localtime()) + " SUCCESS go to work, Manual punch the clock ***")
     except:
-        # 上班打卡，点击失败，急速打卡？
+        # 找不到“上班打卡”，显示极速打卡时间
         l = driver.find_elements_by_class_name("android.view.View")
         # for i in range(len(l)):
-            # print(str(i) + ":" + l[i].get_attribute("name"))
+        #     print(str(i) + ":" + l[i].get_attribute("name"))
         if l[18].get_attribute("name") == "极速打卡":
             print(l[17].get_attribute("name") + l[18].get_attribute("name"))
-            print("*** Go to work, quickly punch the clock, success at " + l[17].get_attribute("name") + " ***")
+            print("*** " +l[17].get_attribute("name") + " SUCCESS go to work, quickly punch the clock ***")
+        #  找不到极速打卡，应该是刚急速打卡
+        else:
+            print("*** " + time.strftime("%H:%M:%S", time.localtime()) + " SUCCESS go to work, quickly punch the clock ***")
         pass
 
-elif (t.hour < 22 and t.hour >= 17):
+elif (t.hour < 22 and t.hour >= 17): # 下班时间
     try:
         driver.wait_activity("下班打卡", 10)
-        driver.find_element_by_android_uiautomator('new UiSelector().description("下班打卡")').click()
-        print("*** Go off work, Manual punch the clock, success at " + time.strftime("%H:%M:%S", time.localtime()) + " ***")
+        driver.find_element_by_android_uiautomator('new UiSelector().description("下班打卡")').click()# 点击”下班打卡“
+        print("*** " + time.strftime("%H:%M:%S", time.localtime()) + " SUCCESS go off work, Manual punch the clock ***")
     except:
+        # 找不到“下班打卡“，点击更新
         driver.wait_activity("更新打卡", 5)
         driver.find_element_by_android_uiautomator('new UiSelector().description("更新打卡")').click()
         driver.wait_activity(u"确定", 5)
         driver.find_element_by_name(u"确定").click()
-        print("*** Go off work, Update punch the clock, success at " + time.strftime("%H:%M:%S", time.localtime()) + " ***")
+        print("*** " + time.strftime("%H:%M:%S", time.localtime()) + " SUCCESS go off work, Update punch the clock ***")
         pass
 else:
     print("*** No operation ***")
