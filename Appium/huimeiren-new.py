@@ -24,7 +24,7 @@ desired_caps = {
                 'resetKeyboard': True
                 }
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
-
+time.sleep(5)
 try:
     # 输入账号密码
     driver.wait_activity("com.heyi.oa.onlyoa:id/et_input_phone", 5)
@@ -39,16 +39,18 @@ except:
     pass
 
 time.sleep(3)
-# driver.find_element_by_android_uiautomator('new UiSelector().description("工作")').click()  #  点击 工作
-driver.find_elements_by_class_name("android.widget.ImageView")[6].click()  # 点击“工作” ，list类型 [270,1770][540,1920]
-time.sleep(2)
-try:
-    driver.wait_activity("考勤打卡", 5)
-    driver.find_element_by_name("考勤打卡").click()
-except:
-    print("考勤打卡元素找不到，坐标点击")
-    driver.tap([(168, 1008)], 10)  # 点击“考勤打卡” [45,857][292,1160]
-    pass
+# l = driver.find_elements_by_class_name("android.widget.TextView")
+# for i in range(len(l)):
+#      print(str(i) + ":" + l[i].text)
+driver.find_elements_by_class_name("android.widget.TextView")[20].click()  # 点击“工作” ，list类型 [270,1770][540,1920]
+# time.sleep(2)
+# try:
+#     driver.wait_activity("考勤打卡", 5)
+#     driver.find_element_by_name("考勤打卡").click()
+# except:
+#     print("考勤打卡元素找不到，坐标点击")
+#     driver.tap([(168, 1008)], 10)  # 点击“考勤打卡” [45,857][292,1160]
+#     pass
 
 # time.sleep(5)
 # if (t.hour < 10 and t.hour > 7):  # 上班时间
