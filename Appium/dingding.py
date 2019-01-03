@@ -62,7 +62,7 @@ if (t.hour < 10 and t.hour > 7):  # 上班时间
         print("*** " + time.strftime("%H:%M:%S", time.localtime()) + " SUCCESS go to work, quickly punch the clock ***")
         pass
 
-elif (t.hour < 18 and t.hour >= 18): # 下班时间
+elif (t.hour < 18 and t.hour >= 17): # 下班时间
     try:
         driver.find_element_by_android_uiautomator('new UiSelector().description("下班打卡")').click()# 点击”下班打卡“
         print("*** " + time.strftime("%H:%M:%S", time.localtime()) + " SUCCESS go off work, Manual punch the clock ***")
