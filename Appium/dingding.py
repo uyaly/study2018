@@ -43,7 +43,7 @@ time.sleep(3)
 # driver.current_activity
 driver.wait_activity(".biz.home.activity.HomeActivity", 10)  # 等待登录后页面
 driver.find_elements_by_id("com.alibaba.android.rimet:id/home_bottom_tab_icon_group")[2].click()  # 点击“长江智联”
-time.sleep(2)
+time.sleep(3)
 try:
     driver.find_element_by_android_uiautomator('new UiSelector().description("考勤打卡")').click()
 except:
@@ -75,12 +75,14 @@ elif (t.hour < 22 and t.hour >= 18): # 下班时间
     try:
         # 点击更新
         driver.find_element_by_android_uiautomator('new UiSelector().description("更新打卡")').click()
-        driver.find_element_by_name(u"确定").click()
+        time.sleep(2)
+        driver.find_element_by_id("android:id/button1").click()
         print("*** " + time.strftime("%H:%M:%S", time.localtime()) + " SUCCESS go off work, Update punch the clock ***")
     except:
         print("更新打卡元素找不到，坐标点击")
         driver.tap([(167, 1196)], 10)  # 点击“更新打卡”
-        driver.find_element_by_name(u"确定").click()
+        time.sleep(2)
+        driver.find_element_by_id("android:id/button1").click()
         print("*** " + time.strftime("%H:%M:%S", time.localtime()) + " SUCCESS go off work, Update punch the clock ***")
         pass
 else:
