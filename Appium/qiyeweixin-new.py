@@ -12,8 +12,7 @@ desired_caps1 = {
                 # 这里是声明android还是ios的环境
                 'platformName': 'Android',
                 # 手机设备名称，通过adb devices查看
-                # 'deviceName': '11642f40', # 自己的小米4
-                'deviceName': 'cc2ae2f4', # 测试机小米4
+                'deviceName': 'cc2ae2f4',
                 # android系统的版本号
                 'platformVersion': '6.0.1',
                 # apk包名
@@ -25,10 +24,10 @@ desired_caps1 = {
 
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps1)
 try:
-    time.sleep(5)
+    driver.wait_activity(".launch.WwMainActivity", 10)  # 等待未登录页面
     driver.find_element_by_name(u"微信登录").click()
-    # print("登录页面2：" + driver.current_activity)
-    driver.wait_activity("com.android.packageinstaller.permission.ui.GrantPermissionsActivity", 10)  # 等待未登录页面
+    time.sleep(2)
+    print "输入："+ (driver.current_activity)
     driver.find_elements_by_class_name("android.widget.EditText")[0].send_keys(name)
     driver.find_elements_by_class_name("android.widget.EditText")[1].send_keys(mm)
     driver.find_element_by_name(u"登录").click()
@@ -36,23 +35,22 @@ try:
 except:
     pass
 try:
+    driver.wait_activity(".launch.WwMainActivity", 10)  # 等待登录页面
     # 进入企业
-    time.sleep(2)
     # driver.wait_activity("com.tencent.wework:id/dc6", 5)
     # driver.find_element_by_id("com.tencent.wework:id/dc6").click()
     driver.find_element_by_name(u"进入企业 ").click()
 except:
     pass
-driver.wait_activity(".login.controller.LoginWxAuthActivity", 10)  # 等待进入打卡页面
-print("工作台：" + driver.current_activity)
+time.sleep(5)
 driver.find_element_by_name(u"工作台").click()
 # driver.find_element_by_id("com.tencent.wework:id/ao8").click()
-print("打卡：" + driver.current_activity)
+
 driver.find_element_by_name(u"打卡").click()
 # driver.find_element_by_id("com.tencent.wework:id/atw").click()
 
 time.sleep(10)
-print("打卡页面：" + driver.current_activity)
+driver.wait_activity(".enterprise.attendance.controller.AttendanceActivity2", 10)  # 等待考勤打卡
 if (t.hour < 9 and t.hour > 7):
     try:
         driver.find_element_by_name(u"上班打卡").click()
@@ -66,12 +64,10 @@ elif (t.hour < 23 and t.hour >= 18):
         driver.find_element_by_name(u"下班打卡").click()
         print("*** Go off work, Manual punch the clock, success at" + str(t) + "***")
     except:
-        print(driver.contexts)   # 1 试试打印页面
-        driver.tap([(415, 1491)], 10)  # 点击“下班打卡”
-        # driver.find_element_by_android_uiautomator('new UiSelector().description("更新")').click()
-        # # driver.find_element_by_name(u"更新").click()  # 点击“更新”
-        # driver.find_element_by_name(u"更新下班卡").click()
-        # print("*** Go off work, Update punch the clock, success at" + str(t) + "***")
+        driver.find_element_by_android_uiautomator('new UiSelector().description("更新")').click()
+        # driver.find_element_by_name(u"更新").click()  # 点击“更新”
+        driver.find_element_by_name(u"更新下班卡").click()
+        print("*** Go off work, Update punch the clock, success at" + str(t) + "***")
         pass
 else:
     print("*** No operation ***")

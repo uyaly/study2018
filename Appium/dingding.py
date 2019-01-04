@@ -40,6 +40,7 @@ except:
     pass
 
 time.sleep(3)
+# driver.current_activity
 driver.wait_activity(".biz.home.activity.HomeActivity", 10)  # 等待登录后页面
 driver.find_elements_by_id("com.alibaba.android.rimet:id/home_bottom_tab_icon_group")[2].click()  # 点击“长江智联”
 time.sleep(2)
