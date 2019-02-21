@@ -47,7 +47,7 @@ time.sleep(3)
 try:
     driver.find_element_by_android_uiautomator('new UiSelector().description("考勤打卡")').click()
 except:
-    print("考勤打卡元素找不到，坐标点击")
+    # print("考勤打卡元素找不到，坐标点击")
     driver.tap([(415, 1067)], 10)  # 点击“考勤打卡”
     pass
 
@@ -58,7 +58,7 @@ if (t.hour < 10 and t.hour > 7):  # 上班时间
         driver.find_element_by_android_uiautomator('new UiSelector().description("上班打卡")').click()  # 点击上班打卡
         print("*** " + time.strftime("%H:%M:%S", time.localtime()) + " SUCCESS go to work, Manual punch the clock ***")
     except:
-        print("上班打卡元素找不到，坐标点击")
+        # print("上班打卡元素找不到，坐标点击")
         driver.tap([(600, 680)], 10)  # 点击“上班打卡”
         print("*** " + time.strftime("%H:%M:%S", time.localtime()) + " SUCCESS go to work, quickly punch the clock ***")
         pass
@@ -95,7 +95,7 @@ driver.find_element_by_accessibility_id(u"返回").click()
 try:
     driver.find_element_by_accessibility_id(u"返回").click()
 except:
-    print("***返回成功，准备退出***")
+    # print("***返回成功，准备退出***")
     pass
 
 driver.wait_activity(".biz.home.activity.HomeActivity", 10)  # 等待返回登录后页面

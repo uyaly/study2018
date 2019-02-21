@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc8a5560-63ab-43fc-9ddf-37f0be1628c2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/temp/jenkinsTest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/temp/t.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/weixin/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/weixin/handle.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/weixin/main.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/weixin/material.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/weixin/menu.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/weixin/receive.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/weixin/reply.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/weixin/web.config" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Appium/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Appium/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Appium/dingding.py" afterPath="$PROJECT_DIR$/Appium/dingding.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/temp/__init__.py" afterPath="$PROJECT_DIR$/python/temp/__init__.py" />
     </list>
     <ignored path="study.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="huimeiren.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Appium/huimeiren.py">
+      <file leaf-file-name="dingding.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Appium/dingding.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="65" />
+              <caret line="98" column="8" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
               <folding>
                 <element signature="e#15#43#0" expanded="true" />
               </folding>
@@ -37,22 +47,68 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="huimeiren-new.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Appium/huimeiren-new.py">
+      <file leaf-file-name="reply.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/weixin/reply.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+              <caret line="26" column="44" selection-start-line="9" selection-start-column="0" selection-end-line="26" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dingding.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Appium/dingding.py">
+      <file leaf-file-name="menu.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/weixin/menu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31554523">
-              <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+              <folding>
+                <element signature="e#44#57#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="t.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python/temp/t.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4764992">
+              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <folding>
+                <element signature="e#24#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="receive.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/weixin/receive.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="61" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="handle.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/weixin/handle.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="material.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/weixin/material.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+              <folding>
+                <element signature="e#53#67#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,15 +171,24 @@
         <option value="$PROJECT_DIR$/interface/wl_app/app_test.py" />
         <option value="$PROJECT_DIR$/Appium/huimeiren.py" />
         <option value="$PROJECT_DIR$/Appium/huimeiren-new.py" />
+        <option value="$PROJECT_DIR$/python/weixin/dispatcher.py" />
+        <option value="$PROJECT_DIR$/python/weixin/robot.py" />
+        <option value="$PROJECT_DIR$/python/weixin/api.py" />
+        <option value="$PROJECT_DIR$/python/weixin/handle.py" />
+        <option value="$PROJECT_DIR$/python/weixin/menu.py" />
+        <option value="$PROJECT_DIR$/python/weixin/material.py" />
+        <option value="$PROJECT_DIR$/python/weixin/reply.py" />
+        <option value="$PROJECT_DIR$/python/temp/__init__.py" />
         <option value="$PROJECT_DIR$/Appium/dingding.py" />
+        <option value="$PROJECT_DIR$/python/temp/jenkinsTest.py" />
+        <option value="$PROJECT_DIR$/python/temp/t.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="608" />
-    <option name="y" value="1" />
-    <option name="width" value="1117" />
-    <option name="height" value="1022" />
+    <option name="x" value="700" />
+    <option name="width" value="1220" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -178,7 +243,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Appium" />
+              <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="temp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -191,51 +274,42 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="study" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="study" />
+      </console-settings>
+    </option>
+  </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\PycharmProjects\test\study\Appium" />
-      <recent name="E:\PycharmProjects\test\study" />
-      <recent name="E:\PycharmProjects\test\study\python\Flask" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\PycharmProjects\test\study\Appium" />
       <recent name="E:\PycharmProjects\test\study\selenium\Tools" />
       <recent name="E:\PycharmProjects\test\study\selenium\temp_ly\config" />
       <recent name="D:\PycharmProjects\test\study\Tools\AutoSentChatroom" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\test\study\Appium" />
+      <recent name="E:\PycharmProjects\test\study" />
+      <recent name="E:\PycharmProjects\test\study\python\Flask" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.dingding">
-    <configuration default="false" name="app_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/wl_app" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="study" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/wl_app/app_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in test_class" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.jenkinsTest">
+    <configuration default="false" name="Unittests in t" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytest_study/old" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/temp" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="study" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytest_study/old/test_class.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/temp/t.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -247,53 +321,80 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="dingding" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="Unittests in jenkinsTest (4)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/temp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="study" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/temp/t.py" />
+      <option name="CLASS_NAME" value="jenkinsTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in jenkinsTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/temp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="study" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/temp/t.py" />
+      <option name="CLASS_NAME" value="jenkinsTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="t" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Appium" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/temp" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="study" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Appium/dingding.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/temp/t.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="huimeiren" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="jenkinsTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Appium" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/temp" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="study" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Appium/huimeiren.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="huimeiren-new" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Appium" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="study" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Appium/huimeiren-new.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/temp/jenkinsTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -420,20 +521,43 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.app_test" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_class" />
-      <item index="2" class="java.lang.String" itemvalue="Python.dingding" />
-      <item index="3" class="java.lang.String" itemvalue="Python.huimeiren" />
-      <item index="4" class="java.lang.String" itemvalue="Python.huimeiren-new" />
+    <configuration default="false" name="Unittests in jenkinsTest (1)" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/temp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="study" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/temp/t.py" />
+      <option name="CLASS_NAME" value="jenkinsTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in jenkinsTest (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in t" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in jenkinsTest (4)" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in jenkinsTest" />
+      <item index="4" class="java.lang.String" itemvalue="Python.t" />
+      <item index="5" class="java.lang.String" itemvalue="Python.jenkinsTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.dingding" />
-        <item index="1" class="java.lang.String" itemvalue="Python.huimeiren-new" />
-        <item index="2" class="java.lang.String" itemvalue="Python.huimeiren" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_class" />
-        <item index="4" class="java.lang.String" itemvalue="Python.app_test" />
+        <item index="0" class="java.lang.String" itemvalue="Python.jenkinsTest" />
+        <item index="1" class="java.lang.String" itemvalue="Python.t" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in t" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in jenkinsTest" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in jenkinsTest (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -447,12 +571,6 @@
       <created>1503995181187</created>
       <option name="number" value="Default" />
       <updated>1503995181187</updated>
-    </task>
-    <task id="LOCAL-00027" summary="修改打印文字为英文">
-      <created>1524102200131</created>
-      <option name="number" value="00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1524102200131</updated>
     </task>
     <task id="LOCAL-00028" summary="修改打印文字为英文">
       <created>1524106937814</created>
@@ -742,39 +860,45 @@
       <option name="project" value="LOCAL" />
       <updated>1546605060043</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="update dingding">
+      <created>1548726319869</created>
+      <option name="number" value="00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1548726319870</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_lizhiFM_download_(1) - 2018.08.14 at 08h 23m 55s.xml">
-      <configuration name="Unittests in lizhiFM_download (1)" configurationId="tests" />
+    <history-entry file="Unittests_in_jenkinsTest_(1) - 2019.02.21 at 16h 51m 05s.xml">
+      <configuration name="Unittests in jenkinsTest (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_lizhiFM_download_(1) - 2018.08.14 at 08h 26m 19s.xml">
-      <configuration name="Unittests in lizhiFM_download (1)" configurationId="tests" />
+    <history-entry file="Unittests_in_jenkinsTest_(1) - 2019.02.21 at 17h 09m 50s.xml">
+      <configuration name="Unittests in jenkinsTest (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_796IISAoto - 2017.12.01 at 11h 08m 43s.xml">
-      <configuration name="Unittests in test_796IISAoto" configurationId="tests" />
+    <history-entry file="Unittests_in_jenkinsTest_(1) - 2019.02.21 at 17h 10m 18s.xml">
+      <configuration name="Unittests in jenkinsTest (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_796IISAoto - 2017.12.01 at 11h 09m 28s.xml">
-      <configuration name="Unittests in test_796IISAoto" configurationId="tests" />
+    <history-entry file="Unittests_in_jenkinsTest_(2) - 2019.02.21 at 16h 51m 25s.xml">
+      <configuration name="Unittests in jenkinsTest (2)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_796IISAoto - 2017.12.01 at 11h 12m 57s.xml">
-      <configuration name="Unittests in test_796IISAoto" configurationId="tests" />
+    <history-entry file="Unittests_in_jenkinsTest_(3) - 2019.02.21 at 16h 51m 32s.xml">
+      <configuration name="Unittests in jenkinsTest (3)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_796IISAoto - 2017.12.01 at 11h 15m 31s.xml">
-      <configuration name="Unittests in test_796IISAoto" configurationId="tests" />
+    <history-entry file="Unittests_in_jenkinsTest_(4) - 2019.02.21 at 16h 51m 37s.xml">
+      <configuration name="Unittests in jenkinsTest (4)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_796IISAoto - 2017.12.01 at 11h 15m 52s.xml">
-      <configuration name="Unittests in test_796IISAoto" configurationId="tests" />
+    <history-entry file="Unittests_in_t - 2019.02.21 at 16h 46m 40s.xml">
+      <configuration name="Unittests in t" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_796IISAoto - 2017.12.01 at 11h 16m 47s.xml">
-      <configuration name="Unittests in test_796IISAoto" configurationId="tests" />
+    <history-entry file="Unittests_in_t - 2019.02.21 at 16h 51m 14s.xml">
+      <configuration name="Unittests in t" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_796IISAoto - 2017.12.01 at 11h 18m 02s.xml">
-      <configuration name="Unittests in test_796IISAoto" configurationId="tests" />
+    <history-entry file="Unittests_in_t - 2019.02.21 at 16h 52m 25s.xml">
+      <configuration name="Unittests in t" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_class - 2018.12.20 at 20h 21m 55s.xml">
-      <configuration name="Unittests in test_class" configurationId="tests" />
+    <history-entry file="Unittests_in_t - 2019.02.21 at 16h 59m 31s.xml">
+      <configuration name="Unittests in t" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -787,27 +911,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="608" y="1" width="1117" height="1022" extended-state="0" />
+    <frame x="700" y="0" width="1220" height="1040" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28822985" sideWeight="0.4955947" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23434857" sideWeight="0.4955947" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32599118" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28854626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21678966" sideWeight="0.50440526" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4030837" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3764045" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40374038" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -846,7 +970,8 @@
     <MESSAGE value="荔枝 循环7次" />
     <MESSAGE value="update 修改钉钉打卡" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="update dingding" />
+    <option name="LAST_COMMIT_MESSAGE" value="update dingding" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -855,111 +980,17 @@
           <url>file://$PROJECT_DIR$/selenium/study/4/5数据驱动.py</url>
           <line>1</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://D:/Python27/Lib/site-packages/jenkins/__init__.py</url>
+          <line>445</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/selenium/study/4/12PageObject.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selenium/study/4/9判断弹出框alert_is_present.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selenium/study/3/SendMail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selenium/study/3/Sendmail1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selenium/study/4/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selenium/study/4/8判断文本text_to_be_present_in_element.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Appium/old/lizhiFM_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019318182">
-          <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/wl_app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selenium/study/4/3参数化登录方法.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7340909">
-          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Appium/screensize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32386363">
-          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selenium/study/4/5数据驱动.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python27/Lib/site-packages/appium/webdriver/webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/book/templates/book.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6891892">
-          <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/Flask/example/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6326861">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python27/Lib/xml/etree/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1079,13 +1110,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/utrunner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/selenium/study/6/页面解析PhantomJS.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.058020476">
@@ -1198,29 +1222,163 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Appium/huimeiren-new.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17386363">
+          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Appium/huimeiren.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="65" />
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/weixin/web.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/weixin/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/temp/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03868032">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python27/Lib/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33183858">
+          <caret line="338" column="0" selection-start-line="338" selection-start-column="0" selection-end-line="338" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python27/Lib/json/decoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33183858">
+          <caret line="363" column="0" selection-start-line="363" selection-start-column="0" selection-end-line="363" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python27/Lib/site-packages/jenkins/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.113074206">
+          <caret line="1105" column="30" selection-start-line="1105" selection-start-column="30" selection-end-line="1105" selection-end-column="30" />
+          <folding>
+            <element signature="e#9790#9861#0" expanded="false" />
+            <element signature="e#9911#9986#0" expanded="false" />
+            <element signature="e#10041#10125#0" expanded="false" />
+            <element signature="e#10174#10256#0" expanded="false" />
+            <element signature="e#10305#10375#0" expanded="false" />
+            <element signature="e#10422#11314#0" expanded="false" />
+            <element signature="e#13414#13673#0" expanded="false" />
+            <element signature="e#13739#13926#0" expanded="false" />
+            <element signature="e#13972#14468#0" expanded="false" />
+            <element signature="e#15981#17261#0" expanded="false" />
+            <element signature="e#15981#16395#1" expanded="false" />
+            <element signature="e#18854#19620#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/utrunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6964286">
+          <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/weixin/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12142857">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appium/dingding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="98" column="8" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
           <folding>
             <element signature="e#15#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Appium/huimeiren-new.py">
+    <entry file="file://$PROJECT_DIR$/python/temp/jenkinsTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+          <caret line="39" column="9" selection-start-line="14" selection-start-column="0" selection-end-line="39" selection-end-column="9" />
+          <folding>
+            <element signature="e#24#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/weixin/menu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+          <folding>
+            <element signature="e#44#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/weixin/material.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+          <folding>
+            <element signature="e#53#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/weixin/handle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Appium/dingding.py">
+    <entry file="file://$PROJECT_DIR$/python/weixin/receive.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31554523">
-          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="61" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/weixin/reply.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="44" selection-start-line="9" selection-start-column="0" selection-end-line="26" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/temp/t.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4764992">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
