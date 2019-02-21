@@ -61,7 +61,6 @@ class jenkinsTest():
             sys.exit(-1)
 
     def post(self):
-def send(self):
         XmlForm = """
         <xml>
         <ToUserName><![CDATA[{ToUserName}]]></ToUserName>
