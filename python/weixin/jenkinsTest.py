@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-import jenkins
-import re
-import sys
-import time
+from python.weixin.temp import jenkins
 
 #定义远程的jenkins master server的url，以及port
 jenkins_server_url='http://localhost:8080/'
@@ -13,7 +10,7 @@ job_name='dingding'
 # def info(self,jenkins_server_url, job_name, user_id, api_token):
 
 #实例化jenkins对象，连接远程的jenkins master server
-server=jenkins.Jenkins(jenkins_server_url, username=user_id, password=api_token)
+server= jenkins.Jenkins(jenkins_server_url, username=user_id, password=api_token)
 
 #构建job名为job_name的job（不带构建参数）
 # server.build_job(job_name)
@@ -24,7 +21,7 @@ server=jenkins.Jenkins(jenkins_server_url, username=user_id, password=api_token)
 server.get_job_info(job_name)
 #获取job名为job_name的job的最后次构建号
 build_number = server.get_job_info(job_name)['lastBuild']['number']
-build_number = 514
+# build_number = 514
 #获取job名为job_name的job的某次构建的执行结果状态
 build_result = server.get_build_info(job_name,build_number)['result']
 #判断job名为job_name的job的某次构建是否还在构建中
