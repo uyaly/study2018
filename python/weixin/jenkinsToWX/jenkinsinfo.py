@@ -6,7 +6,7 @@ import reply
 
 class jenkinsinfo(object):
 
-    def __init__(self, user_name):
+    def __init__(self):
         #定义远程的jenkins master server的url，以及port
         self.jenkins_server_url='http://localhost:8080/'
         #定义用户的User Id 和 API Token，获取方式同上文
@@ -14,7 +14,7 @@ class jenkinsinfo(object):
         self.api_token='123456'
         self.job_name='dingding'
         self.server = jenkins(self.jenkins_server_url, self.user_id, self.api_token)
-        self.user_name = user_name
+        self.user_name = "U"
 
     def run(self):
         self.server.build_job(self.job_name, self.api_token)
@@ -50,25 +50,3 @@ class jenkinsinfo(object):
                 msg = console_info[start:end].strip()
         print "last msg:", msg
         return msg
-
-    def sendinfo(self):
-        try:
-            recMsg = self.consoleinfo()
-            if(self.user_name == "U"):
-                toUser = "oyJXO07T6RM7v610Bzd2Zxlv3Vz8" # U:oyJXO07T6RM7v610Bzd2Zxlv3Vz8
-            elif(self.user_name == "Y"):
-                toUser = "oyJXO03XskpUoHyh8PY1pYmI0xmY" # U:oyJXO03XskpUoHyh8PY1pYmI0xmY
-            else:
-                pass
-
-            fromUser = "gh_0c619267e79e"
-
-            reply1 = reply.TextMsg(toUser, fromUser, recMsg)
-            return reply1.send()  #
-        except Exception, Argment:
-            return Argment
-
-if __name__ == '__main__':
-    j = jenkinsinfo("U")
-    r = j.sendinfo()
-    print(r)
