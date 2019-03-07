@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc8a5560-63ab-43fc-9ddf-37f0be1628c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/weixin/jenkinsToWX/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/weixin/temp/material.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/weixin/temp/media.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/weixin/temp/menu.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interface/2.3.py" afterPath="$PROJECT_DIR$/interface/2.3.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/weixin/jenkinsToWX/jenkinsToWX.py" afterPath="$PROJECT_DIR$/python/weixin/jenkinsToWX/jenkinsToWX.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/weixin/jenkinsToWX/reply.py" afterPath="$PROJECT_DIR$/python/weixin/jenkinsToWX/reply.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/weixin/temp/jenkins.py" afterPath="$PROJECT_DIR$/python/weixin/temp/jenkins.py" />
     </list>
     <ignored path="study.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,63 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reply.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/weixin/reply.py">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/weixin/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="91" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="91" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jenkins.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/weixin/temp/jenkins.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-              <folding>
-                <element signature="e#24#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="media.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/python/weixin/temp/media.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="t.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/weixin/temp/t.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="86" selection-start-line="1" selection-start-column="86" selection-end-line="1" selection-end-column="86" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jenkinsToWX.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/weixin/jenkinsToWX/jenkinsToWX.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reply.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/weixin/jenkinsToWX/reply.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -111,11 +56,34 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="jenkinsToWX.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python/weixin/jenkinsToWX/jenkinsToWX.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.58670986">
+              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+              <folding>
+                <element signature="e#24#38#0" expanded="true" />
+                <element signature="e#1361#1746#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="handle.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/weixin/handle.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="0" selection-start-line="35" selection-start-column="8" selection-end-line="54" selection-end-column="0" />
+              <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reply.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/weixin/reply.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -141,8 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lytest/case/cj/readlognew.py" />
-        <option value="$PROJECT_DIR$/uyaly/test.py" />
         <option value="$PROJECT_DIR$/Tools/AutoSentChatroom/AutoSentChatroom--.py" />
         <option value="$PROJECT_DIR$/Tools/AutoSentChatroom/test.py" />
         <option value="$PROJECT_DIR$/Tools/AutoSentChatroom/tmp/1.html" />
@@ -191,6 +157,8 @@
         <option value="$PROJECT_DIR$/python/weixin/新建文件夹/jenkins.py" />
         <option value="$PROJECT_DIR$/python/weixin/Robot.py" />
         <option value="$PROJECT_DIR$/python/weixin/temp/t.py" />
+        <option value="$PROJECT_DIR$/python/weixin/temp/jenkins.py" />
+        <option value="$PROJECT_DIR$/python/weixin/jenkinsToWX/reply.py" />
         <option value="$PROJECT_DIR$/python/weixin/jenkinsToWX/jenkinsToWX.py" />
       </list>
     </option>
@@ -355,29 +323,7 @@
       <recent name="D:\PycharmProjects\test\study\Tools\AutoSentChatroom" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.t (1)">
-    <configuration default="false" name="Unittests in jenkins" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/temp" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="study" />
-      <option name="SCRIPT_NAME" value="E:\PycharmProjects\test\study\python\weixin\新建文件夹\jenkins.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.jenkinsToWX">
     <configuration default="false" name="t" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -442,6 +388,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="study" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/weixin/temp/t.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="jenkinsToWX" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/weixin/jenkinsToWX" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="study" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/weixin/jenkinsToWX/jenkinsToWX.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -592,19 +555,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in jenkinsTest" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in jenkins" />
-      <item index="2" class="java.lang.String" itemvalue="Python.t" />
-      <item index="3" class="java.lang.String" itemvalue="Python.jenkinsTest" />
-      <item index="4" class="java.lang.String" itemvalue="Python.temp" />
-      <item index="5" class="java.lang.String" itemvalue="Python.t (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.t" />
+      <item index="2" class="java.lang.String" itemvalue="Python.jenkinsTest" />
+      <item index="3" class="java.lang.String" itemvalue="Python.temp" />
+      <item index="4" class="java.lang.String" itemvalue="Python.t (1)" />
+      <item index="5" class="java.lang.String" itemvalue="Python.jenkinsToWX" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.t (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.temp" />
-        <item index="2" class="java.lang.String" itemvalue="Python.jenkinsTest" />
-        <item index="3" class="java.lang.String" itemvalue="Python.t" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in jenkins" />
+        <item index="0" class="java.lang.String" itemvalue="Python.jenkinsToWX" />
+        <item index="1" class="java.lang.String" itemvalue="Python.t (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.temp" />
+        <item index="3" class="java.lang.String" itemvalue="Python.jenkinsTest" />
+        <item index="4" class="java.lang.String" itemvalue="Python.t" />
       </list>
     </recent_temporary>
   </component>
@@ -618,12 +581,6 @@
       <created>1503995181187</created>
       <option name="number" value="Default" />
       <updated>1503995181187</updated>
-    </task>
-    <task id="LOCAL-00034" summary="钉钉打卡，下班更新打卡功能">
-      <created>1525426447377</created>
-      <option name="number" value="00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1525426447377</updated>
     </task>
     <task id="LOCAL-00035" summary="lizhiFM">
       <created>1525653155100</created>
@@ -913,7 +870,13 @@
       <option name="project" value="LOCAL" />
       <updated>1551939005622</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="update">
+      <created>1551939022874</created>
+      <option name="number" value="00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1551939022874</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -961,14 +924,14 @@
     <frame x="700" y="0" width="1220" height="1040" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23434857" sideWeight="0.4955947" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23434857" sideWeight="0.4955947" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32599118" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28854626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28854626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21678966" sideWeight="0.50440526" order="2" side_tool="true" content_ui="tabs" />
@@ -1032,8 +995,13 @@
           <line>445</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/python/weixin/handle.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1220,13 +1188,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/weixin/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12142857">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/Flask/example/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1346,10 +1307,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/weixin/receive.py">
+    <entry file="file://$PROJECT_DIR$/python/weixin/temp/t.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+          <caret line="1" column="86" selection-start-line="1" selection-start-column="86" selection-end-line="1" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/weixin/temp/media.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/weixin/jenkinsToWX/reply.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27552673">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1362,18 +1339,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/weixin/reply.py">
+    <entry file="file://$PROJECT_DIR$/python/weixin/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="91" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="91" />
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/weixin/temp/t.py">
+    <entry file="file://$PROJECT_DIR$/python/weixin/receive.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="86" selection-start-line="1" selection-start-column="86" selection-end-line="1" selection-end-column="86" />
+          <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/weixin/temp/jenkins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9562398">
+          <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/weixin/reply.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -1381,42 +1376,19 @@
     <entry file="file://$PROJECT_DIR$/python/weixin/handle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="0" selection-start-line="35" selection-start-column="8" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/weixin/jenkinsToWX/reply.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/weixin/jenkinsToWX/jenkinsToWX.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/weixin/temp/jenkins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.58670986">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
           <folding>
-            <element signature="e#24#34#0" expanded="true" />
+            <element signature="e#24#38#0" expanded="true" />
+            <element signature="e#1361#1746#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/weixin/temp/media.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

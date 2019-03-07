@@ -6,7 +6,6 @@ import jenkins
 
 
 class jenkinsTest():
-
     #定义远程的jenkins master server的url，以及port
     jenkins_server_url='http://localhost:8080/'
     #定义用户的User Id 和 API Token，获取方式同上文

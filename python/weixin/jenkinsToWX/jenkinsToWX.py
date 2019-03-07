@@ -1,60 +1,74 @@
 # -*- coding: utf-8 -*-
-from python.weixin.temp import jenkins
+import jenkins
+import sys
+import time
+import reply
 
-class jenkinsToWX():
-    def jenkinsAnalysis(self):
+class jenkinsinfo(object):
+
+    def __init__(self, user_name):
         #定义远程的jenkins master server的url，以及port
-        jenkins_server_url='http://localhost:8080/'
+        self.jenkins_server_url='http://localhost:8080/'
         #定义用户的User Id 和 API Token，获取方式同上文
-        user_id='admin'
-        api_token='123456'
-        job_name='dingding'
-        # def info(self,jenkins_server_url, job_name, user_id, api_token):
+        self.user_id='admin'
+        self.api_token='123456'
+        self.job_name='dingding'
+        self.server = jenkins(self.jenkins_server_url, self.user_id, self.api_token)
+        self.user_name = user_name
 
-        #实例化jenkins对象，连接远程的jenkins master server
-        server= jenkins.Jenkins(jenkins_server_url, username=user_id, password=api_token)
+    def run(self):
+        self.server.build_job(self.job_name, self.api_token)
+        while True:
+            time.sleep(1)
+            print 'check running job...'
+            if len(self.server.get_running_builds()) == 0:
+                break
+            else:
+                time.sleep(20)
+        last_build_number = self.lastnumber()
+        build_info = self.server.get_build_info(self.job_name, last_build_number)
+        build_result = build_info['result']
+        print 'Build result is ' + build_result
+        if build_result == 'SUCCESS':
+            sys.exit(0)
+        else:
+            sys.exit(-1)
+        return last_build_number
 
-        #构建job名为job_name的job（不带构建参数）
-        # server.build_job(job_name)
-        #String参数化构建job名为job_name的job, 参数param_dict为字典形式，如：param_dict= {"param1"：“value1”， “param2”：“value2”}
-        # server.build_job(job_name, parameters=param_dict)
+    def lastnumber(self):
+        last_build_number = self.server.get_job_info(self.job_name)['lastCompletedBuild']['number']
+        return last_build_number
 
-        #获取job名为job_name的job的相关信息
-        server.get_job_info(job_name)
-        #获取job名为job_name的job的最后次构建号
-        build_number = server.get_job_info(job_name)['lastBuild']['number']
-        # build_number = 514
-        #获取job名为job_name的job的某次构建的执行结果状态
-        build_result = server.get_build_info(job_name,build_number)['result']
-        #判断job名为job_name的job的某次构建是否还在构建中
-        server.get_build_info(job_name,build_number)['building']
-        console_output = server.get_build_console_output(job_name,build_number)  # 控制台信息
+    def consoleinfo(self, build_number):
+        console_info = self.server.get_build_console_output(self.job_name, build_number)  # 控制台信息
         # 截取控制台信息msg
-        start = console_output.find("***")
+        start = console_info.find("***")
         if start >= 0:
             start += len("***")
-            end = console_output.find("***", start)
+            end = console_info.find("***", start)
             if end >= 0:
-                msg = console_output[start:end].strip()
-        print msg
+                msg = console_info[start:end].strip()
+        print "last msg:", msg
+        return msg
 
-    def send(self):
+    def sendinfo(self):
         try:
-            webData = web.data()
-            # print "Handle Post webdata is ", webData  #后台打日志
-            recMsg = receive.parse_xml(webData)
-            if isinstance(recMsg, receive.Msg) and recMsg.MsgType == 'text':
-                toUser = recMsg.FromUserName
-                fromUser = recMsg.ToUserName
-                recriveMsg = recMsg.Content
-                # print "Handle receive:", recriveMsg
-                replyMsg = Robot.RobotQYK().content(recriveMsg)  #  机器人
-                # print "Handle reply:",(replyMsg)
-                reply1 = reply.TextMsg(toUser, fromUser, replyMsg)
-                return reply1.send()  # 重复你说的
-
+            recMsg = self.consoleinfo()
+            if(self.user_name == "U"):
+                toUser = "oyJXO07T6RM7v610Bzd2Zxlv3Vz8" # U:oyJXO07T6RM7v610Bzd2Zxlv3Vz8
+            elif(self.user_name == "Y"):
+                toUser = "oyJXO03XskpUoHyh8PY1pYmI0xmY" # U:oyJXO03XskpUoHyh8PY1pYmI0xmY
             else:
-                print "暂且不处理"
-                return "success"
+                pass
+
+            fromUser = "gh_0c619267e79e"
+
+            reply1 = reply.TextMsg(toUser, fromUser, recMsg)
+            return reply1.send()  #
         except Exception, Argment:
             return Argment
+
+if __name__ == '__main__':
+    j = jenkinsinfo("U")
+    r = j.sendinfo()
+    print(r)
