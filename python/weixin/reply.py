@@ -28,6 +28,7 @@ class TextMsg(Msg):
         """
         print "send():", (XmlForm.format(**self.__dict))
         return XmlForm.format(**self.__dict)
+
 class ImageMsg(Msg):
     def __init__(self, toUserName, fromUserName, mediaId):
         self.__dict = dict()
