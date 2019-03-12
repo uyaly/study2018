@@ -12,7 +12,7 @@ desired_caps1 = {
                 # 这里是声明android还是ios的环境
                 'platformName': 'Android',
                 # 手机设备名称，通过adb devices查看
-                'deviceName': '11642f40',
+                'deviceName': 'cc2ae2f4',
                 # android系统的版本号
                 'platformVersion': '6.0.1',
                 # apk包名
@@ -22,62 +22,56 @@ desired_caps1 = {
                 # 'appWaitActivity': 'com.tencent.mm.app.WeChatSplashActivity'
                 }
 
-desired_caps2 = {
-                # 这里是声明android还是ios的环境
-                'platformName': 'Android',
-                # 手机设备名称，通过adb devices查看
-                'deviceName': '11642f40',
-                # android系统的版本号
-                'platformVersion': '6.0.1',
-                # apk包名
-                'appPackage': 'com.tencent.mm',
-                # apk的launcherActivity
-                'appActivity': 'com.tencent.mm.ui.LauncherUI'
-                # 'appWaitActivity': 'com.tencent.mm.app.WeChatSplashActivity'
-                }
-
-driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps2)
-
-# try:
-#     driver.wait_activity("登录", 5)
-#     driver.find_element_by_name(u"登录").click()
-#     driver.find_element_by_name(u"用微信号/QQ号/邮箱登录").click()
-#     driver.find_elements_by_class_name("android.widget.EditText")[0].send_keys(name)
-#     driver.find_elements_by_class_name("android.widget.EditText")[1].send_keys(mm)
-#     driver.find_element_by_name(u"登录").click()
-# except:
-#
-#     pass
-# try:
-#     driver.find_element_by_id("com.tencent.mm:id/jd").send_keys(mm)
-#     driver.find_element_by_name(u"登录").click()
-#     time.sleep(2)
-# except:
-#     pass
-# driver.quit()
-
-
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps1)
 try:
+    driver.wait_activity(".launch.WwMainActivity", 10)  # 等待未登录页面
     driver.find_element_by_name(u"微信登录").click()
+    time.sleep(2)
+    print "输入："+ (driver.current_activity)
     driver.find_elements_by_class_name("android.widget.EditText")[0].send_keys(name)
     driver.find_elements_by_class_name("android.widget.EditText")[1].send_keys(mm)
     driver.find_element_by_name(u"登录").click()
-
+    # driver.tap([(1000, 1800)], 10)  # 点击右下角“允许”
 except:
     pass
 try:
+    driver.wait_activity(".launch.WwMainActivity", 10)  # 等待登录页面
     # 进入企业
-    driver.wait_activity("com.tencent.wework:id/cr9", 5)
-    driver.find_element_by_id("com.tencent.wework:id/cr9").click()
+    # driver.wait_activity("com.tencent.wework:id/dc6", 5)
+    # driver.find_element_by_id("com.tencent.wework:id/dc6").click()
+    driver.find_element_by_name(u"进入企业 ").click()
 except:
     pass
-driver.wait_activity("工作台", 5)
-driver.find_element_by_name(u"工作台").click()
-driver.find_element_by_name(u"打卡").click()
-# driver.find_element_by_name(u"下班打卡").click()
-
-driver.find_element_by_name(u"更新").click()
 time.sleep(5)
+driver.find_element_by_name(u"工作台").click()
+# driver.find_element_by_id("com.tencent.wework:id/ao8").click()
+
+driver.find_element_by_name(u"打卡").click()
+# driver.find_element_by_id("com.tencent.wework:id/atw").click()
+
+time.sleep(10)
+driver.wait_activity(".enterprise.attendance.controller.AttendanceActivity2", 10)  # 等待考勤打卡
+if (t.hour < 9 and t.hour > 7):
+    try:
+        driver.find_element_by_name(u"上班打卡").click()
+        print("*** Go to work, Manual punch the clock, success at" + str(t) + "***")
+    except:
+        print("*** Go to work, quickly punch the clock, success at" + str(t) + "***")
+        pass
+
+elif (t.hour < 23 and t.hour >= 18):
+    try:
+        driver.find_element_by_name(u"下班打卡").click()
+        print("*** Go off work, Manual punch the clock, success at" + str(t) + "***")
+    except:
+        driver.find_element_by_android_uiautomator('new UiSelector().description("更新")').click()
+        # driver.find_element_by_name(u"更新").click()  # 点击“更新”
+        driver.find_element_by_name(u"更新下班卡").click()
+        print("*** Go off work, Update punch the clock, success at" + str(t) + "***")
+        pass
+else:
+    print("*** No operation ***")
+    pass
+
 # 结束
 driver.quit()

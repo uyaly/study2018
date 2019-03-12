@@ -52,3 +52,20 @@ class Handle(object):
                 return "success"
         except Exception, Argment:
             return Argment
+
+
+    def POST(self, action, recMsg):
+        try:
+            if isinstance(recMsg, receive.Msg) and recMsg.MsgType == 'text':
+                toUser = recMsg.ToUserName
+                fromUser = recMsg.FromUserName
+                recriveMsg = recMsg.content
+                print "Handle receive:", recriveMsg
+                reply1 = reply.TextMsg(toUser, fromUser, recriveMsg)
+                return reply1.send()  # 重复你说的
+
+            else:
+                print "暂且不处理"
+                return "success"
+        except Exception, Argment:
+            return Argment

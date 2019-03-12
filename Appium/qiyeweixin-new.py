@@ -24,10 +24,16 @@ desired_caps1 = {
 
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps1)
 try:
+    time.sleep(2)
+    driver.find_element_by_name(u"确定").click()
+except:
+    pass
+
+try:
     driver.wait_activity(".launch.WwMainActivity", 10)  # 等待未登录页面
     driver.find_element_by_name(u"微信登录").click()
     time.sleep(2)
-    print "输入："+ (driver.current_activity)
+    # print "输入："+ (driver.current_activity)
     driver.find_elements_by_class_name("android.widget.EditText")[0].send_keys(name)
     driver.find_elements_by_class_name("android.widget.EditText")[1].send_keys(mm)
     driver.find_element_by_name(u"登录").click()
@@ -35,28 +41,31 @@ try:
 except:
     pass
 try:
-    driver.wait_activity(".launch.WwMainActivity", 10)  # 等待登录页面
+    #  print "输入："+ (driver.current_activity)
+    driver.wait_activity(".enterprisemgr.controller.LoginEnterpriseListActivity", 10)  # 等待页面
+    driver.find_element_by_name(u"天恒信息").click()  # id：com.tencent.wework:id/ao6
+
+    driver.wait_activity(".enterprisemgr.controller.NormalEnterpriseInfoActivity", 10)  # 等待页面
     # 进入企业
-    # driver.wait_activity("com.tencent.wework:id/dc6", 5)
     # driver.find_element_by_id("com.tencent.wework:id/dc6").click()
     driver.find_element_by_name(u"进入企业 ").click()
 except:
     pass
-time.sleep(5)
+driver.wait_activity(".launch.WwMainActivity", 10)  # 等待页面
 driver.find_element_by_name(u"工作台").click()
 # driver.find_element_by_id("com.tencent.wework:id/ao8").click()
 
 driver.find_element_by_name(u"打卡").click()
 # driver.find_element_by_id("com.tencent.wework:id/atw").click()
 
-time.sleep(10)
+
 driver.wait_activity(".enterprise.attendance.controller.AttendanceActivity2", 10)  # 等待考勤打卡
-if (t.hour < 9 and t.hour > 7):
+if (t.hour < 9 and t.hour > 6):
     try:
         driver.find_element_by_name(u"上班打卡").click()
         print("*** Go to work, Manual punch the clock, success at" + str(t) + "***")
     except:
-        print("*** Go to work, quickly punch the clock, success at" + str(t) + "***")
+        print("*** Go to work, quickly punch the clock, success ***")
         pass
 
 elif (t.hour < 23 and t.hour >= 18):
@@ -64,14 +73,17 @@ elif (t.hour < 23 and t.hour >= 18):
         driver.find_element_by_name(u"下班打卡").click()
         print("*** Go off work, Manual punch the clock, success at" + str(t) + "***")
     except:
-        driver.find_element_by_android_uiautomator('new UiSelector().description("更新")').click()
+        # driver.find_element_by_android_uiautomator('new UiSelector().description("更新")').click()
         # driver.find_element_by_name(u"更新").click()  # 点击“更新”
-        driver.find_element_by_name(u"更新下班卡").click()
-        print("*** Go off work, Update punch the clock, success at" + str(t) + "***")
+        # driver.find_element_by_name(u"更新下班卡").click()
+        print("*** Go off work, Manual punch the clock, success ***")
         pass
 else:
     print("*** No operation ***")
     pass
 
 # 结束
-driver.quit()
+try:
+    driver.quit()
+except:
+    pass
