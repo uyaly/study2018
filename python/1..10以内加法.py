@@ -5,7 +5,7 @@
 import random
 import time
 
-def add_test(sum_value, count):
+def add_test(questions, sum_value, count):
     '''
     返回指定个数（count）的计算题，以计算某数(sum_value）以内的加法
     :param sum_value: 指定某数以内（的加法）
@@ -13,7 +13,6 @@ def add_test(sum_value, count):
     :return: 返回count个计算题
     '''
 
-    questions = '日期：'+ str(time.strftime('%Y-%m-%d',time.localtime(time.time()))) + '   姓名：游文熹      用时：            得分：             \n'
     count_temp = 1   # 计数器
 
     while True:
@@ -33,7 +32,8 @@ def add_test(sum_value, count):
 
 def main():
     sum_value, count = 10, 100      # 随机出150题，10以内的加法
-    q = add_test(sum_value, count)
+    questions = '日期：'+ str(time.strftime('%Y-%m-%d',time.localtime(time.time()))) + '   姓名：游文熹    用时：        得分：      \n'
+    q = add_test(questions, sum_value, count)
     str_title = u'%d以内加法算术题%d题.doc'% (sum_value, count)
     with open(str_title, "w") as f:
         f.write(q)
