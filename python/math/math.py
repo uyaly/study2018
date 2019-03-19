@@ -5,7 +5,7 @@ import random
 import time
 
 # 加法
-def add(sum_value, count):
+def add1(sum_value, count):
     '''
     返回指定个数（count）的计算题，以计算某数(sum_value）以内的加法
     :param sum_value: 指定某数以内（的加法）
@@ -31,7 +31,7 @@ def add(sum_value, count):
     return questions
 
 # 减法
-def minus(sum_value, count):
+def minus1(sum_value, count):
     '''
     返回指定个数（count）的计算题，以计算某数(sum_value）以内的加法
     :param sum_value: 指定某数以内（的加法）

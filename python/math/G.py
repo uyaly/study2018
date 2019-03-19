@@ -7,7 +7,7 @@ import tkMessageBox
 #窗口
 window = tk.Tk()
 window.title('欢迎进入学习系统')
-window.geometry('450x300')
+window.geometry('500x500')
 
 OPTIONS = [
     '加法',
@@ -36,17 +36,26 @@ var_num=tk.StringVar()
 entry_num=tk.Entry(window,textvariable=var_num)
 entry_num.place(x=60,y=90)
 #结果显示框
-var_text=tk.StringVar()
-out_text=tk.Text(window,textvariable=var_text, width=50)
+# var_text=tk.StringVar()
+out_text=tk.Text(window, width=50)
 out_text.place(x=10,y=130)
 
-result=m.add(var_maxnum,var_num)
-# m.add2(var_maxnum,var_num)
-# m.minus(var_maxnum,var_num)
-# m.minus2(var_maxnum,var_num)
+def math():
+    min = var_minnum.get()
+    max = var_maxnum.get()
+    num = var_num.get()
+    if variable.get() == u'加法':
+        result=m.add1(max, num)
+        print(result)
+        out_text.insert(INSERT,result)
 
 
-B = tk.Button(window, text ="出 题", command = '').place(x=250,y=90)
+        # m.add2(max,num)
+        # m.minus(max,num)
+        # m.minus2(max,num)
+
+
+B = tk.Button(window, text ="出 题", command = math).place(x=110,y=10)
 
 
 # 进入消息循环

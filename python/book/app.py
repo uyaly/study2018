@@ -26,6 +26,7 @@ app = Flask(__name__)
 #         return render_template('signin-ok.html', username=username)
 #     return render_template('form.html', message='Bad username or password', username=username)
 
+
 @app.route("/",methods = ["GET","POST"])
 def wechat_auth():
     if request.method == 'GET':
@@ -77,5 +78,9 @@ def book_name(name):
     # return render_template('static.html?name= %s' % name)
     return render_template('book.html', name=name)
 
+
+
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port = 80, debug=True)
+  #  app.run(host='0.0.0.0', port = 80, debug=True)
+  
+    app.run()
