@@ -16,8 +16,8 @@ def add1(sum_value, count):
     count_temp = 1   # 计数器
 
     while True:
-        i = random.randrange(1, sum_value)       # 随机生成 第一个加数
-        j = random.randrange(2, sum_value + 1)   # 随机生成 和
+        i = random.randint(1, int(sum_value))       # 随机生成 第一个加数
+        j = random.randint(2, int(sum_value) + 1)   # 随机生成 和
         l = j - i                                # 第二个加数
         if l > 0:
             str_temp = str(i) + ' + ' + str(l) + '' + ' = \t\t'
@@ -73,7 +73,7 @@ def add2(sum_value, count):
         h = random.randrange(1, sum_value-1)   # 随机生成 第三个数
         l = j + i + h                              # 第二个加数
         if l < 20:
-            str_temp = str(i) + ' + ' + str(j) + ' + ' +  str(h) + ' = \t'
+            str_temp = str(i) + ' + ' + str(j) + ' + ' +  str(h) + ' =   '
             questions += str_temp
             if(count_temp % 5 == 0):
                 questions += '\n'
@@ -100,7 +100,7 @@ def minus2(sum_value, count):
         h = random.randrange(1, sum_value-1)   # 随机生成 第三个数
         l = i - j - h                                # 第二个加数
         if l >= 0:
-            str_temp = str(i) + ' - ' + str(j) + ' - ' + str(h) + ' = \t'
+            str_temp = str(i) + ' - ' + str(j) + ' - ' + str(h) + ' =   '
             questions += str_temp
             if(count_temp % 5 == 0):
                 questions += '\n'

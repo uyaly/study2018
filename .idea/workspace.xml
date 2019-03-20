@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc8a5560-63ab-43fc-9ddf-37f0be1628c2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/math/G1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/math/mysetup.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/math/old/cal.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/book/.idea/workspace.xml" afterPath="$PROJECT_DIR$/python/book/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/book/app.py" afterPath="$PROJECT_DIR$/python/book/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/book/templates/book_app.html" afterPath="$PROJECT_DIR$/python/book/templates/book_app.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/python/出题/G.py" afterPath="$PROJECT_DIR$/python/math/G.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/python/出题/__init__.py" afterPath="$PROJECT_DIR$/python/math/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/python/出题/math.py" afterPath="$PROJECT_DIR$/python/math/math.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/python/出题/old/1..10以内加法.py" afterPath="$PROJECT_DIR$/python/math/old/1..10以内加法.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/python/出题/old/2..10以内加减法.py" afterPath="$PROJECT_DIR$/python/math/old/2..10以内加减法.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/python/出题/old/__init__.py" afterPath="$PROJECT_DIR$/python/math/old/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/python/出题/光谷一小2年级出题/__init__.py" afterPath="$PROJECT_DIR$/python/math/光谷一小2年级出题/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/python/出题/光谷一小2年级出题/出题.py" afterPath="$PROJECT_DIR$/python/math/光谷一小2年级出题/出题.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/math/G.py" afterPath="$PROJECT_DIR$/python/math/G.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/python/math/math.py" afterPath="$PROJECT_DIR$/python/math/cal.py" />
     </list>
     <ignored path="study.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,25 +31,10 @@
       <file leaf-file-name="G.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python/math/G.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8551136">
-              <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.3469388">
+              <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
               <folding>
-                <element signature="e#42#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="math.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/math/math.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-              <folding>
-                <element signature="e#112#786#0" expanded="false" />
-                <element signature="e#827#1502#0" expanded="false" />
-                <element signature="e#1541#2288#0" expanded="false" />
-                <element signature="e#2330#3077#0" expanded="false" />
+                <element signature="e#42#61#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,7 +44,67 @@
         <entry file="file://D:/Python27/Lib/lib-tk/Tkinter.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1540" column="0" selection-start-line="1540" selection-start-column="0" selection-end-line="1540" selection-end-column="0" />
+              <caret line="3080" column="8" selection-start-line="3080" selection-start-column="8" selection-end-line="3080" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysetup.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/math/mysetup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+              <folding>
+                <element signature="e#13#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="G1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/math/G1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="出题.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/math/光谷一小2年级出题/出题.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="161" column="17" selection-start-line="161" selection-start-column="17" selection-end-line="161" selection-end-column="17" />
+              <folding>
+                <element signature="e#310#1254#0" expanded="false" />
+                <element signature="e#1461#2505#0" expanded="false" />
+                <element signature="e#2599#3072#0" expanded="false" />
+                <element signature="e#3168#3716#0" expanded="false" />
+                <element signature="e#3754#4281#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cal.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/math/cal.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+              <folding>
+                <element signature="e#48#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cal.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/math/old/cal.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="83" column="20" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -91,11 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/python/Flask/templates/1.html" />
-        <option value="$PROJECT_DIR$/python/Flask/test.py" />
-        <option value="$PROJECT_DIR$/python/book/templates/book.html" />
-        <option value="$PROJECT_DIR$/python/Flask/example/app1.py" />
-        <option value="$PROJECT_DIR$/python/Flask/example/app.py" />
         <option value="$PROJECT_DIR$/python/book/request.py" />
         <option value="$PROJECT_DIR$/python/EncodingAESKey/WXBizMsgCrypt.py" />
         <option value="$PROJECT_DIR$/python/EncodingAESKey/Sample.py" />
@@ -141,13 +175,19 @@
         <option value="$PROJECT_DIR$/python/出题/math.py" />
         <option value="$PROJECT_DIR$/python/出题/G.py" />
         <option value="$PROJECT_DIR$/python/math/math.py" />
+        <option value="$PROJECT_DIR$/python/math/G1.py" />
+        <option value="$PROJECT_DIR$/python/math/test.py" />
+        <option value="$PROJECT_DIR$/python/math/mysetup.py" />
+        <option value="$PROJECT_DIR$/python/math/old/cal.py" />
+        <option value="$PROJECT_DIR$/python/math/cal.py" />
         <option value="$PROJECT_DIR$/python/math/G.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="667" />
-    <option name="width" value="1253" />
+    <option name="x" value="624" />
+    <option name="y" value="11" />
+    <option name="width" value="1249" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -235,6 +275,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="math" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="old" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="pytest_study" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -260,13 +322,6 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\PycharmProjects\test\study\python" />
-      <recent name="E:\PycharmProjects\test\study\python\weixin\jenkinsToWX" />
-      <recent name="E:\PycharmProjects\test\study\Appium" />
-      <recent name="E:\PycharmProjects\test\study\selenium\Tools" />
-      <recent name="E:\PycharmProjects\test\study\selenium\temp_ly\config" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\PycharmProjects\test\study\python\出题" />
       <recent name="E:\PycharmProjects\test\study\python\出题\old" />
@@ -274,59 +329,15 @@
       <recent name="E:\PycharmProjects\test\study\python\weixin\jenkinsToWX" />
       <recent name="E:\PycharmProjects\test\study\python\weixin\新建文件夹" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\test\study\python\math" />
+      <recent name="E:\PycharmProjects\test\study\python\math\old" />
+      <recent name="E:\PycharmProjects\test\study\python" />
+      <recent name="E:\PycharmProjects\test\study\python\weixin\jenkinsToWX" />
+      <recent name="E:\PycharmProjects\test\study\Appium" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.G (2)">
-    <configuration default="false" name="2..10以内连加连减" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="study" />
-      <option name="SCRIPT_NAME" value="E:\PycharmProjects\test\study\python\出题\math.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="出题" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="study" />
-      <option name="SCRIPT_NAME" value="E:\PycharmProjects\test\study\python\光谷一小2年级出题\出题.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="G" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="study" />
-      <option name="SCRIPT_NAME" value="E:\PycharmProjects\test\study\python\出题\G.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="G (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -357,6 +368,57 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="study" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/math/G.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="出题 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/math/光谷一小2年级出题" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="study" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/math/光谷一小2年级出题/出题.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/math" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="study" />
+      <option name="SCRIPT_NAME" value="E:\PycharmProjects\test\study\python\math\mysetup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="G1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/math" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="study" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/math/G1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -507,19 +569,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in jenkinsTest" />
-      <item index="1" class="java.lang.String" itemvalue="Python.2..10以内连加连减" />
-      <item index="2" class="java.lang.String" itemvalue="Python.出题" />
-      <item index="3" class="java.lang.String" itemvalue="Python.G" />
-      <item index="4" class="java.lang.String" itemvalue="Python.G (1)" />
-      <item index="5" class="java.lang.String" itemvalue="Python.G (2)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.G (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.G (2)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.出题 (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test" />
+      <item index="5" class="java.lang.String" itemvalue="Python.G1" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.G (2)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.G (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.G" />
-        <item index="3" class="java.lang.String" itemvalue="Python.出题" />
-        <item index="4" class="java.lang.String" itemvalue="Python.2..10以内连加连减" />
+        <item index="1" class="java.lang.String" itemvalue="Python.G1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.出题 (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Python.G (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -533,12 +595,6 @@
       <created>1503995181187</created>
       <option name="number" value="Default" />
       <updated>1503995181187</updated>
-    </task>
-    <task id="LOCAL-00043" summary="修改荔枝FM">
-      <created>1529544106168</created>
-      <option name="number" value="00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1529544106168</updated>
     </task>
     <task id="LOCAL-00044" summary="修改荔枝FM和dingding">
       <created>1529887071915</created>
@@ -828,7 +884,13 @@
       <option name="project" value="LOCAL" />
       <updated>1552901452713</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="update">
+      <created>1552974790161</created>
+      <option name="number" value="00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1552974790162</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -873,21 +935,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="667" y="0" width="1253" height="1040" extended-state="0" />
+    <frame x="624" y="11" width="1249" height="1040" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22798353" sideWeight="0.4955947" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22873658" sideWeight="0.4955947" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32599118" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19361936" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34140968" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21678966" sideWeight="0.50440526" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4030837" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -968,32 +1030,11 @@
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pytest_study/old/test_class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33565623">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pytest_study/old/test_sample.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.078977935">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/test--.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interface/wl_app/add_car.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1278,17 +1319,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/math/光谷一小2年级出题/出题.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6927453">
-          <caret line="148" column="39" selection-start-line="148" selection-start-column="39" selection-end-line="148" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6023392">
           <caret line="2402" column="0" selection-start-line="2402" selection-start-column="0" selection-end-line="2402" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1332,33 +1367,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Python27/Lib/lib-tk/Tkinter.py">
+    <entry file="file://$PROJECT_DIR$/python/math/G1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1540" column="0" selection-start-line="1540" selection-start-column="0" selection-end-line="1540" selection-end-column="0" />
+          <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/math/math.py">
+    <entry file="file://$PROJECT_DIR$/python/math/mysetup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
           <folding>
-            <element signature="e#112#786#0" expanded="false" />
-            <element signature="e#827#1502#0" expanded="false" />
-            <element signature="e#1541#2288#0" expanded="false" />
-            <element signature="e#2330#3077#0" expanded="false" />
+            <element signature="e#13#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python27/Lib/lib-tk/Tkinter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3080" column="8" selection-start-line="3080" selection-start-column="8" selection-end-line="3080" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/math/old/cal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="83" column="20" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/math/光谷一小2年级出题/出题.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="161" column="17" selection-start-line="161" selection-start-column="17" selection-end-line="161" selection-end-column="17" />
+          <folding>
+            <element signature="e#310#1254#0" expanded="false" />
+            <element signature="e#1461#2505#0" expanded="false" />
+            <element signature="e#2599#3072#0" expanded="false" />
+            <element signature="e#3168#3716#0" expanded="false" />
+            <element signature="e#3754#4281#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/math/cal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+          <folding>
+            <element signature="e#48#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/math/G.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8551136">
-          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.3469388">
+          <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
           <folding>
-            <element signature="e#42#58#0" expanded="true" />
+            <element signature="e#42#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
