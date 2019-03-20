@@ -10,8 +10,6 @@ sys.setdefaultencoding( "utf-8" )
 window = Tk()
 window.title('欢迎进入出题系统')
 window.geometry('560x460')
-frame = Frame(window)
-frame.pack()
 
 OPTIONS = [
     '加法 ：... + ... ',
@@ -86,7 +84,7 @@ def com():
     if u'混合1'in v_type:
         v_type = u'加减混合'
         var_title.set(u'%s以内%s%s题'% (v_max, v_type, v_num))
-        result = calcu.type1_str(int(v_min), int(v_max), 0, int(v_max), int(v_num))
+        result = calcu.type1_str(int(v_min), int(v_max), int(v_num))
         for i in range(len(result)):
             out_text.insert(INSERT, result[i])
             if (i+1)%4 == 0:

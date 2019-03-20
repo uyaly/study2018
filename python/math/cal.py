@@ -28,27 +28,25 @@ def base_plus(pmin, pmax, num):
 def base_minus(mmin, mmax, num):
     '''
     mmin,mmax:减法转换成加法后，加数、被加数最小最大值
-    minussum:减数+减数
     num:题目数
     '''
     num_temp = 1   # 计数器
     result = []
-
     while True:
         minus1 = randint(mmin, mmax)
-        minus2 = randint(mmin+1, mmax)
+        minus2 = randint(mmin, mmax)
         sum = minus1 + minus2
         if (sum <= mmax):
             minus = str(sum).rjust(2) + ' - ' + str(minus1).rjust(2) + ' =   '
-            if minus not in result:
-                result.append(minus)
-                num_temp += 1
+
+            result.append(minus)
+            num_temp += 1
         if num_temp > num:
             break
     return result
 
 # 类型1算式：... +/- ... +/- ...
-def type1_str(tmin, tmax, summin, summax, num):
+def type1_str(tmin, tmax, num):
     '''
     summin,summax:允许总和的最小最大值
     '''
@@ -58,28 +56,33 @@ def type1_str(tmin, tmax, summin, summax, num):
         sym1 = sym[randint(0, 1)]
         sym2 = sym[randint(0, 1)]
         if sym1 == ' + ' and sym2 == ' + ':
-            sum_ = randint(summin + 2, summax)
-            first = randint(summin, sum_ - 2)
+            sum_ = randint(tmin + 2, tmax)
+            first = randint(tmin, sum_ - 2)
             second = sum_ - first
-            second = randint(summin, second - 1)
+            second = randint(tmin, second - 1)
             third = sum_ - first - second
         elif sym1 == ' + ' and sym2 == ' - ':
-            sum_ = randint(summin + 1, summax)
-            first = randint(summin, sum_ - 1)
+            sum_ = randint(tmin + 1, tmax)
+            first = randint(tmin, sum_ - 1)
             second = sum_ - first
-            third = randint(summin, sum_)
+            third = randint(tmin, sum_)
         elif sym1 == ' - ' and sym2 == ' + ':
-            first = randint(summin + 1, summax)
-            second = randint(summin, first)
-            third = randint(first - second, summax)
+            first = randint(tmin + 1, tmax)
+            second = randint(tmin, first)
+            third = randint(first - second, tmax)
         elif sym1 == ' - ' and sym2 == ' - ':
-            first = randint(summin + 2, summax)
-            second = randint(summin, first)
-            third = first - second
-            third = randint(summin, third)
+            while 1:
+                first = randint(tmin + 2, tmax)
+                second = randint(tmin, first)
+                third = first - second
+                if (third>=tmin):
+                    third = randint(tmin, third)
+                    break
+                else:
+                    continue
         # 判断第一个值的范围
-        if (first>tmin and first<tmax ):
-            arithmetic = str(first).rjust(2) + sym1 + str(second).rjust(2) + sym2 + str(third).rjust(2) + ' =     '
+        arithmetic = str(first).rjust(2) + sym1 + str(second).rjust(2) + sym2 + str(third).rjust(2) + ' =     '
+        if arithmetic not in result:
             result.append(arithmetic)
             num_temp += 1
         if num_temp > num:
