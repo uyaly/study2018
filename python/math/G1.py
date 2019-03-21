@@ -171,7 +171,7 @@ def com():
     var_title.set(u'%s以内加减法%s道'% (v_max, str(count)))
 
 def exportword():
-    str_title = var_title + str(time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))) + '.doc'
+    str_title = var_title.get() + str(time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))) + '.doc'
     title = u'日期：'+ str(time.strftime('%Y-%m-%d',time.localtime(time.time()))) + u'   姓名：        用时：        得分：      \n'
     q = (title + out_text.get('1.0', END))
     with open(str_title, "w") as f:
