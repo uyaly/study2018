@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc8a5560-63ab-43fc-9ddf-37f0be1628c2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/爬页面数据/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/爬页面数据/getweb.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/爬页面数据/main.py" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/python/math/出题G.rar" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/math/G1.py" afterPath="$PROJECT_DIR$/python/math/G1.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/python/math/G.py" afterPath="$PROJECT_DIR$/python/出题/G.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/python/math/G1.py" afterPath="$PROJECT_DIR$/python/出题/G1.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/python/math/__init__.py" afterPath="$PROJECT_DIR$/python/出题/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/python/math/cal.py" afterPath="$PROJECT_DIR$/python/出题/cal.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/python/math/mysetup.py" afterPath="$PROJECT_DIR$/python/出题/mysetup.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/python/math/old/1..10以内加法.py" afterPath="$PROJECT_DIR$/python/出题/old/1..10以内加法.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/python/math/old/2..10以内加减法.py" afterPath="$PROJECT_DIR$/python/出题/old/2..10以内加减法.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/python/math/old/__init__.py" afterPath="$PROJECT_DIR$/python/出题/old/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/python/math/old/cal.py" afterPath="$PROJECT_DIR$/python/出题/old/cal.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/python/math/old/test.py" afterPath="$PROJECT_DIR$/python/出题/old/test.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/python/math/光谷一小2年级出题/__init__.py" afterPath="$PROJECT_DIR$/python/出题/光谷一小2年级出题/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/python/math/光谷一小2年级出题/出题.py" afterPath="$PROJECT_DIR$/python/出题/光谷一小2年级出题/出题.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/python/math/打包文件修改mysetup.bat" afterPath="$PROJECT_DIR$/python/出题/打包文件修改mysetup.bat" />
     </list>
     <ignored path="study.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,23 +40,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cal.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/math/cal.py">
+      <file leaf-file-name="getweb.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/爬页面数据/getweb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="-30.964285">
+              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding>
-                <element signature="e#48#59#0" expanded="true" />
+                <element signature="e#23#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="G1.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/python/math/G1.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Python27/Lib/encodings/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.83181816">
-              <caret line="185" column="17" selection-start-line="185" selection-start-column="17" selection-end-line="185" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="G.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/出题/G.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="47" column="31" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="G1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/出题/G1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
               <folding>
                 <element signature="e#42#61#0" expanded="true" />
               </folding>
@@ -49,21 +84,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pydevd.py" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <file leaf-file-name="handle.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/weixin/handle.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2402" column="0" selection-start-line="2402" selection-start-column="0" selection-end-line="2402" selection-end-column="0" />
+              <caret line="44" column="71" selection-start-line="44" selection-start-column="71" selection-end-line="44" selection-end-column="71" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tkinter.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Python27/Lib/lib-tk/Tkinter.py">
+      <file leaf-file-name="receive.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/weixin/receive.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1128" column="0" selection-start-line="1128" selection-start-column="0" selection-end-line="1128" selection-end-column="0" />
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reply.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/weixin/reply.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="91" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python/爬页面数据/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.49418604">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -89,14 +144,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/python/EncodingAESKey/WXBizMsgCrypt.py" />
-        <option value="$PROJECT_DIR$/python/EncodingAESKey/Sample.py" />
-        <option value="$PROJECT_DIR$/Appium/lizhiFM_file-new.py" />
         <option value="$PROJECT_DIR$/python/book/app.py" />
         <option value="$PROJECT_DIR$/selenium/temp_ly/config/conf.yaml" />
         <option value="$PROJECT_DIR$/selenium/temp_ly/lizhiFM_download/lizhiFM_download.py" />
         <option value="$PROJECT_DIR$/selenium/Tools/lizhiFM_download.py" />
-        <option value="$PROJECT_DIR$/python/Mysql.py" />
         <option value="$PROJECT_DIR$/interface/wl_app/app_test.py" />
         <option value="$PROJECT_DIR$/Appium/huimeiren.py" />
         <option value="$PROJECT_DIR$/Appium/huimeiren-new.py" />
@@ -140,13 +191,16 @@
         <option value="$PROJECT_DIR$/python/math/old/test.py" />
         <option value="$PROJECT_DIR$/python/math/cal.py" />
         <option value="$PROJECT_DIR$/python/math/G1.py" />
+        <option value="$PROJECT_DIR$/python/Mysql.py" />
+        <option value="$PROJECT_DIR$/python/getweb.py" />
+        <option value="$PROJECT_DIR$/python/爬页面数据/getweb.py" />
+        <option value="$PROJECT_DIR$/python/爬页面数据/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="624" />
-    <option name="y" value="11" />
-    <option name="width" value="1249" />
+    <option name="x" value="363" />
+    <option name="width" value="1539" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -175,7 +229,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -222,7 +275,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="math" />
+              <option name="myItemId" value="爬页面数据" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -236,18 +289,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pytest_study" />
+              <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weixin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -259,13 +317,6 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\PycharmProjects\test\study\python\出题" />
-      <recent name="E:\PycharmProjects\test\study\python\出题\old" />
-      <recent name="E:\PycharmProjects\test\study\python\光谷一小2年级出题" />
-      <recent name="E:\PycharmProjects\test\study\python\weixin\jenkinsToWX" />
-      <recent name="E:\PycharmProjects\test\study\python\weixin\新建文件夹" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\PycharmProjects\test\study\python\math" />
       <recent name="E:\PycharmProjects\test\study\python\math\old" />
@@ -273,25 +324,15 @@
       <recent name="E:\PycharmProjects\test\study\python\weixin\jenkinsToWX" />
       <recent name="E:\PycharmProjects\test\study\Appium" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\test\study\python\爬页面数据" />
+      <recent name="E:\PycharmProjects\test\study\python\出题" />
+      <recent name="E:\PycharmProjects\test\study\python\出题\old" />
+      <recent name="E:\PycharmProjects\test\study\python\光谷一小2年级出题" />
+      <recent name="E:\PycharmProjects\test\study\python\weixin\jenkinsToWX" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.G1">
-    <configuration default="false" name="G (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/math" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="study" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/math/G.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.main">
     <configuration default="false" name="出题 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -305,23 +346,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="study" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/math/光谷一小2年级出题/出题.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/math" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="study" />
-      <option name="SCRIPT_NAME" value="E:\PycharmProjects\test\study\python\math\mysetup.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -343,19 +367,53 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="getweb" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/math/old" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="study" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/math/old/test.py" />
+      <option name="SCRIPT_NAME" value="E:\PycharmProjects\test\study\python\爬页面数据\getweb.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="getweb (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/爬页面数据" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="study" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/爬页面数据/getweb.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/爬页面数据" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="study" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/爬页面数据/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -506,19 +564,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in jenkinsTest" />
-      <item index="1" class="java.lang.String" itemvalue="Python.G (2)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.出题 (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test" />
-      <item index="4" class="java.lang.String" itemvalue="Python.G1" />
-      <item index="5" class="java.lang.String" itemvalue="Python.test (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.出题 (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.G1" />
+      <item index="3" class="java.lang.String" itemvalue="Python.getweb" />
+      <item index="4" class="java.lang.String" itemvalue="Python.getweb (1)" />
+      <item index="5" class="java.lang.String" itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.G1" />
-        <item index="1" class="java.lang.String" itemvalue="Python.出题 (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.G (2)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test" />
+        <item index="0" class="java.lang.String" itemvalue="Python.main" />
+        <item index="1" class="java.lang.String" itemvalue="Python.getweb (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.getweb" />
+        <item index="3" class="java.lang.String" itemvalue="Python.G1" />
+        <item index="4" class="java.lang.String" itemvalue="Python.出题 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -532,12 +590,6 @@
       <created>1503995181187</created>
       <option name="number" value="Default" />
       <updated>1503995181187</updated>
-    </task>
-    <task id="LOCAL-00048" summary="flask">
-      <created>1530581070123</created>
-      <option name="number" value="00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1530581070123</updated>
     </task>
     <task id="LOCAL-00049" summary="flask">
       <created>1530596546915</created>
@@ -827,7 +879,13 @@
       <option name="project" value="LOCAL" />
       <updated>1553154767257</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="update">
+      <created>1553155596621</created>
+      <option name="number" value="00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1553155596621</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -872,27 +930,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="624" y="11" width="1249" height="1040" extended-state="0" />
+    <frame x="363" y="0" width="1539" height="1040" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22873658" sideWeight="0.4955947" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18454364" sideWeight="0.4955947" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32599118" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39977974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21678966" sideWeight="0.50440526" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4581498" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33480176" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4030837" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -967,27 +1025,17 @@
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/python/math/G1.py</url>
-          <line>103</line>
-          <option name="timeStamp" value="40" />
+          <url>file://$PROJECT_DIR$/python/爬页面数据/getweb.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/python/math/G1.py</url>
-          <line>107</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/python/math/G1.py</url>
-          <line>173</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/python/math/G1.py</url>
-          <line>170</line>
-          <option name="timeStamp" value="44" />
+          <url>file://$PROJECT_DIR$/python/爬页面数据/getweb.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="45" />
+      <option name="time" value="64" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -996,62 +1044,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/interface/wl_app/app_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57259">
-          <caret line="29" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="121" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/weixin/web.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/weixin/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python27/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33183858">
-          <caret line="338" column="0" selection-start-line="338" selection-start-column="0" selection-end-line="338" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python27/Lib/json/decoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33183858">
-          <caret line="363" column="0" selection-start-line="363" selection-start-column="0" selection-end-line="363" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python27/Lib/site-packages/jenkins/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.113074206">
-          <caret line="1105" column="30" selection-start-line="1105" selection-start-column="30" selection-end-line="1105" selection-end-column="30" />
-          <folding>
-            <element signature="e#9790#9861#0" expanded="false" />
-            <element signature="e#9911#9986#0" expanded="false" />
-            <element signature="e#10041#10125#0" expanded="false" />
-            <element signature="e#10174#10256#0" expanded="false" />
-            <element signature="e#10305#10375#0" expanded="false" />
-            <element signature="e#10422#11314#0" expanded="false" />
-            <element signature="e#13414#13673#0" expanded="false" />
-            <element signature="e#13739#13926#0" expanded="false" />
-            <element signature="e#13972#14468#0" expanded="false" />
-            <element signature="e#15981#17261#0" expanded="false" />
-            <element signature="e#15981#16395#1" expanded="false" />
-            <element signature="e#18854#19620#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/utrunner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6964286">
@@ -1171,13 +1163,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/weixin/reply.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7292378">
-          <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Appium/qiyeweixin-new.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5221843">
@@ -1213,25 +1198,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/weixin/handle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/weixin/jenkinsToWX/jenkinsinfo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/weixin/receive.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1245,17 +1215,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/math/光谷一小2年级出题/__init__.py">
+    <entry file="file://$PROJECT_DIR$/python/出题/光谷一小2年级出题/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/Mysql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21763869">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1294,88 +1257,164 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/math/mysetup.py">
+    <entry file="file://$PROJECT_DIR$/python/出题/mysetup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/math/old/1..10以内加法.py">
+    <entry file="file://$PROJECT_DIR$/python/出题/old/1..10以内加法.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28295255">
           <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/math/old/2..10以内加减法.py">
+    <entry file="file://$PROJECT_DIR$/python/出题/old/2..10以内加减法.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.82073814">
           <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/math/old/cal.py">
+    <entry file="file://$PROJECT_DIR$/python/出题/old/cal.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.1669595">
           <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/math/old/test.py">
+    <entry file="file://$PROJECT_DIR$/python/出题/old/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.059753954">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/math/G.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23901582">
-          <caret line="47" column="31" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/math/光谷一小2年级出题/出题.py">
+    <entry file="file://$PROJECT_DIR$/python/出题/光谷一小2年级出题/出题.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="88" column="48" selection-start-line="88" selection-start-column="48" selection-end-line="88" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/math/cal.py">
+    <entry file="file://$PROJECT_DIR$/python/出题/cal.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#48#59#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://D:/Python27/Lib/lib-tk/Tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="21.790909">
           <caret line="1128" column="0" selection-start-line="1128" selection-start-column="0" selection-end-line="1128" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selenium/study/9/2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selenium/study/6/页面解析PhantomJS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selenium/study/9/1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/Mysql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03868032">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/出题/G.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="31" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/出题/G1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="e#42#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/weixin/handle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="71" selection-start-line="44" selection-start-column="71" selection-end-line="44" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/weixin/receive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2402" column="0" selection-start-line="2402" selection-start-column="0" selection-end-line="2402" selection-end-column="0" />
+        <state vertical-scroll-proportion="-1.0">
+          <caret line="1804" column="33" selection-start-line="1804" selection-start-column="33" selection-end-line="1804" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/math/G1.py">
+    <entry file="file://D:/Python27/Lib/encodings/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83181816">
-          <caret line="185" column="17" selection-start-line="185" selection-start-column="17" selection-end-line="185" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/weixin/reply.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="91" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/爬页面数据/getweb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-30.964285">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
-            <element signature="e#42#61#0" expanded="true" />
+            <element signature="e#23#37#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/爬页面数据/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49418604">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
