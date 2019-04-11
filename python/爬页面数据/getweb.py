@@ -1,6 +1,5 @@
-
 #-*-coding:utf-8-*-
- 
+import time
 import urllib2
 import random
 from lxml import etree
@@ -16,36 +15,34 @@ my_headers=["Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
 "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Win64; x64; Trident/6.0)"
 ]
 
-key = u"全"
-def get_content(url, headers, key):
+def get_content(url, key):
     '''
     @获取403禁止访问的网页
     '''
-    randdom_header=random.choice(headers)
+    randdom_header=random.choice(my_headers)
 
     req=urllib2.Request(url)
     req.add_header("User-Agent",randdom_header)
-    # req.add_header("Host","blog.csdn.net")
-    # req.add_header("Referer","http://blog.csdn.net/")
     req.add_header("GET",url)
-    result = []
     result_text = []
+    result_link = []
     content=urllib2.urlopen(req).read()
     # 所有id包含normalthread_的
     result_text_temp = etree.HTML(content).xpath('//*[contains(@id, "normalthread_")]/tr/th/a[1]/text()')
-    result_link = etree.HTML(content).xpath('//*[contains(@id, "normalthread_")]/tr/th/a[1]/@href')
-    # print len(result_text)
-    # print len(result_link)
-
+    result_link_temp = etree.HTML(content).xpath('//*[contains(@id, "normalthread_")]/tr/th/a[1]/@href')
     for i in range(len(result_text_temp)):
-        # print i
-        result_text.append(result_text_temp[i])
-        if key in result_text[i]:
-            # result_ = result_text[i] + result_link[i]
-            result.append(result_text[i] + '  ' + result_link[i])
-            print result_text[i]
-            print result_link[i]
-    return result
+        if key in result_text_temp[i]:
+            result_text.append(result_text_temp[i])
+            result_link.append(result_link_temp[i])
+    return result_text,result_link
 
-
-print get_content(url,my_headers,key)
+def refresh(str, interval):
+    if str == " 开 始 ":
+        for j in range(int(interval)):
+            str = ' ' + str(int(interval)-j) + ' '
+            time.sleep(1)
+        refresh()
+        # out_text.after(int(interval)*1000, refresh) #  单位是毫秒，1秒(s)=1000毫秒(ms)
+    else:
+        # b['state'] = "normal"
+        str = " 开 始 "
