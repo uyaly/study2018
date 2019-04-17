@@ -35,14 +35,3 @@ def get_content(url, key):
             result_text.append(result_text_temp[i])
             result_link.append(result_link_temp[i])
     return result_text,result_link
-
-def refresh(str, interval):
-    if str == " 开 始 ":
-        for j in range(int(interval)):
-            str = ' ' + str(int(interval)-j) + ' '
-            time.sleep(1)
-        refresh()
-        # out_text.after(int(interval)*1000, refresh) #  单位是毫秒，1秒(s)=1000毫秒(ms)
-    else:
-        # b['state'] = "normal"
-        str = " 开 始 "

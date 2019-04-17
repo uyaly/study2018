@@ -11,7 +11,8 @@ desired_caps = {
                 'platformName': 'Android',
                 # 手机设备名称，通过adb devices查看
                 # 'deviceName': '11642f40', # 自己的小米4
-                'deviceName': 'cc2ae2f4', # 测试机小米4
+                # 'deviceName': 'cc2ae2f4', # 测试机小米4
+                'deviceName': '11642f40', # 测试机小米4
                 # android系统的版本号
                 'platformVersion': '6.0.1',
                 # apk包名
@@ -26,7 +27,6 @@ try:
     # 进入登录
     driver.find_element_by_name(u"登录").click()
 except:
-    print("没有登录页面")
     pass
 try:
     driver.wait_activity("com.alibaba.android.user.login.SignUpWithPwdActivity", 10)  # 等待未登录页面
@@ -53,17 +53,18 @@ except:
 
 time.sleep(5)
 driver.wait_activity("com.alibaba.lightapp.runtime.activity.CommonWebViewActivity", 10)  # 等待考勤打卡页面
-if (t.hour < 10 and t.hour > 7):  # 上班时间
+if (t.hour < 9 and t.hour > 7):  # 上班时间
     try:
         driver.find_element_by_android_uiautomator('new UiSelector().description("上班打卡")').click()  # 点击上班打卡
         print("*** " + time.strftime("%H:%M:%S", time.localtime()) + " SUCCESS go to work, Manual punch the clock ***")
     except:
         # print("上班打卡元素找不到，坐标点击")
         driver.tap([(600, 680)], 10)  # 点击“上班打卡”
-        print("*** " + time.strftime("%H:%M:%S", time.localtime()) + " SUCCESS go to work, quickly punch the clock ***")
+        print("*** SUCCESS go to work, quickly punch the clock ***")
         pass
 
 elif (t.hour < 18 and t.hour >= 17): # 下班时间
+    time.sleep(2)
     try:
         driver.find_element_by_android_uiautomator('new UiSelector().description("下班打卡")').click()# 点击”下班打卡“
         print("*** " + time.strftime("%H:%M:%S", time.localtime()) + " SUCCESS go off work, Manual punch the clock ***")
