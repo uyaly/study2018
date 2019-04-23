@@ -29,6 +29,7 @@ try:
 except:
     pass
 try:
+    # print(driver.current_activity)
     driver.wait_activity("com.alibaba.android.user.login.SignUpWithPwdActivity", 10)  # 等待未登录页面
     # 输入账号密码
     driver.find_element_by_id("com.alibaba.android.rimet:id/et_phone_input").send_keys("18062427385")
@@ -39,9 +40,9 @@ except:
     print("Default login")
     pass
 
-time.sleep(3)
+
 # driver.current_activity
-driver.wait_activity(".biz.home.activity.HomeActivity", 10)  # 等待登录后页面
+driver.wait_activity(".biz.home.activity.HomeActivity", 20)  # 等待登录后页面
 driver.find_elements_by_id("com.alibaba.android.rimet:id/home_bottom_tab_icon_group")[2].click()  # 点击“长江智联”
 time.sleep(3)
 try:
@@ -103,7 +104,7 @@ driver.wait_activity(".biz.home.activity.HomeActivity", 10)  # 等待返回登�
 driver.find_element_by_name(u"我的").click()
 time.sleep(2)
 # driver.swipe(0, 1622, 0, 530, 500)
-driver.swipe(0, 1600, 0, 530, 500)
+driver.swipe(0, 1600, 0, 330, 500)
 time.sleep(2)
 driver.find_element_by_id("com.alibaba.android.rimet:id/rl_setting").click()  # 点击 设置
 driver.find_element_by_name(u"退出登录").click()
