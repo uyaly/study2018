@@ -82,9 +82,9 @@ elif (t.hour < 22 and t.hour >= 18): # 下班时间
         print("*** " + time.strftime("%H:%M:%S", time.localtime()) + " SUCCESS go off work, Update punch the clock ***")
     except:
         print("更新打卡元素找不到，坐标点击")
-        driver.tap([(167, 1196)], 10)  # 点击“更新打卡”
+        driver.tap([(200, 1150)], 10)  # 点击“更新打卡”
         time.sleep(2)
-        driver.find_element_by_id("android:id/button1").click()
+        driver.find_element_by_id("android:id/button1").click()  #  确定更新打卡
         print("*** " + time.strftime("%H:%M:%S", time.localtime()) + " SUCCESS go off work, Update punch the clock ***")
         pass
 else:
@@ -104,9 +104,11 @@ driver.wait_activity(".biz.home.activity.HomeActivity", 10)  # 等待返回登�
 driver.find_element_by_name(u"我的").click()
 time.sleep(2)
 # driver.swipe(0, 1622, 0, 530, 500)
-driver.swipe(0, 1600, 0, 330, 500)
+driver.swipe(0, 1600, 0, 530, 500)
 time.sleep(2)
 driver.find_element_by_id("com.alibaba.android.rimet:id/rl_setting").click()  # 点击 设置
+driver.swipe(0, 1600, 0, 530, 500)
+time.sleep(2)
 driver.find_element_by_name(u"退出登录").click()
 driver.find_element_by_name(u"确认").click()
 # 结束

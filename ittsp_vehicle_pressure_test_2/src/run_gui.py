@@ -20,6 +20,7 @@ class Gui:
         self.carCount = StringVar()
         self.gpsCount = StringVar()
         self.hearCount = StringVar()
+        self.hearCount = StringVar()
         self.fialCount = StringVar()
         self.netCount = StringVar()
         self.cpuCount = StringVar()
@@ -34,13 +35,13 @@ class Gui:
 
         self.eIP = Entry(self.frame)
         self.eIP.grid(row=0, column=1)
-        self.eIP.insert(0, '192.168.3.136')
+        self.eIP.insert(0, '192.168.3.243')
 
         Label(self.frame, text='Port').grid(row=0, column=2)
 
         self.ePort = Entry(self.frame, width=5)
         self.ePort.grid(row=0, column=3)
-        self.ePort.insert(0, '5560')
+        self.ePort.insert(0, '6666')
 
         Label(self.frame, text=' ').grid(row=0, column=4)
 

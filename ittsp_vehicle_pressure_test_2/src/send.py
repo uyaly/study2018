@@ -25,14 +25,14 @@ class Send:
         self.tcp.send(bytes.fromhex(reg))
         config.BYTES += len(bytes.fromhex(reg))
         print(self.tcp.getsockname(), self.vID + '上线了')
-        self.failLog('注册', reg)
+        # self.failLog('注册', reg)
 
     # 发送鉴权
     def sendAut(self):
         aut = self.data.authentication_0x0102('vmsGPS')
         self.tcp.send(bytes.fromhex(aut))
         config.BYTES += len(bytes.fromhex(aut))
-        self.failLog('鉴权', aut)
+        # self.failLog('鉴权', aut)
 
     # 发送GPS
     def sendGPS(self, GPSList):
