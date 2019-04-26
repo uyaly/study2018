@@ -54,7 +54,7 @@ except:
 
 time.sleep(5)
 driver.wait_activity("com.alibaba.lightapp.runtime.activity.CommonWebViewActivity", 10)  # 等待考勤打卡页面
-if (t.hour < 9 and t.hour > 7):  # 上班时间
+if (t.hour < 7 and t.hour > 6):  # 上班时间
     try:
         driver.find_element_by_android_uiautomator('new UiSelector().description("上班打卡")').click()  # 点击上班打卡
         print("*** " + time.strftime("%H:%M:%S", time.localtime()) + " SUCCESS go to work, Manual punch the clock ***")
@@ -103,11 +103,11 @@ except:
 driver.wait_activity(".biz.home.activity.HomeActivity", 10)  # 等待返回登录后页面
 driver.find_element_by_name(u"我的").click()
 time.sleep(2)
-# driver.swipe(0, 1622, 0, 530, 500)
 driver.swipe(0, 1600, 0, 530, 500)
 time.sleep(2)
 driver.find_element_by_id("com.alibaba.android.rimet:id/rl_setting").click()  # 点击 设置
-driver.swipe(0, 1600, 0, 530, 500)
+time.sleep(2)
+driver.swipe(0, 1600, 0, 1000, 500)
 time.sleep(2)
 driver.find_element_by_name(u"退出登录").click()
 driver.find_element_by_name(u"确认").click()
