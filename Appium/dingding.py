@@ -54,7 +54,7 @@ except:
 
 time.sleep(5)
 driver.wait_activity("com.alibaba.lightapp.runtime.activity.CommonWebViewActivity", 10)  # 等待考勤打卡页面
-if (t.hour < 7 and t.hour > 6):  # 上班时间
+if (t.hour < 9 and t.hour > 7):  # 上班时间
     try:
         driver.find_element_by_android_uiautomator('new UiSelector().description("上班打卡")').click()  # 点击上班打卡
         print("*** " + time.strftime("%H:%M:%S", time.localtime()) + " SUCCESS go to work, Manual punch the clock ***")
@@ -77,16 +77,20 @@ elif (t.hour < 22 and t.hour >= 18): # 下班时间
     try:
         # 点击更新
         driver.find_element_by_android_uiautomator('new UiSelector().description("更新打卡")').click()
-        time.sleep(2)
-        driver.find_element_by_id("android:id/button1").click()
         print("*** " + time.strftime("%H:%M:%S", time.localtime()) + " SUCCESS go off work, Update punch the clock ***")
     except:
         print("更新打卡元素找不到，坐标点击")
         driver.tap([(200, 1150)], 10)  # 点击“更新打卡”
-        time.sleep(2)
-        driver.find_element_by_id("android:id/button1").click()  #  确定更新打卡
         print("*** " + time.strftime("%H:%M:%S", time.localtime()) + " SUCCESS go off work, Update punch the clock ***")
         pass
+
+    time.sleep(2)
+
+    try:
+        driver.find_element_by_id("android:id/button1").click()  #  确定更新打卡
+    except:
+        pass
+
 else:
     print("*** No operation ***")
     pass
