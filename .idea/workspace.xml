@@ -2,107 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc8a5560-63ab-43fc-9ddf-37f0be1628c2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/Flask/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/Flask/.idea/Flask.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/Flask/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/Flask/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/Flask/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/Flask/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/Flask/example/app.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/Flask/example/templates/form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/Flask/example/templates/home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/Flask/example/templates/signin-ok.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/Flask/old/Hello Flask.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/Flask/old/app.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/Flask/old/hello world.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/Flask/old/ui_py.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/.idea/book.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/.idea/dictionaries/Administrator.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/0_A.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/0_B.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/11_A.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/11_B.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/1_A.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/1_B.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/3_A.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/3_B.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/5.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/5_A.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/7_A.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/7_B.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/22.Look Out Fish!/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/0_A.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/0_B.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/10_A.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/10_B.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/1_A.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/1_B.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/2_A.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/2_B.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/3_A.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/3_B.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/4_A.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/4_B.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/5_A.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/5_B.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/6_A.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/6_B.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/7_A.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/7_B.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/8_A.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/8_B.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/9_A.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/23.Sleeping animals/9_B.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/99.test/0_A.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/99.test/0_B.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/99.test/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/static/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/templates/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/templates/book.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/templates/book_app.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/templates/form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/templates/home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/book/templates/signin-ok.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/打包/photo.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selenium/秒杀/__init__.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Flask/example/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Flask/example/app.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Appium/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Appium/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/python/Flask/__init__.py" afterPath="$PROJECT_DIR$/Flask/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/python/Flask/example/__init__.py" afterPath="$PROJECT_DIR$/Flask/v绘本/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/python/Flask/example/templates/__init__.py" afterPath="$PROJECT_DIR$/python/笛卡尔算法/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/python/Flask/old/__init__.py" afterPath="$PROJECT_DIR$/python/编码/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/python/book/1.py" afterPath="$PROJECT_DIR$/Flask/v绘本/1.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/python/book/app.py" afterPath="$PROJECT_DIR$/Flask/v绘本/app.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/python/book/readlist.py" afterPath="$PROJECT_DIR$/Flask/v绘本/readlist.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/python/pthoto/t/photo.py" afterPath="$PROJECT_DIR$/python/照片按日期目录存放/photo.py" />
     </list>
     <list id="bc92abf9-ff2c-438d-b6a4-56788936a964" name="Failed commit: Default" comment="dd" />
     <ignored path="study.iws" />
@@ -124,42 +26,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".name" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flask/v绘本/.idea/.name">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/爬页面数据/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="book.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flask/v绘本/.idea/book.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="misc.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flask/v绘本/.idea/misc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modules.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flask/v绘本/.idea/modules.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+              <folding>
+                <element signature="e#42#58#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -167,25 +41,25 @@
       <file leaf-file-name="Administrator.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flask/v绘本/.idea/dictionaries/Administrator.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-1.3076923">
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="encodings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flask/v绘本/.idea/encodings.xml">
+      <file leaf-file-name="run_all (日期).py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interface/uu/run_all (日期).py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flask/v绘本/.idea/workspace.xml">
+      <file leaf-file-name="app_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interface/wl_app/app_test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -204,11 +78,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Flask/v绘本/1.py">
+      <file leaf-file-name="readlist.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flask/v绘本/readlist.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flask/v绘本/1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Flask/example/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flask/old/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -379,7 +283,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Flask" />
+              <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="笛卡尔算法" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -393,11 +301,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Flask" />
+              <option name="myItemId" value="python" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="v绘本" />
+              <option name="myItemId" value="爬页面数据" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -437,7 +345,7 @@
       <recent name="E:\PycharmProjects\test\study\python\weixin\jenkinsToWX" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.app">
     <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -451,23 +359,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="study" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/爬页面数据/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="randomball" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="study" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/randomball.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -519,6 +410,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="study" />
       <option name="SCRIPT_NAME" value="E:\PycharmProjects\test\study\python\笛卡尔算法\color2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Flask/old" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="study" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Flask/old/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -670,18 +578,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in jenkinsTest" />
       <item index="1" class="java.lang.String" itemvalue="Python.main" />
-      <item index="2" class="java.lang.String" itemvalue="Python.randomball" />
-      <item index="3" class="java.lang.String" itemvalue="Python.color" />
-      <item index="4" class="java.lang.String" itemvalue="Python.color1" />
-      <item index="5" class="java.lang.String" itemvalue="Python.color2" />
+      <item index="2" class="java.lang.String" itemvalue="Python.color" />
+      <item index="3" class="java.lang.String" itemvalue="Python.color1" />
+      <item index="4" class="java.lang.String" itemvalue="Python.color2" />
+      <item index="5" class="java.lang.String" itemvalue="Python.app" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.main" />
-        <item index="1" class="java.lang.String" itemvalue="Python.color1" />
-        <item index="2" class="java.lang.String" itemvalue="Python.color2" />
-        <item index="3" class="java.lang.String" itemvalue="Python.color" />
-        <item index="4" class="java.lang.String" itemvalue="Python.randomball" />
+        <item index="0" class="java.lang.String" itemvalue="Python.app" />
+        <item index="1" class="java.lang.String" itemvalue="Python.main" />
+        <item index="2" class="java.lang.String" itemvalue="Python.color1" />
+        <item index="3" class="java.lang.String" itemvalue="Python.color2" />
+        <item index="4" class="java.lang.String" itemvalue="Python.color" />
       </list>
     </recent_temporary>
   </component>
@@ -695,18 +603,6 @@
       <created>1503995181187</created>
       <option name="number" value="Default" />
       <updated>1503995181187</updated>
-    </task>
-    <task id="LOCAL-00061" summary="update 修改钉钉打卡">
-      <created>1540861671261</created>
-      <option name="number" value="00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1540861671261</updated>
-    </task>
-    <task id="LOCAL-00062" summary="update">
-      <created>1545027429508</created>
-      <option name="number" value="00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1545027429509</updated>
     </task>
     <task id="LOCAL-00063" summary="update">
       <created>1545209503268</created>
@@ -990,7 +886,19 @@
       <option name="project" value="LOCAL" />
       <updated>1559038747535</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="dd">
+      <created>1559039773602</created>
+      <option name="number" value="00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1559039773602</updated>
+    </task>
+    <task id="LOCAL-00111" summary="dd">
+      <created>1559039811172</created>
+      <option name="number" value="00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1559039811172</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1036,16 +944,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32599118" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18722944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18722944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18496802" sideWeight="0.4955947" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18496802" sideWeight="0.4955947" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1673774" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24980605" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1179,32 +1087,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/python/爬页面数据/tempo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#45#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/爬页面数据/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/打包/mysetup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/出题/光谷一小2年级出题/出题.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1241,22 +1123,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/v绘本/readlist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/example/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1411,28 +1277,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/爬页面数据/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39217877">
-          <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
-          <folding>
-            <element signature="e#42#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/照片按日期目录存放/photo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/old/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1541,22 +1389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/v绘本/.idea/dictionaries/Administrator.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/v绘本/.idea/encodings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Flask/v绘本/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1581,6 +1413,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Flask/v绘本/.idea/encodings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/uu/run_all (日期).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/wl_app/app_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Flask/v绘本/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1589,7 +1445,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Flask/v绘本/readlist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Flask/v绘本/1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/笛卡尔算法/color.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/爬页面数据/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+          <folding>
+            <element signature="e#42#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask/v绘本/.idea/dictionaries/Administrator.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask/old/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask/example/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
