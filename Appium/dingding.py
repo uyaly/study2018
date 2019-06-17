@@ -114,6 +114,7 @@ time.sleep(2)
 driver.swipe(0, 1600, 0, 1000, 500)
 time.sleep(2)
 driver.find_element_by_name(u"退出登录").click()
+time.sleep(2)
 driver.find_element_by_name(u"确认").click()
 # 结束
 driver.quit()
