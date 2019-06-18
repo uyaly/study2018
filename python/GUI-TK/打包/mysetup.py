@@ -2,4 +2,4 @@
 from distutils.core import setup
 import py2exe
  
-setup(windows=["G1.py"])
+setup(windows=["G.py"])
