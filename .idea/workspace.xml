@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc8a5560-63ab-43fc-9ddf-37f0be1628c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/hello.ui" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/hz-py/data.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/hz-py/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/hz-py/ui.ui" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/hello.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/hz-py/MainUI.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/hz-py/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/hz-py/temp/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/hz-py/temp/change.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/hz-py/temp/listDlg.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/hz-py/temp/readxls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/hz-py/ui.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/main.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/car_sql/UI.ui" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tiisp_carsql（车辆创建）/test.xls" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/car_sql/UI.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/car_sql/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/car_sql/car_sql--.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/car_sql/creat_carsql.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/car_sql/creat_carsql.spec" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selenium/miaosha/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tiisp_carsql（车辆创建）/car_sql.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tiisp_carsql（车辆创建）/tg_doorway_add.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="bc92abf9-ff2c-438d-b6a4-56788936a964" name="Failed commit: Default" comment="dd" />
@@ -38,28 +34,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/GUI-TK/出题/3_0/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/GUI-pyqt5/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ui.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/python/GUI-pyqt5/hz-py/ui.py">
+      <file leaf-file-name="UI.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python/GUI-pyqt5/car_sql/UI.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -242,51 +218,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hz-py" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="study" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="study" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GUI-pyqt5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hz-py" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="temp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="study" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="study" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GUI-TK" />
+              <option name="myItemId" value="car_sql" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -584,18 +516,6 @@
       <option name="number" value="Default" />
       <updated>1503995181187</updated>
     </task>
-    <task id="LOCAL-00073" summary="update">
-      <created>1546508117832</created>
-      <option name="number" value="00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1546508117832</updated>
-    </task>
-    <task id="LOCAL-00074" summary="update">
-      <created>1546565082448</created>
-      <option name="number" value="00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1546565082448</updated>
-    </task>
     <task id="LOCAL-00075" summary="update">
       <created>1546605060042</created>
       <option name="number" value="00075" />
@@ -878,7 +798,19 @@
       <option name="project" value="LOCAL" />
       <updated>1560860715045</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="口算出题">
+      <created>1560860812567</created>
+      <option name="number" value="00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1560860812567</updated>
+    </task>
+    <task id="LOCAL-00123" summary="口算出题">
+      <created>1560860904212</created>
+      <option name="number" value="00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1560860904212</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1067,36 +999,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/python/GUI-TK/爬页面数据/build/bdist.win32/winexe/temp/lxml.etree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/GUI-TK/爬页面数据/build/bdist.win32/winexe/temp/unicodedata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/old/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/old/Hello Flask.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Flask/old/hello world.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1420,7 +1322,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/GUI-TK/出题/3_0/__init__.py">
+    <entry file="file://$PROJECT_DIR$/python/alarm/old.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/GUI-pyqt5/hz-py/ui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1436,7 +1346,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/GUI-pyqt5/hz-py/ui.py">
+    <entry file="file://$PROJECT_DIR$/python/GUI-TK/出题/3_0/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/alarm/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/笛卡尔算法/color1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4588957">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/GUI-pyqt5/car_sql/UI.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
