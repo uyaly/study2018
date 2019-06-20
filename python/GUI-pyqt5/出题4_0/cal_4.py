@@ -1,6 +1,8 @@
 # !/usr/bin/env python
 # -*- coding=gb2312 -*-
 
+import random
+import time
 from random import randint
 sym = [' + ', ' - ']
 
@@ -14,7 +16,7 @@ def base_plus(pmin, pmax, num):
     result = []
     while True:
         plus1 = randint(pmin, pmax)
-        plus2 = randint(2, pmax + 1)
+        plus2 = randint(pmin, pmax)
         if (plus1 + plus2 <= pmax):
             # plus：加法算式，rjust(2_0)：按2位数右对齐
             plus = str(plus1).rjust(2) + ' + ' + str(plus2).rjust(2) + ' =   '
@@ -33,7 +35,7 @@ def base_minus(mmin, mmax, num):
     result = []
     while True:
         minus1 = randint(mmin, mmax)
-        minus2 = randint(2, mmax + 1)
+        minus2 = randint(mmin, mmax)
         sum = minus1 + minus2
         if (sum <= mmax):
             minus = str(sum).rjust(2) + ' - ' + str(minus1).rjust(2) + ' =   '
@@ -107,8 +109,7 @@ def type1_str(summin, summax, num):
             first = randint(summin + 2, summax)
             second = randint(summin, first)
             third = first - second
-            if (third != 0):
-                third = randint(summin, third)
+            third = randint(summin, third)
 
         arithmetic = str(first).rjust(2) + sym1 + str(second).rjust(2) + sym2 + str(third).rjust(2) + ' =     '
         if arithmetic not in result:

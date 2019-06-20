@@ -58,7 +58,7 @@ def base_minus(min_value, max_value, count):
 
 def main():
     sum_value, count = 20, 50      # 20以内的加法,随机出100题
-    title = '日期：'+ str(time.strftime('%Y-%m-%d',time.localtime(time.time()))) + '   姓名：游文熹    用时：        得分：      \n'
+    title = '日期：'+ str(time.strftime('%Y-%m-%d',time.localtime(time.time()))) + '   姓名：    用时：        得分：      \n'
     # q = title + add(sum_value, count)  #  加法
     # q = title + add(sum_value, count) + minus(sum_value, count)   # 加减法
     # q = title + add2(sum_value, count)  #  连加法
