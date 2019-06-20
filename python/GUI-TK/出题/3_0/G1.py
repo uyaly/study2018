@@ -78,7 +78,11 @@ var_maxsum=StringVar()
 entry_maxnum=Entry(frame_right,textvariable=var_maxsum, width=5)
 entry_maxnum.place(relx=0.4, rely=0.62)
 var_maxsum.set("100")
-
+#标签，重复统计
+var_same=StringVar()
+var_same.set("")
+same = Label(window, textvariable=var_same, width=50)
+same.place(x=0.02,y=0.5)
 #标签
 var_title=StringVar()
 var_title.set("")
@@ -169,6 +173,10 @@ def com():
         count += len(result)
 
     var_title.set(u'%s以内加减法%s道'% (v_max, str(count)))
+        # 统计数组中的重复项
+    # for j in set(result):
+        # print('{0}个数：{1}'.format(j, result.count(j)))
+    var_same.set('重复个数为：{0}'.format(int(v_num)-len(set(result))))
 
 def exportword():
     str_title = var_title.get() + str(time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))) + '.doc'
