@@ -37,7 +37,7 @@ class MainUI(QtWidgets.QMainWindow, Ui_MainWindow):
         """
         装饰器自定义槽函数命令规则：on + 使用setObjectName设置的名称 + 信号名称
         1、获取用户下拉框选择的index
-        2、判断index，如果为1 （批量添加），则个数输入框置为可输入，否则个数输入框为不可输入
+        2.txt、判断index，如果为1 （批量添加），则个数输入框置为可输入，否则个数输入框为不可输入
         :return:
         """
         index = self.add_user_type_comboBox.currentIndex()
@@ -73,7 +73,7 @@ class MainUI(QtWidgets.QMainWindow, Ui_MainWindow):
         """
         用户新增
         1、获取用户输入：self.add_user_username_lineEdit.text()
-        2、判断account 是否为null，是则提示，不是进行下步判断
+        2.txt、判断account 是否为null，是则提示，不是进行下步判断
         3、下一步判断sum(个数)是否为null,是则为单个添加，调用add_user添加后输入日志到log_textBrowser中
             否，则进行下一步判断
         4、下一步判断sum是否为整数，是，则多线程创建，否，则提示非法输入
@@ -122,7 +122,7 @@ class MainUI(QtWidgets.QMainWindow, Ui_MainWindow):
         """
         用户密码重置
         1、获取用户输入用户名account
-        2、调用密码重置函数reset_password
+        2.txt、调用密码重置函数reset_password
         3、把返回结果显示在log_textBrowser中
         :return:
         """
@@ -138,7 +138,7 @@ class UserThread(QtCore.QThread):
     """
     用户新增线程
     1、创建一个信号
-    2、初始化用户输入数据
+    2.txt、初始化用户输入数据
     3、重置run函数
     """
     log_textBrowser = QtCore.pyqtSignal(str)

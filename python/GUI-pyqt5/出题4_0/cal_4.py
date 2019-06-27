@@ -1,179 +1,160 @@
 # !/usr/bin/env python
-# -*- coding=gb2312 -*-
-
+# -*- coding:utf-8 -*-
 import random
+from itertools import product
+import sys
+
 import time
-from random import randint
-sym = [' + ', ' - ']
+from PyQt5.QtWidgets import *
+from UI import Ui_MainWindow
 
-# ¼Ó·¨
-def base_plus(pmin, pmax, num):
-    '''
-    pmin,pmax:¼ÓÊı¡¢±»¼ÓÊı¡¢ºÍ×îĞ¡×î´óÖµ
-    num:ÌâÄ¿Êı
-    '''
-    num_temp = 1   # ¼ÆÊıÆ÷
-    result = []
-    while True:
-        plus1 = randint(pmin, pmax)
-        plus2 = randint(pmin, pmax)
-        if (plus1 + plus2 <= pmax):
-            # plus£º¼Ó·¨ËãÊ½£¬rjust(2_0)£º°´2Î»ÊıÓÒ¶ÔÆë
-            plus = str(plus1).rjust(2) + ' + ' + str(plus2).rjust(2) + ' =   '
-            result.append(plus)
-            num_temp += 1
-        if num_temp > num:
-            break
-    return result
-# ¼õ·¨
-def base_minus(mmin, mmax, num):
-    '''
-    mmin,mmax:¼õ·¨×ª»»³É¼Ó·¨ºó£¬¼ÓÊı¡¢±»¼ÓÊı×îĞ¡×î´óÖµ
-    num:ÌâÄ¿Êı
-    '''
-    num_temp = 1   # ¼ÆÊıÆ÷
-    result = []
-    while True:
-        minus1 = randint(mmin, mmax)
-        minus2 = randint(mmin, mmax)
-        sum = minus1 + minus2
-        if (sum <= mmax):
-            minus = str(sum).rjust(2) + ' - ' + str(minus1).rjust(2) + ' =   '
-            result.append(minus)
-            num_temp += 1
-        if num_temp > num:
-            break
-    return result
-# ³Ë·¨
-def base_multi(multimin, multimax, num):
-    '''
-    multimin,multimax:³ËÊı¡¢±»³ËÊı×îĞ¡×î´óÖµ
-    '''
-    # multi£º³Ë·¨ËãÊ½
-    num_temp = 1   # ¼ÆÊıÆ÷
-    result = []
-    while True:
-        multi1 = randint(multimin, multimax)
-        multi2 = randint(multimin, multimax)
-        multi = str(multi1).rjust(2) + ' x ' + str(multi2).rjust(2) + ' =   '
-        result.append(multi)
-        num_temp += 1
-        if num_temp > num:
-            break
-    return result
-# ³ı·¨
-def base_div(divmin, divmax, num):
-    '''
-    divmin,divmax:³ı·¨×ª»»³É³Ë·¨ºó£¬³ËÊı¡¢±»³ËÊı×îĞ¡×î´óÖµ
-    '''
-    # div£º³ı·¨ËãÊ½
-    num_temp = 1   # ¼ÆÊıÆ÷
-    result = []
-    while True:
-        div1 = randint(divmin, divmax)
-        div2 = randint(divmin, divmax)
-        divmulti = div1 * div2
-        div = str(divmulti).rjust(2) + ' / ' + str(div1).rjust(2) + ' =   '
-        result.append(div)
-        num_temp += 1
-        if num_temp > num:
-            break
-    return result
-# ÀàĞÍ1ËãÊ½£º... +/- ... +/- ...
-def type1_str(summin, summax, num):
-    '''
-    summin,summax:ÔÊĞí×ÜºÍµÄ×îĞ¡×î´óÖµ
-    '''
-    num_temp = 1   # ¼ÆÊıÆ÷
-    result = []
-    while True:
-        sym1 = sym[randint(0, 1)]
-        sym2 = sym[randint(0, 1)]
+class Demo(Ui_MainWindow, QMainWindow):
+    def __init__(self):
+        super(Demo, self).__init__()
+        self.setupUi(self)
+        self.initCreate()
 
-        if sym1 == ' + ' and sym2 == ' + ':
-            sum_ = randint(summin + 2, summax)
-            first = randint(summin, sum_ - 2)
-            second = sum_ - first
-            second = randint(summin, second - 1)
-            third = sum_ - first - second
-        elif sym1 == ' + ' and sym2 == ' - ':
-            sum_ = randint(summin + 1, summax)
-            first = randint(summin, sum_ - 1)
-            second = sum_ - first
-            third = randint(summin, sum_)
-        elif sym1 == ' - ' and sym2 == ' + ':
-            first = randint(summin + 1, summax)
-            second = randint(summin, first)
-            third = randint(first - second, summax)
-        elif sym1 == ' - ' and sym2 == ' - ':
-            first = randint(summin + 2, summax)
-            second = randint(summin, first)
-            third = first - second
-            third = randint(summin, third)
+    def initCreate(self):
+        self.creat_btn.clicked.connect(self.mix)
+        self.report_btn.clicked.connect(self.exportword)
 
-        arithmetic = str(first).rjust(2) + sym1 + str(second).rjust(2) + sym2 + str(third).rjust(2) + ' =     '
-        if arithmetic not in result:
-            result.append(arithmetic)
-            num_temp += 1
-        if num_temp > num:
-            break
-    return result
+    def base_plus(self, n_min, n_max, n_sum):
+        plus_all = []
+        # ä¸¤ä½è¿ç®—çš„ä¸é‡å¤ä¸ªæ•°
+        for x,y in product(range(n_min,n_max+1), repeat=2):
+            if (x + y <= n_sum):
+                plus = str(x).rjust(2) + ' +' + str(y).rjust(2) + ' =     '      #  æŒ‰2ä½æ•°å³å¯¹é½
+                plus_all.append(plus)
+        # print ("åŠ æ³•"+str(len(plus_all)))
+        return plus_all
 
-# ÀàĞÍ2ËãÊ½£º... +/- ... x ...
-def type2_str(multimin, multimax, summin, summax, num):
-    '''
-    multimin,multimax:³ËÊı¡¢±»³ËÊı×îĞ¡×î´óÖµ
-    summin,summax:ÔÊĞí×ÜºÍµÄ×îĞ¡×î´óÖµ
-    '''
-    num_temp = 1   # ¼ÆÊıÆ÷
-    result = []
-    while True:
-        sym1 = sym[randint(0, 1)]
-        second = randint(multimin, multimax)
-        third = randint(multimin, multimax)
-        multi = second * third
+    def base_minus(self, n_min, n_max, n_sum):
+        minus_all = []
+        # ä¸¤ä½è¿ç®—çš„ä¸é‡å¤ä¸ªæ•°
+        for x,y in product(range(n_min,n_max+1), repeat=2):
+            if (x - y >= 0):
+                minus = str(x).rjust(2) + ' -' + str(y).rjust(2) + ' =     '     #  æŒ‰2ä½æ•°å³å¯¹é½
+                minus_all.append(minus)
+        # print ("å‡æ³•"+str(len(minus_all)))
+        return minus_all
 
-        if sym1 == ' + ':
-            first = randint(summin, summax - multi)
-        else:
-            first = randint(multi, summax)
+    def base_plus2(self, n_min, n_max, n_sum):
+        plus2_all = []
+        # ä¸‰ä½è¿ç®—çš„ä¸é‡å¤ä¸ªæ•°
+        for x,y,z in product(range(n_min, n_max+1), repeat=3):
+            if (x + y + z <= n_sum):
+                plus2 = str(x).rjust(2) + ' +' + str(y).rjust(2) + ' +' + str(z).rjust(2) + ' =     '      #  æŒ‰2ä½æ•°å³å¯¹é½
+                plus2_all.append(plus2)
+        # print ("è¿åŠ "+str(len(plus2_all)))
+        return plus2_all
 
-        arithmetic = str(first).rjust(2) + sym1 + str(second).rjust(2) + ' x ' + str(third).rjust(2) + ' =     '
-        # print arithmetic
-        # return arithmetic
-        if arithmetic not in result:
-            result.append(arithmetic)
-            num_temp += 1
-        if num_temp > num:
-            break
-    return result
+    def base_minus2(self, n_min, n_max, n_sum):
+        minus2_all = []
+        # ä¸‰ä½è¿ç®—çš„ä¸é‡å¤ä¸ªæ•°
+        for x,y,z in product(range(n_min, n_max+1), repeat=3):
+            if (x - y - z >= 0):
+                minus2 = str(x).rjust(2) + ' -' + str(y).rjust(2) + ' -' + str(z).rjust(2) + ' =     '     #  æŒ‰2ä½æ•°å³å¯¹é½
+                minus2_all.append(minus2)
+        # print ("è¿å‡"+str(len(minus2_all)))
+        return minus2_all
+
+    def base_mix2(self, n_min, n_max, n_sum):
+        mix2_all = []
+        # ä¸‰ä½è¿ç®—çš„ä¸é‡å¤ä¸ªæ•°
+        for x,y,z in product(range(n_min, n_max+1), repeat=3):
+            if (x + y - z >= 0)and(x + y - z <= n_sum):
+                mix1 = str(x).rjust(2) + ' +' + str(y).rjust(2) + ' -' + str(z).rjust(2) + ' =     '     #  æŒ‰2ä½æ•°å³å¯¹é½
+                mix2_all.append(mix1)
+            if (x - y + z >= 0)and((x - y + z <= n_sum)):
+                mix2 = str(x).rjust(2) + ' -' + str(y).rjust(2) + ' +' + str(z).rjust(2) + ' =     '     #  æŒ‰2ä½æ•°å³å¯¹é½
+                mix2_all.append(mix2)
+        # print ("-++-"+str(len(mix2_all)))
+        return mix2_all
+
+    def mix(self):
+        self.message_show.clear()
+        resultList = []
+        plus_count = int(self.plus.text())
+        minus_count = int(self.minus.text())
+        plus2_count = int(self.plus2.text())
+        minus2_count = int(self.minus2.text())
+        mix2_count = int(self.mix2.text())
+        n_min = int(self.n_min.text())
+        n_max = int(self.n_max.text())
+        n_sum = int(self.n_sum.text())
+        count = 0
+
+        if (plus_count > 0):  # æœ‰åŠ æ³• 45ä¸é‡
+            count += plus_count
+            result = self.base_plus(n_min, n_max, n_sum)
+            if plus_count > len(result):
+                resultList += result
+                for k in range(plus_count-len(result)):
+                    resultList.append(random.choice(result))
+            else:
+                resultList += random.sample(result, plus_count)
 
 
-# ÀàĞÍ3ËãÊ½£º(... +/- ...) / ...
-def type3_str(multimin, multimax, summin, summax, num):
-    '''
-    multimin,multimax:³ËÊı¡¢±»³ËÊı×îĞ¡×î´óÖµ
-    summin,summax:ÔÊĞí×ÜºÍµÄ×îĞ¡×î´óÖµ
-    '''
-    num_temp = 1   # ¼ÆÊıÆ÷
-    result = []
-    while True:
-        sym1 = sym[randint(0, 1)]
-        second = randint(multimin, multimax)
-        third = randint(multimin, multimax)
-        multi = second * third
+        if (minus_count > 0):  # æœ‰å‡æ³• 55ä¸é‡
+            count += minus_count
+            result  = self.base_minus(n_min, n_max, n_sum)
+            if minus_count > len(result):
+                resultList += result
+                for k in range(minus_count-len(result)):
+                    resultList.append(random.choice(result))
+            else:
+                resultList += random.sample(result, minus_count)
 
-        if sym1 == '+':
-            first = randint(summin, multi)
-            second = multi - first
-        else:
-            second = randint(summin, summax - multi)
-            first = multi + second
+        if (plus2_count > 0):  # è¿åŠ æ³• 120ä¸é‡
+            count += plus2_count
+            result  = self.base_plus2(n_min, n_max, n_sum)
+            if plus2_count > len(result):
+                resultList += result
+                for k in range(plus2_count-len(result)):
+                    resultList.append(random.choice(result))
+            else:
+                resultList += random.sample(result, plus2_count)
 
-        arithmetic = '(' + str(first).rjust(2) + sym1 + str(second).rjust(2) + ')' + '/' + str(third).rjust(2) + ' =     '
-        if arithmetic not in result:
-            result.append(arithmetic)
-            num_temp += 1
-        if num_temp > num:
-            break
-    return result
+        if (minus2_count > 0):  # è¿å‡æ³• 165ä¸é‡
+            count += minus2_count
+            result  = self.base_minus2(n_min, n_max, n_sum)
+            if minus2_count > len(result):
+                resultList += result
+                for k in range(minus2_count-len(result)):
+                    resultList.append(random.choice(result))
+            else:
+                resultList += random.sample(result, minus2_count)
+
+        if (mix2_count > 0):  # æ··åˆåŠ å‡æ³•  1430ä¸é‡ï¼ˆ715*2.txtï¼‰
+            count += mix2_count
+            result  = self.base_mix2(n_min, n_max, n_sum)
+            if mix2_count > len(result):
+                resultList += result
+                for k in range(mix2_count-len(result)):
+                    resultList.append(random.choice(result))
+            else:
+                resultList += random.sample(result, mix2_count)
+
+        random.shuffle(resultList)
+        for k in range(len(resultList)):
+            self.message_show.insertPlainText(resultList[k])
+            if (k+1)%7 == 0:
+                self.message_show.append('\n')
+
+        self.label_title.setText(u'{0}ä»¥å†…{1}é“'.format(n_max, count))
+        self.label_8.setText('é‡å¤ä¸ªæ•°ä¸ºï¼š{0}'.format(count-len(set(resultList))))
+
+    def exportword(self):
+        str_title = self.label_title.text() + str(time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))) + '.doc'
+        title = self.label_title.text() + '\n' + u'æ—¥æœŸï¼š'+ str(time.strftime('%Y-%m-%d',time.localtime(time.time()))) + u'   å§“åï¼š        ç”¨æ—¶ï¼š        å¾—åˆ†ï¼š      \n'
+        q = (title + self.message_show.toPlainText())
+        with open(str_title, "w") as f:
+            f.write(q)
+        f.close()
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    d = Demo()
+    d.show()
+    sys.exit(app.exec_())
+
