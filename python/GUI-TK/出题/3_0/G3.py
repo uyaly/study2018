@@ -173,15 +173,14 @@ def com():
         result_all1 += result
 
 
-
-
-
     var_title.set(u'%s以内加减法%s道'% (v_max, str(count)))
         # 统计数组中的重复项
     print(len(set(result_all)))
-    for j in set(result_all):
-        if (result_all.count(j))>1:
-            print('{0}个数：{1}'.format(j, result_all.count(j)))
+    for m in (set(result_all)):
+        print(m)
+    # for j in set(result_all):
+    #     if (result_all.count(j))>1:
+            # print('{0}个数：{1}'.format(j, result_all.count(j)))
     var_same.set('重复个数为：{0}'.format(count-len(set(result_all1+result_all))))
 
 def exportword():

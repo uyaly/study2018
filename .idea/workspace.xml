@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc8a5560-63ab-43fc-9ddf-37f0be1628c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/car_sql/UI.ui" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tiisp_carsql（车辆创建）/test.xls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/car_sql/UI.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/car_sql/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/car_sql/car_sql--.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/car_sql/creat_carsql.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/car_sql/creat_carsql.spec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selenium/miaosha/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tiisp_carsql（车辆创建）/car_sql.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tiisp_carsql（车辆创建）/tg_doorway_add.py" />
+    <list default="true" id="dc8a5560-63ab-43fc-9ddf-37f0be1628c2" name="Default" comment="json-pyqt5">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/config/1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/config/2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/config/3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/config/config.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/config/main1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/GUI-pyqt5/config/main3.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/python/GUI-TK/出题/3_0/cal_4.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/python/GUI-TK/打包/G.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/python/GUI-TK/打包/cal_2.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Appium/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Appium/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/.idea/workspace.xml" afterPath="$PROJECT_DIR$/python/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/GUI-TK/出题/3_0/G3.py" afterPath="$PROJECT_DIR$/python/GUI-TK/出题/3_0/G3.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/GUI-TK/出题/old/test.py" afterPath="$PROJECT_DIR$/python/GUI-TK/出题/old/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/GUI-TK/打包/mysetup.py" afterPath="$PROJECT_DIR$/python/GUI-TK/打包/mysetup.py" />
     </list>
     <list id="bc92abf9-ff2c-438d-b6a4-56788936a964" name="Failed commit: Default" comment="dd" />
     <ignored path="study.iws" />
@@ -34,11 +38,93 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UI.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/python/GUI-pyqt5/car_sql/UI.py">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/GUI-pyqt5/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="79" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
+              <folding>
+                <element signature="e#109#144#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="3.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python/GUI-pyqt5/config/3.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="G2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/GUI-TK/出题/2_0/G2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="G3.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/GUI-TK/出题/3_0/G3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="36" column="59" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/GUI-TK/出题/old/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="color2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/笛卡尔算法/color2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="color1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/笛卡尔算法/color1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="color.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/笛卡尔算法/color.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cal_3.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/GUI-TK/出题/3_0/cal_3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="93" column="33" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -64,9 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/python/weixin/material.py" />
-        <option value="$PROJECT_DIR$/python/temp/__init__.py" />
-        <option value="$PROJECT_DIR$/python/temp/jenkinsTest.py" />
         <option value="$PROJECT_DIR$/python/temp/t.py" />
         <option value="$PROJECT_DIR$/python/temp/temp.py" />
         <option value="$PROJECT_DIR$/python/weixin/新建文件夹/jenkins.py" />
@@ -115,14 +198,16 @@
         <option value="$PROJECT_DIR$/python/编码/cod1.py" />
         <option value="$PROJECT_DIR$/python/编码/cod.py" />
         <option value="$PROJECT_DIR$/python/zendao/zendao.py" />
+        <option value="$PROJECT_DIR$/python/GUI-TK/出题/3_0/G1.py" />
+        <option value="$PROJECT_DIR$/python/GUI-pyqt5/出题4_0/G1.py" />
+        <option value="$PROJECT_DIR$/python/GUI-TK/出题/old/test.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="331" />
-    <option name="y" value="18" />
-    <option name="width" value="1586" />
-    <option name="height" value="976" />
+    <option name="x" value="716" />
+    <option name="width" value="1169" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -218,7 +303,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="car_sql" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -243,38 +328,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\test\study\python\GUI-TK\出题\3_0" />
+      <recent name="E:\PycharmProjects\test\study\python\GUI-pyqt5\出题4_0" />
       <recent name="E:\PycharmProjects\test\study\python" />
       <recent name="E:\PycharmProjects\test\study\python\爬页面数据" />
       <recent name="E:\PycharmProjects\test\study\python\math" />
-      <recent name="E:\PycharmProjects\test\study\python\math\old" />
-      <recent name="E:\PycharmProjects\test\study\python\weixin\jenkinsToWX" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\test\study\python\GUI-pyqt5\出题4_0" />
       <recent name="E:\PycharmProjects\test\study\python\GUI-TK" />
       <recent name="E:\PycharmProjects\test\study\Flask" />
       <recent name="E:\PycharmProjects\test\study" />
       <recent name="E:\PycharmProjects\test\study\python\照片按日期目录存放" />
-      <recent name="E:\PycharmProjects\test\study\python\笛卡尔算法" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.zendao">
-    <configuration default="false" name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Flask/old" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="study" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Flask/old/app.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.color2">
     <configuration default="false" name="cod" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -292,40 +360,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="randomball" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="study" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/randomball.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="cod1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/编码" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="study" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/编码/cod1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="zendao" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -339,6 +373,57 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="study" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/zendao/zendao.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="G1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/GUI-TK/出题/3_0" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="study" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/GUI-TK/出题/3_0/G1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/GUI-TK/出题/old" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="study" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/GUI-TK/出题/old/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="color2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/笛卡尔算法" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="study" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/笛卡尔算法/color2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -489,19 +574,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in jenkinsTest" />
-      <item index="1" class="java.lang.String" itemvalue="Python.app" />
-      <item index="2" class="java.lang.String" itemvalue="Python.cod" />
-      <item index="3" class="java.lang.String" itemvalue="Python.randomball" />
-      <item index="4" class="java.lang.String" itemvalue="Python.cod1" />
-      <item index="5" class="java.lang.String" itemvalue="Python.zendao" />
+      <item index="1" class="java.lang.String" itemvalue="Python.cod" />
+      <item index="2" class="java.lang.String" itemvalue="Python.zendao" />
+      <item index="3" class="java.lang.String" itemvalue="Python.G1" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test" />
+      <item index="5" class="java.lang.String" itemvalue="Python.color2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.zendao" />
-        <item index="1" class="java.lang.String" itemvalue="Python.cod" />
-        <item index="2" class="java.lang.String" itemvalue="Python.cod1" />
-        <item index="3" class="java.lang.String" itemvalue="Python.randomball" />
-        <item index="4" class="java.lang.String" itemvalue="Python.app" />
+        <item index="0" class="java.lang.String" itemvalue="Python.color2" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.G1" />
+        <item index="3" class="java.lang.String" itemvalue="Python.zendao" />
+        <item index="4" class="java.lang.String" itemvalue="Python.cod" />
       </list>
     </recent_temporary>
   </component>
@@ -515,42 +600,6 @@
       <created>1503995181187</created>
       <option name="number" value="Default" />
       <updated>1503995181187</updated>
-    </task>
-    <task id="LOCAL-00075" summary="update">
-      <created>1546605060042</created>
-      <option name="number" value="00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1546605060043</updated>
-    </task>
-    <task id="LOCAL-00076" summary="update dingding">
-      <created>1548726319869</created>
-      <option name="number" value="00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1548726319870</updated>
-    </task>
-    <task id="LOCAL-00077" summary="update dingding">
-      <created>1550750287186</created>
-      <option name="number" value="00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1550750287193</updated>
-    </task>
-    <task id="LOCAL-00078" summary="update dingding">
-      <created>1550750315376</created>
-      <option name="number" value="00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1550750315376</updated>
-    </task>
-    <task id="LOCAL-00079" summary="update 微信公众机器人">
-      <created>1551924360062</created>
-      <option name="number" value="00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1551924360063</updated>
-    </task>
-    <task id="LOCAL-00080" summary="update 微信公众机器人">
-      <created>1551925632430</created>
-      <option name="number" value="00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1551925632433</updated>
     </task>
     <task id="LOCAL-00081" summary="update 微信公众机器人">
       <created>1551938187034</created>
@@ -810,7 +859,43 @@
       <option name="project" value="LOCAL" />
       <updated>1560860904212</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="车辆表新建数据">
+      <created>1560861058358</created>
+      <option name="number" value="00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1560861058358</updated>
+    </task>
+    <task id="LOCAL-00125" summary="车辆表新建数据">
+      <created>1560993124029</created>
+      <option name="number" value="00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1560993124029</updated>
+    </task>
+    <task id="LOCAL-00126" summary="口算出题优化">
+      <created>1561035408930</created>
+      <option name="number" value="00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1561035408951</updated>
+    </task>
+    <task id="LOCAL-00127" summary="口算出题优化">
+      <created>1561035606297</created>
+      <option name="number" value="00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1561035606297</updated>
+    </task>
+    <task id="LOCAL-00128" summary="口算出题优化">
+      <created>1561095600911</created>
+      <option name="number" value="00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1561095600911</updated>
+    </task>
+    <task id="LOCAL-00129" summary="json-pyqt5">
+      <created>1561640034448</created>
+      <option name="number" value="00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1561640034455</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -855,10 +940,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="331" y="18" width="1586" height="976" extended-state="0" />
+    <frame x="716" y="0" width="1169" height="1040" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30555555" sideWeight="0.4955947" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3050398" sideWeight="0.4955947" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -871,7 +956,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32233223" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3215859" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1673774" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -890,9 +975,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改打印文字为英文" />
-    <MESSAGE value="拷贝文件工具，未完成" />
-    <MESSAGE value="钉钉打卡，下班更新打卡功能" />
     <MESSAGE value="lizhiFM" />
     <MESSAGE value="融威物联app，加车" />
     <MESSAGE value="appium word" />
@@ -915,7 +997,10 @@
     <MESSAGE value="dd" />
     <MESSAGE value="整理目录&#10;" />
     <MESSAGE value="口算出题" />
-    <option name="LAST_COMMIT_MESSAGE" value="口算出题" />
+    <MESSAGE value="车辆表新建数据" />
+    <MESSAGE value="口算出题优化" />
+    <MESSAGE value="json-pyqt5" />
+    <option name="LAST_COMMIT_MESSAGE" value="json-pyqt5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -999,66 +1084,11 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Flask/old/hello world.py">
+    <entry file="file://$PROJECT_DIR$/python/GUI-TK/出题/3_0/cal_3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/.idea/.name">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/.idea/Flask.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/.idea/encodings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/v绘本/.idea/.name">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/v绘本/.idea/book.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/v绘本/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="93" column="33" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1101,14 +1131,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/笛卡尔算法/color.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1161,13 +1183,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/笛卡尔算法/color2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16666667">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/编码/cod1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.033333335">
@@ -1179,13 +1194,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4876141">
           <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/GUI-TK/出题/old/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1229,7 +1237,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1245,7 +1252,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1253,7 +1259,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1261,7 +1266,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1269,7 +1273,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27116564">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1284,7 +1287,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1292,7 +1294,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1300,7 +1301,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08343558">
           <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1308,9 +1308,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48343557">
           <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding>
-            <element signature="e#117#128#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1318,7 +1315,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1326,7 +1322,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1334,7 +1329,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1342,7 +1336,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1350,7 +1343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1358,19 +1350,104 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/GUI-pyqt5/car_sql/UI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/GUI-TK/出题/光谷一小2年级出题/出题.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6875">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/GUI-pyqt5/出题4_0/cal_4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/GUI-TK/出题/2_0/cal_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51704544">
+          <caret line="53" column="34" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/GUI-pyqt5/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="79" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
+          <folding>
+            <element signature="e#109#144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/GUI-TK/出题/2_0/G2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/GUI-TK/出题/3_0/G3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="59" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/GUI-TK/出题/old/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/笛卡尔算法/color1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4588957">
+        <state vertical-scroll-proportion="0.0">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/GUI-pyqt5/car_sql/UI.py">
+    <entry file="file://$PROJECT_DIR$/python/笛卡尔算法/color.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/笛卡尔算法/color2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/GUI-TK/出题/3_0/cal_3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="93" column="33" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/GUI-pyqt5/config/3.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
