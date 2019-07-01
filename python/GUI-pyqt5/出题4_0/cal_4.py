@@ -5,6 +5,8 @@ from itertools import product
 import sys
 
 import time
+
+from PyQt5.QtCore import QSettings
 from PyQt5.QtWidgets import *
 from UI import Ui_MainWindow
 
@@ -14,9 +16,37 @@ class Demo(Ui_MainWindow, QMainWindow):
         self.setupUi(self)
         self.initCreate()
 
+
     def initCreate(self):
+        settings = QSettings("config.ini", QSettings.IniFormat)
+        #settings = QSettings("mysoft","myapp")                        #方法2：使用注册表
+        self.plus.setText(settings.value("plus_count"))
+        self.minus.setText(settings.value("minus_count"))
+        self.plus2.setText(settings.value("plus2_count"))
+        self.minus2.setText(settings.value("minus2_count"))
+        self.mix2.setText(settings.value("mix2_count"))
+        self.n_min.setText(settings.value("n_min"))
+        self.n_max.setText(settings.value("n_max"))
+        self.n_sum.setText(settings.value("n_sum"))
+        self.n_row.setText(settings.value("n_row"))
+
         self.creat_btn.clicked.connect(self.mix)
         self.report_btn.clicked.connect(self.exportword)
+
+
+    #  # 保存信息
+    def save_login_info(self):
+        settings = QSettings("config.ini", QSettings.IniFormat)        #方法1：使用配置文件
+        #settings = QSettings("mysoft","myapp")                        #方法2：使用注册表
+        settings.setValue("plus_count",self.plus.text())        #  加法题数量
+        settings.setValue("minus_count", self.minus.text())     #  减法题数量
+        settings.setValue("plus2_count", self.plus2.text())     #  连加题数量
+        settings.setValue("minus2_count", self.minus2.text())   #  连减题数量
+        settings.setValue("mix2_count", self.mix2.text())   #  混合题数量
+        settings.setValue("n_min", self.n_min.text())   #  最小值
+        settings.setValue("n_max", self.n_max.text())   #  最大值
+        settings.setValue("n_sum", self.n_sum.text())   #  最大和
+        settings.setValue("n_row", self.n_row.text())   #  每行多少题
 
     def base_plus(self, n_min, n_max, n_sum):
         plus_all = []
@@ -74,14 +104,36 @@ class Demo(Ui_MainWindow, QMainWindow):
     def mix(self):
         self.message_show.clear()
         resultList = []
-        plus_count = int(self.plus.text())
-        minus_count = int(self.minus.text())
-        plus2_count = int(self.plus2.text())
-        minus2_count = int(self.minus2.text())
-        mix2_count = int(self.mix2.text())
+        #  加法题数量
+        if self.plus.text() == '':
+            plus_count = 0
+        else:
+            plus_count = int(self.plus.text())
+        #  减法题数量
+        if self.minus.text() == '':
+            minus_count = 0
+        else:
+            minus_count = int(self.minus.text())
+        #  连加题数量
+        if self.plus2.text() == '':
+            plus2_count = 0
+        else:
+            plus2_count = int(self.plus2.text())
+        #  连减题数量
+        if self.minus2.text() == '':
+            minus2_count = 0
+        else:
+            minus2_count = int(self.minus2.text())
+        #  混合题数量
+        if self.mix2.text() == '':
+            mix2_count = 0
+        else:
+            mix2_count = int(self.mix2.text())
+
         n_min = int(self.n_min.text())
         n_max = int(self.n_max.text())
         n_sum = int(self.n_sum.text())
+        n_row = int(self.n_row.text())
         count = 0
 
         if (plus_count > 0):  # 有加法 45不重
@@ -138,11 +190,12 @@ class Demo(Ui_MainWindow, QMainWindow):
         random.shuffle(resultList)
         for k in range(len(resultList)):
             self.message_show.insertPlainText(resultList[k])
-            if (k+1)%7 == 0:
+            if (k+1)%n_row == 0:
                 self.message_show.append('\n')
 
         self.label_title.setText(u'{0}以内{1}道'.format(n_max, count))
         self.label_8.setText('重复个数为：{0}'.format(count-len(set(resultList))))
+        self.save_login_info()
 
     def exportword(self):
         str_title = self.label_title.text() + str(time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))) + '.doc'

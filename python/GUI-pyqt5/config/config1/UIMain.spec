@@ -3,8 +3,8 @@
 block_cipher = None
 
 
-a = Analysis(['creat_carsql.py'],
-             pathex=['E:\\PycharmProjects\\test\\study\\python\\GUI-pyqt5\\car_sql'],
+a = Analysis(['UIMain.py'],
+             pathex=['E:\\PycharmProjects\\test\\study\\python\\GUI-pyqt5\\config\\config1'],
              binaries=[],
              datas=[],
              hiddenimports=[],
@@ -23,7 +23,7 @@ exe = EXE(pyz,
           a.zipfiles,
           a.datas,
           [],
-          name='creat_carsql',
+          name='UIMain',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,
