@@ -24,17 +24,20 @@ class Demo(Ui_MainWindow, QMainWindow):
         self.minus.setText(settings.value("minus_count"))
         self.plus2.setText(settings.value("plus2_count"))
         self.minus2.setText(settings.value("minus2_count"))
+        self.mult.setText(settings.value("mult_count"))
+        self.divi.setText(settings.value("divi_count"))
         self.mix2.setText(settings.value("mix2_count"))
         self.n_min.setText(settings.value("n_min"))
         self.n_max.setText(settings.value("n_max"))
         self.n_sum.setText(settings.value("n_sum"))
+        self.n_row.setText(settings.value("n_row"))
         self.n_row.setText(settings.value("n_row"))
 
         self.creat_btn.clicked.connect(self.mix)
         self.report_btn.clicked.connect(self.exportword)
 
 
-    #  # 保存信息
+    #   保存信息
     def save_login_info(self):
         settings = QSettings("config.ini", QSettings.IniFormat)        #方法1：使用配置文件
         #settings = QSettings("mysoft","myapp")                        #方法2：使用注册表
@@ -43,6 +46,8 @@ class Demo(Ui_MainWindow, QMainWindow):
         settings.setValue("plus2_count", self.plus2.text())     #  连加题数量
         settings.setValue("minus2_count", self.minus2.text())   #  连减题数量
         settings.setValue("mix2_count", self.mix2.text())   #  混合题数量
+        settings.setValue("mult_count", self.mult.text())   #  乘法题数量
+        settings.setValue("divi_count", self.divi.text())   #  除法题数量
         settings.setValue("n_min", self.n_min.text())   #  最小值
         settings.setValue("n_max", self.n_max.text())   #  最大值
         settings.setValue("n_sum", self.n_sum.text())   #  最大和
@@ -129,6 +134,16 @@ class Demo(Ui_MainWindow, QMainWindow):
             mix2_count = 0
         else:
             mix2_count = int(self.mix2.text())
+        #  乘法题数量
+        if self.mult.text() == '':
+            mult_count = 0
+        else:
+            mult_count = int(self.mult.text())
+        #  乘法题数量
+        if self.divi.text() == '':
+            divi_count = 0
+        else:
+            divi_count = int(self.divi.text())
 
         n_min = int(self.n_min.text())
         n_max = int(self.n_max.text())
@@ -145,7 +160,6 @@ class Demo(Ui_MainWindow, QMainWindow):
                     resultList.append(random.choice(result))
             else:
                 resultList += random.sample(result, plus_count)
-
 
         if (minus_count > 0):  # 有减法 55不重
             count += minus_count
