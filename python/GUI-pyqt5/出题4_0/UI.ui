@@ -42,7 +42,7 @@
       </font>
      </property>
      <property name="text">
-      <string>加法45</string>
+      <string>加法</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="plus">
@@ -84,7 +84,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>减法55</string>
+      <string>减法</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -97,7 +97,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>连加120</string>
+      <string>连加</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="plus2">
@@ -136,33 +136,85 @@
       </rect>
      </property>
      <property name="text">
-      <string>连减165</string>
+      <string>连减</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_9">
      <property name="geometry">
       <rect>
-       <x>160</x>
+       <x>130</x>
        <y>120</y>
        <width>71</width>
        <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string>加减混合1430</string>
+      <string>加减混合</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="mix2">
      <property name="geometry">
       <rect>
-       <x>240</x>
+       <x>210</x>
        <y>120</y>
        <width>41</width>
        <height>20</height>
       </rect>
      </property>
      <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>60</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>除法</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="divi">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>60</y>
+       <width>41</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
       <string>200</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="mult">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>30</y>
+       <width>41</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>200</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>30</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>乘法</string>
      </property>
     </widget>
    </widget>
