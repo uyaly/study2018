@@ -51,7 +51,7 @@ def json_txt(str):
                             value_change2 = value_change2[2:]   #  去掉前两位0x
                             value_change2 = "{0:>08s}".format(value_change2)   # 不足8位左侧补0
                             # print("{0:>08s}".format(value_change2))
-                        value_change = (' '.join(re.compile('.{4}').findall(value_change2)))
+                        value_change = (' '.join(re.compile('.{4}').findall(value_change2)))    # 每隔两个数 空格一次
                         # print(key + ': %s' % value_change)
                         result += (key + ': %s' % value_change)+ '\n'
                         l = l+value

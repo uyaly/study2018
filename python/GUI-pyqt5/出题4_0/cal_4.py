@@ -36,7 +36,6 @@ class Demo(Ui_MainWindow, QMainWindow):
         self.creat_btn.clicked.connect(self.mix)
         self.report_btn.clicked.connect(self.exportword)
 
-
     #   保存信息
     def save_login_info(self):
         settings = QSettings("config.ini", QSettings.IniFormat)        #方法1：使用配置文件

@@ -91,8 +91,4 @@ class Demo(Ui_MainWindow, QMainWindow):
         return (org_code+'.sql'+'创建成功！')
         # print (org_code+'.sql'+'创建成功！')
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    d = Demo()
-    d.show()
-    sys.exit(app.exec_())
+

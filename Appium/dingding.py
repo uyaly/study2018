@@ -107,7 +107,7 @@ except:
 driver.wait_activity(".biz.home.activity.HomeActivity", 10)  # 等待返回登录后页面
 driver.find_element_by_name(u"我的").click()
 time.sleep(2)
-driver.swipe(0, 1600, 0, 530, 500)
+driver.swipe(0, 1600, 0, 100, 500)
 time.sleep(2)
 driver.find_element_by_id("com.alibaba.android.rimet:id/rl_setting").click()  # 点击 设置
 time.sleep(2)
