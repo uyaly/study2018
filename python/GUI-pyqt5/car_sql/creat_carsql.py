@@ -5,12 +5,10 @@
 # importlib.reload(sys)
 # sys.setdefaultencoding('utf-8')
 import glob
-
 from math import ceil
 from PyQt5.QtWidgets import *
-import sys
 import os
-
+import sys
 from UI import Ui_MainWindow
 
 class Demo(Ui_MainWindow, QMainWindow):
@@ -82,7 +80,7 @@ class Demo(Ui_MainWindow, QMainWindow):
                           "values({}, 4, {}, '{}', '{}',1,'1076测试服务器','4',8,'0');".format(id_sum*10+each+1,id_sum+each+1,terminal,org_code)
 
             strCar = "insert into V_VEHICLEINFO (ORG_CODE,VEHICLE_ID,ID_NUMBER,TYPE_ID,TERMINAL_ID,DELETE_FLAG,COLOR_ID_NUMBER_ID,AUTHORIZED_PAY_MASS) " \
-                     "values ('{}','{}', '{}', 4, {}, 0, '2.txt',15);".format(org_code, id_sum*100+each+1, car, id_sum*10+each+1)
+                     "values ('{}','{}', '{}', 4, {}, 0, '2',15);".format(org_code, id_sum*100+each+1, car, id_sum*10+each+1)
             #写入数据到sql文件中
             with open(org_code + '.sql', 'a') as f:
                 f.write(strSim + '\n')
@@ -90,5 +88,11 @@ class Demo(Ui_MainWindow, QMainWindow):
                 f.write(strCar + '\n\n')
         return (org_code+'.sql'+'创建成功！')
         # print (org_code+'.sql'+'创建成功！')
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    d = Demo()
+    d.show()
+    sys.exit(app.exec_())
 
 
