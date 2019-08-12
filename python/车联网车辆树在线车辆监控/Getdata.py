@@ -54,9 +54,10 @@ def record_xls():
     :return: 要发送的文本，即在线总数低于参数的单位和实时数据
     """
     data = xlrd.open_workbook(r'E:\PycharmProjects\test\study\python\车联网车辆树在线车辆监控\统计.xls')
-    # data = xlrd.open_workbook(r'统计.xls')
+    conf = xlrd.open_workbook(r'E:\PycharmProjects\test\study\python\车联网车辆树在线车辆监控\配置.xls')
+    # data = xlrd.open_workbook(r'统计-.xls')
     table = data.sheet_by_name(u'Sheet1')
-    table2 = data.sheet_by_name(u'Sheet2')
+    table2 = conf.sheet_by_name(u'Sheet2')
     row_n = table.nrows
     col_n = table2.ncols
     newWb = copy(data)
@@ -68,22 +69,27 @@ def record_xls():
     hour = now_time.hour
     col = 0
     for k in range(1,col_n-1):
-        if(hour >= int(table2.cell(0,k).value) and hour < int(table2.cell(0,k+1).value)):
+        if(hour >= int(table2.cell(1,k).value) and hour < int(table2.cell(1,k+1).value)):
             col = k
     msg = ''
+    print(time_str)
     for j in range(len(list)):
+        # print("j:%d" % j)
+        # print("list[j][2]: %d" % list[j][2])
+        # print("table2.cell(j+1,col).value: %s"% (table2.cell(j+2,col).value))
+        if ((list[j][2]) < int(table2.cell(j+2,col).value)):
+            # msg += "【%s】| 所有：%d | 在线：%d | 行驶：%d  \n" %(list[j][0],list[j][1],list[j][2],list[j][3])
+            msg += "【%s】| 在线：%d | 同期均值：%s  \n" %(list[j][0],list[j][2],round(table2.cell(j+2,col).value))
         newWs.write(row_n+j, 0, list[j][0])   # 单位名
         newWs.write(row_n+j, 1, list[j][1])   # 所有
         newWs.write(row_n+j, 2, list[j][2])   # 在线
         newWs.write(row_n+j, 3, list[j][3])   # 行驶
         newWs.write(row_n+j, 4, hour)   # 时间
         newWs.write(row_n+j, 5, time_str)   # 日期
-        if ((list[j][2]) < int(table2.cell(j+1,col).value)):
-            msg += "【%s】| 所有：%d | 在线：%d | 行驶：%d  \n" %(list[j][0],list[j][1],list[j][2],list[j][3])
     newWb.save(r'E:\PycharmProjects\test\study\python\车联网车辆树在线车辆监控\统计.xls'); # 保存
-    # newWb.save(r'统计.xls'); # 保存
-    if msg == '':
-        msg = '一切正常'
+    # newWb.save(r'统计-.xls'); # 保存
+    # if msg == '':
+    #     msg = '全部正常'
     # print(msg)
     return msg
 
@@ -133,6 +139,6 @@ def send_msg(api_token, title, text):
 if __name__ == '__main__':
     # 格式化输出文本
     str = record_xls()
+    print(str)
     # 调用钉钉机器人发信息
-    send_msg("https://oapi.dingtalk.com/robot/send?access_token=cbe3017d8e307959e73b9886f48059f1a1ec23026caac816727c57a17286e00f",
-           "车联网综合信息服务平台", str)
+    # send_msg("https://oapi.dingtalk.com/robot/send?access_token=cbe3017d8e307959e73b9886f48059f1a1ec23026caac816727c57a17286e00f", "车联网综合信息服务平台", str)

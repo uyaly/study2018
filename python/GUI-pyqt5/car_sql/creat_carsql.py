@@ -58,7 +58,7 @@ class Demo(Ui_MainWindow, QMainWindow):
 
     def xlsInput(self, totle, id_sum):   # totle每次循环次数
 
-        org_code = 'B1000' + str(orgnum)   # 部门编号B0000801
+        org_code = 'B000' + str(orgnum)   # 部门编号B0000801
         global carnum
         global terminalnum
         global simnum
