@@ -1,0 +1,45 @@
+<style type="text/css">
+		.table1{
+			border: 1px solid #666;
+			width: 890px;
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+		.table1 th,.table1 td{
+			border: 1px solid #666;
+			height: 219px;
+			line-height: 219px;
+		}
+</style>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>list</title>
+</head>
+<body>
+  <!--{% if message %}-->
+  <!--<p style="color:red">{{ message }}</p>-->
+  <!--{% endif %}-->
+  <!--<form action="/signin" method="post">-->
+    <!--<legend>Please sign in:</legend>-->
+    <!--<p><input name="username" placeholder="Username" value="{{ username }}"></p>-->
+    <!--<p><input name="password" placeholder="Password" type="password"></p>-->
+    <!--<p><button type="submit">Sign In</button></p>-->
+  <table>
+  <p style="text-align:center ">book</p>
+
+      {% for i in range(3) %}
+        <tr>
+          {% for j in range(4)%}
+
+                <td>[z]</td>
+
+          {% endfor %}
+        </tr>
+        {% endfor %}
+
+  </table>
+
+</body>
+</html>

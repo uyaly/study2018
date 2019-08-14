@@ -87,7 +87,7 @@ def record_xls():
         newWs.write(row_n+j, 4, hour)   # 时间
         newWs.write(row_n+j, 5, time_str)   # 日期
     newWb.save(r'E:\PycharmProjects\test\study\python\车联网车辆树在线车辆监控\统计.xls'); # 保存
-    # newWb.save(r'统计-.xls'); # 保存
+    # newWb.save(r'统计.xls'); # 保存
     # if msg == '':
     #     msg = '全部正常'
     # print(msg)
@@ -141,4 +141,4 @@ if __name__ == '__main__':
     str = record_xls()
     print(str)
     # 调用钉钉机器人发信息
-    # send_msg("https://oapi.dingtalk.com/robot/send?access_token=cbe3017d8e307959e73b9886f48059f1a1ec23026caac816727c57a17286e00f", "车联网综合信息服务平台", str)
+    send_msg("https://oapi.dingtalk.com/robot/send?access_token=cbe3017d8e307959e73b9886f48059f1a1ec23026caac816727c57a17286e00f", "车联网综合信息服务平台", str)
