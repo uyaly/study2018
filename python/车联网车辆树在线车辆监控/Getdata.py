@@ -141,4 +141,4 @@ if __name__ == '__main__':
     str = record_xls()
     print(str)
     # 调用钉钉机器人发信息
-    send_msg("https://oapi.dingtalk.com/robot/send?access_token=cbe3017d8e307959e73b9886f48059f1a1ec23026caac816727c57a17286e00f", "车联网综合信息服务平台", str)
+    # send_msg("https://oapi.dingtalk.com/robot/send?access_token=cbe3017d8e307959e73b9886f48059f1a1ec23026caac816727c57a17286e00f", "车联网综合信息服务平台", str)
