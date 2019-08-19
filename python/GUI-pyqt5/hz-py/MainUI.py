@@ -19,7 +19,7 @@ class Demo(QMainWindow, Ui_MainWindow, QWidget):
         self.readExcel(self.tableWidget)
 
     def readExcel(self, tableWidget1):
-        data = xlrd.open_workbook(r'data.xlsx')
+        data = xlrd.open_workbook(r'data.xls')
         table = data.sheet_by_name('Sheet1')
         # 获取第一行作为key值
         # tableWidget1.setHorizontalHeaderLabels(table.row_values(0))

@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5b7ae33-ce92-4497-8721-b5cafb6fb71f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/MAP/bd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/MAP/bd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/MAP/高德/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../python/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../python/车联网车辆树在线车辆监控/统计.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../python/车联网车辆树在线车辆监控/统计.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../python/车联网车辆树在线车辆监控/配置.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../python/车联网车辆树在线车辆监控/配置.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/高德/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/MAP/高德/1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/高德/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/MAP/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/高德/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/MAP/高德/demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/高德/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/../python/MAP/高德/map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/高德/map.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/MAP/高德/map.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/高德/map1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/MAP/高德/map1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

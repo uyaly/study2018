@@ -4,7 +4,7 @@ import xlrd
 class ExcelUtil:
 
     def dict_data(self):
-        filePath = r'data.xlsx'
+        filePath = r'data.xls'
         sheetName = 'Sheet1'
         self.data = xlrd.open_workbook(filePath)
         self.table = self.data.sheet_by_name(sheetName)
@@ -21,7 +21,7 @@ class ExcelUtil:
         return r
 
 # if __name__ == "__main__":
-    # filePath = r'data.xlsx'
+    # filePath = r'data.xls'
     # sheetName = 'Sheet1'
     # list = ExcelUtil().dict_data(filePath, sheetName)
     # print(list)
