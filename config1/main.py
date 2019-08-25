@@ -88,7 +88,7 @@ def json_txt(str):
         result.append(["头-消息ID：",str[2:6]])
         result.append(["头-消息体属性_版本：" ,str[6:10]])
         result.append(["头-消息体属性_加密：" ,str[6:10]])
-        result.append(["头-消息体属性_加密：" ,str[6:10]])
+        result.append(["头-消息体属性_长度：" ,str[6:10]])
         result.append(["头-协议版本号：" ,str[10:12]])
         result.append(["头-终端手机号：" ,str[12:32]])
         result.append(["头-消息流水号：" ,str[32:36]])

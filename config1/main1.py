@@ -7,8 +7,10 @@ def json_txt(str):
     str = str.replace(' ', '')
     if ((str[0:2] == '7e') and (str[-2:] == '7e')) or ((str[0:2] == '7E') and (str[-2:] == '7E')) :
         result = []
+        result2 = []
         result.append(["消息ID：",str[2:6]])
         result.append (["消息体属性：",str[6:10]])
+        # result.append (["消息体长度：",str[6:10]])
         result.append (["协议版本号：",str[10:12]])
         result.append (["终端手机号：",str[12:32]])
         result.append (["消息流水号：",str[32:36]])
@@ -59,7 +61,7 @@ def json_txt(str):
                             for j in range(len(bit_num)):
                                 bits.append (list(value_list)[int(bit_num[j])])
                             # print('【bits '+ (list(value.keys())[q])+ '】('+bit_name +')' + ':' + "".join(bits))
-                            result.append(['[bits '+ (list(value.keys())[q])+ ']'+bit_name +'' + ':' ,"".join(bits)])
+                            result2.append([key+'['+ (list(value.keys())[q])+ ']'+bit_name ,"".join(bits)])
 
                     else:
                         # print(key + ': ' + body_str[l:l+value])
@@ -71,7 +73,7 @@ def json_txt(str):
     else :
         result = "内容不合法"
     # print(result)
-    return result
+    return [result, result2]
 
 if __name__ == "__main__":
 
