@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import *
-from pypinyin import pinyin
+# from pypinyin import pinyin
 
 from ui import Ui_MainWindow
 import xlrd
@@ -43,9 +43,9 @@ class Demo(QMainWindow, Ui_MainWindow, QWidget):
         return (word)
                 # print ("x:",i-1 , "y:", j,"rowslist[j]", rowslist[j])
 
-    def change(self, word):
-        py_word = pinyin(word, heteronym=True)   # 开启多音字
-        print (py_word)
+    # def change(self, word):
+    #     py_word = pinyin(word, heteronym=True)   # 开启多音字
+    #     print (py_word)
 
         # 不需要声调
         # py_r = lazy_pinyin(u"没有了诗和远方")
