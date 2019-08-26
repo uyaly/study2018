@@ -70,9 +70,7 @@ def exchange_bits(value_b):
         # print('[bit '+ list(value.keys())[q]+ ']' + bit_name + ':', "".join(bits))
 
         ll.append(['[bit '+ list(value.keys())[q]+ ']'+bit_name + ':', "".join(bits)])
-
     return ll
-
 
 if __name__ == "__main__":
 

@@ -17,22 +17,26 @@ def apart(str):
     if ((str[0:2] == '7e') and (str[-2:] == '7e')) or ((str[0:2] == '7E') and (str[-2:] == '7E')):
         list.append(["标识位：", str[0:2]])
         list.append(["消息头：", str[2:36]])
+        head_str = str[2:36]
         list.append(["消息体：", str[36:-4]])
+        body_str = str[36:-4]
         list.append(["校验位：", str[-4:-2]])
         list.append(["标识位：", str[-2:]])
         id_str = str[2:6]
-        print(list[1])  #消息头
-        print(list[2])  #消息体
-        print(list)
+        # print(list[1])  #消息头
+        # print(list[2])  #消息体
+        # print(list)
         with open('config.txt', 'r', encoding='utf-8') as file:
             content = file.read()
             try:
                 dic = json.loads(content, object_pairs_hook=collections.OrderedDict)
+                result = []
                 if id_str in dic:
-                    result1 = head.apart_head(list[1])
-                    result2 = body.apart_body(list[2], dic)
-                    # result = [result1, result2]
-                    result = result1
+                    body_dic = (dic[id_str])
+                    result_head = head.apart_head(head_str)
+                    result = result_head
+                    result_body = body.apart_body(body_str, body_dic)
+                    result += result_body
                 else:
                     result = "请先配置"+id_str+"，再分析"
             except:
@@ -40,7 +44,7 @@ def apart(str):
                 pass
     else:
         result = "报文内容不合法"
-    print(result)
+    # print(result)
     return result
 
 def join(list):
@@ -51,11 +55,22 @@ def join(list):
     '''
     result = ''
     for i in range(len(list)):
-        result += list[i][1]
+        result += list[i]
     print(result)
+    ll = ''
+    for K in range(len(result)):
+        ll = result[K:K+2]
+        num = int(ll, 16)
+
+    x_o_r(num[i], num2[i+1])[2:]
+    result += '7E'
+
+    result = ' '.join(re.compile('.{2}').findall(result))  # 隔两位一个空格
     return result
 
 
+def x_o_r(byte1, byte2):  # 传入两个数，并返回它们的异或结果，结果为16进制数
+    return hex(byte1 ^ byte2)
 
 if __name__ == "__main__":
     # str = "7E 80 01 40 05 01 00 00 00 00 01 38 00 00 44 44 00 0A 00 4E 02 00 00 00 7E "
