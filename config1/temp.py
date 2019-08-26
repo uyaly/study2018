@@ -1,5 +1,6 @@
-result = []
-result.append(["1","s"])
-result.append(["2","s"])
-result.append(["3","s"])
-print(result)
+from analyse import tool
+
+str = "00 00 10 11"
+print(tool.exchange_B(str))
+# print(tool.exchange_D(str))
+# print(tool.exchange_bits(str))

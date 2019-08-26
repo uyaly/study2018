@@ -3,7 +3,16 @@ import json
 import collections
 import re
 
-
+def exchange_B_D(strB):
+    '''
+    二进制转十进制
+    :param str:
+    :return:
+    '''
+    # value_D = (int(str,2))
+    # print(value_D)
+    value_D = str(int(strB,2))
+    return value_D
 
 def exchange_D_H(str):
     '''
@@ -73,5 +82,7 @@ if __name__ == "__main__":
 
     # print(exchange_D_H("10"))
     # print(exchange_H_D("00 00 10 11"))
+    print(exchange_B_D("0001010101"))
     # print(exchange_H_B("00 00 10 11"))
-    print(exchange_B_H("0000 0000 0000 0000 0001 0000 0001 0001"))
+    # print(exchange_B_H("0000 0000 0000 0000 0001 0000 0001 0001"))
+

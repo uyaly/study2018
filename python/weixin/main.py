@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# filename: main.py
+# filename: tool.py
 import web
 from handle import Handle
 

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f0a3cd4-669f-4163-8a4a-4c23b5aea2d2" name="Default" comment="统计局数据爬取">
+    <list default="true" id="0f0a3cd4-669f-4163-8a4a-4c23b5aea2d2" name="Default" comment="百度小区范围获取">
+      <change afterPath="$PROJECT_DIR$/../ittsp_vehicle_pressure_test_2（车辆批量上线）/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ittsp_vehicle_pressure_test_2（车辆批量上线）/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ittsp_vehicle_pressure_test_2（车辆批量上线）/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAP/bd.py" beforeDir="false" afterPath="$PROJECT_DIR$/MAP/bd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAP/data.xls" beforeDir="false" afterPath="$PROJECT_DIR$/MAP/data.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/车联网车辆树在线车辆监控/统计-old.xls" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/车联网车辆树在线车辆监控/统计.xls" beforeDir="false" afterPath="$PROJECT_DIR$/车联网车辆树在线车辆监控/统计.xls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -37,24 +38,24 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/MAP" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\PycharmProjects\test\study\python\MAP" />
-      <recent name="E:\PycharmProjects\test\study\python\2018年统计用区划代码和城乡划分代码" />
-      <recent name="E:\PycharmProjects\test\study\python\车联网车辆树接口数据" />
-      <recent name="E:\PycharmProjects\test\study\python\GUI-pyqt5\出题4_0" />
-      <recent name="E:\PycharmProjects\test\study\python\GUI-TK\出题" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\PycharmProjects\test\study\python\MAP" />
       <recent name="E:\PycharmProjects\test\study\python\车联网车辆树在线车辆监控" />
       <recent name="E:\PycharmProjects\test\study\python\车联网车辆树接口数据" />
       <recent name="E:\PycharmProjects\test\study\python\GUI-pyqt5\出题4_0" />
       <recent name="E:\PycharmProjects\test\study\python\pthoto" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\test\study\python\GUI-pyqt5\config" />
+      <recent name="E:\PycharmProjects\test\study\python\GUI-pyqt5\config\old" />
+      <recent name="E:\PycharmProjects\test\study\python\MAP" />
+      <recent name="E:\PycharmProjects\test\study\python\2018年统计用区划代码和城乡划分代码" />
+      <recent name="E:\PycharmProjects\test\study\python\车联网车辆树接口数据" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -69,7 +70,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.bd">
+  <component name="RunManager" selected="Python.main">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -110,6 +111,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="UIMain" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GUI-pyqt5/config/config1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="E:\PycharmProjects\test\study\python\GUI-pyqt5\config\UIMain.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="bd" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,7 +153,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -139,32 +161,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/高德" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GUI-pyqt5/config/config1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/高德/demo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="map1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/高德" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/高德/map1.py" />
+      <option name="SCRIPT_NAME" value="E:\PycharmProjects\test\study\python\GUI-pyqt5\config\main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -195,19 +196,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.map1" />
-      <item itemvalue="Python.demo" />
       <item itemvalue="Python.1" />
       <item itemvalue="Python.bd" />
       <item itemvalue="Python.zendao" />
+      <item itemvalue="Python.UIMain" />
+      <item itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.UIMain" />
         <item itemvalue="Python.bd" />
         <item itemvalue="Python.zendao" />
         <item itemvalue="Python.1" />
-        <item itemvalue="Python.demo" />
-        <item itemvalue="Python.map1" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +244,21 @@
       <option name="project" value="LOCAL" />
       <updated>1566193070785</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="百度小区范围获取">
+      <created>1566203670589</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1566203670589</updated>
+    </task>
+    <task id="LOCAL-00005" summary="------">
+      <created>1566780589393</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1566780589393</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,7 +285,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="高德地图demo" />
     <MESSAGE value="统计局数据爬取" />
-    <option name="LAST_COMMIT_MESSAGE" value="统计局数据爬取" />
+    <MESSAGE value="百度小区范围获取" />
+    <MESSAGE value="------" />
+    <option name="LAST_COMMIT_MESSAGE" value="------" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -332,7 +349,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/MAP/bd.py</url>
-          <line>19</line>
+          <line>18</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
