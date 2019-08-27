@@ -56,12 +56,6 @@ def exchange_B_H(str):
     str = str.replace(' ', '')
     value_H = hex(int(str, 2))[2:]
     return value_H
-def yihuo(list):
-    h = hex(list[0], 16)
-    for i in range(1,len(list)):
-        h1= hex(list[i], 16)
-        h1 = h^h1
-
 
 def exchange_bits(value_b):
     ll = []
@@ -77,6 +71,27 @@ def exchange_bits(value_b):
 
         ll.append(['[bit '+ list(value.keys())[q]+ ']'+bit_name + ':', "".join(bits)])
     return ll
+
+def apart_str(result, num):
+    resultArr = re.findall('.{' + str(num) + '}', result)
+    resultArr.append(result[(len(resultArr) * num):])
+    return resultArr
+
+def x_o_r(resultArr):
+    '''
+    计算校验位
+    :param result: 字符串
+    :param num: 按几位拆分字符串
+    :return: 两两异或，返回16进制数
+    '''
+    c = int('00', 16)
+    for i in range(0, len(resultArr) - 1):
+        a = int(resultArr[i], 16)
+        c = hex(a ^ c)[2:]
+        c = int(c, 16)
+        # print ("a^b:%d"% c)
+    c = hex(c)[2:]
+    return c
 
 if __name__ == "__main__":
 

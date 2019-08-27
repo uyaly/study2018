@@ -17,9 +17,9 @@ class Demo(QMainWindow, Ui_MainWindow, QWidget):
         self.Button_join.clicked.connect(self.join)
         self.flag = False
 
-    def init_create(self):
-        self.Button_apart.clicked.connect(self.apart)
-        self.Button_join.clicked.connect(self.join)
+    # def init_create(self):
+    #     self.Button_apart.clicked.connect(self.apart)
+    #     self.Button_join.clicked.connect(self.join)
         # self.Button_conn.clicked.connect(self.conn)
         # self.Button_disconn.clicked.connect(self.disconn)
 
@@ -83,7 +83,7 @@ class Demo(QMainWindow, Ui_MainWindow, QWidget):
         resultall = analyse.apart(content)
         result = resultall
         # result2 = resultall[1]
-        print(result)
+        # print(result)
         for i in range(len(result)):
             #在tablewidget中添加行
             self.tableWidget.setRowCount(len(result)-1)
