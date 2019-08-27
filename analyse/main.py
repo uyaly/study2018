@@ -15,6 +15,9 @@ class Demo(QMainWindow, Ui_MainWindow, QWidget):
         # self.init_create()
         self.Button_apart.clicked.connect(self.apart)
         self.Button_join.clicked.connect(self.join)
+        self.tableWidget.horizontalHeader().setStretchLastSection(True)   # 0827
+        self.tableWidget.setSelectionBehavior(QAbstractItemView.SelectRows)   # 0827  整行选中
+        self.tableWidget_2.horizontalHeader().setStretchLastSection(True)   # 0827
         # self.tableWidget.clicked.connect(self.clicklist)
         self.Button_conn.clicked.connect(self.conn)
         self.flag = False
@@ -86,7 +89,7 @@ class Demo(QMainWindow, Ui_MainWindow, QWidget):
             value = QTableWidgetItem(result[i][1])
             self.tableWidget.setItem(i, 0, key)   # i-1 首行不显示
             self.tableWidget.setItem(i, 1, value)   # i-1 首行不显示
-
+            key.setFlags(Qt.ItemIsEnabled)      # 0827
         # for j in range(len(result2)):
         #     # print(result2[j])
         #     #在tablewidget1中添加行
