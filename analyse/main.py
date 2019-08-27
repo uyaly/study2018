@@ -1,11 +1,11 @@
 import os
 import sys
 import threading
-# from old import send_thread
+import time
 from PyQt5.QtWidgets import *
 from UI import Ui_MainWindow
 import analyse
-
+import socket
 
 # 列表中的数字显示空白，xls中格式要设置为文本
 class Demo(QMainWindow, Ui_MainWindow, QWidget):
@@ -15,56 +15,49 @@ class Demo(QMainWindow, Ui_MainWindow, QWidget):
         # self.init_create()
         self.Button_apart.clicked.connect(self.apart)
         self.Button_join.clicked.connect(self.join)
+        # self.tableWidget.clicked.connect(self.clicklist)
+        self.Button_conn.clicked.connect(self.conn)
         self.flag = False
-
-    # def init_create(self):
-    #     self.Button_apart.clicked.connect(self.apart)
-    #     self.Button_join.clicked.connect(self.join)
-        # self.Button_conn.clicked.connect(self.conn)
-        # self.Button_disconn.clicked.connect(self.disconn)
-
-    # def conn(self):
-    #     ip = self.lineEdit_IP.text()
-    #     port = self.lineEdit_port.text()
-    #     if '' == ip or '' == port:
-    #         print('请输入ip与端口')
-        # 点击开始按钮
-        # elif self.flag == False:
-        #     self.flag = True
-        #     # self.Button_join.
-        #     # ().config(relief=SUNKEN, text='断开')
-        #     thread = threading.Thread(target=self.Count)
-        #     thread.setDaemon(True)
-        #     thread.start()
-        #
-        #     t = threading.Thread(target=self.threadStart,
-        #                          args=(os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + '\car', ip, port))
-        #     t.setDaemon(True)
-        #     t.start()
-        # # 点击结束按钮
-        # else:
-        #     self.flag = False
-        #
-        #     # self.bStart.config(relief=RAISED, text="连接")
-        #     self.threadStop()
-
-    # def threadStart(self, fileDir, ip, port):
-    #     print(os.getcwd())
-    #     fileList = os.listdir(fileDir)
-    #     filePath = os.getcwd() + '\\' + fileDir
     #
-    #     self.stopList = []
-    #     for each in fileList:
-    #         runGPS = send_thread.ThreadGPS((filePath + '\\' + each), ip, int(port))
-    #         self.stopList.append(runGPS)
-    #         tGPS = threading.Thread(target=runGPS.run)
-    #         tGPS.setDaemon(True)
-    #         tGPS.start()
-    #         time.sleep(20)
+    # def clicklist(self):
+    #     items = self.tableWidget.selectRow()
+        # self.tableWidget.row(items.at(i))
 
-    # def threadStop(self):
-    #     for each in self.stopList:
-    #         each.stop()
+    def conn(self):
+        hostname = self.lineEdit_IP.text()
+        port = self.lineEdit_port.text()
+        if '' == hostname or '' == port:
+            print('请输入ip与端口')
+        else:
+            addr = (hostname, int(port))
+            clientsock = socket.socket()
+            clientsock.connect(addr)
+            self.Button_send.clicked.connect(self.sendmsg(clientsock))
+            while True:
+                send_msg = self.textEdit.toPlainText()
+                if not send_msg:
+                    break
+                self.textEdit_log.insertPlainText(self.textEdit.toPlainText())
+                clientsock.send(bytes(send_msg, encoding='gbk'))
+                recvdata = clientsock.recv(1024)
+                if not recvdata:
+                    break
+                print(recvdata)
+        clientsock.close()
+
+    def sendmsg(self, clientsock):
+        flag = True
+        while True:
+            send_msg = self.textEdit.toPlainText()
+
+            if not send_msg:
+                break
+            self.textEdit_log.insertPlainText(self.textEdit.toPlainText())
+            clientsock.send(bytes(data, encoding='gbk'))
+            recvdata = clientsock.recv(1024)
+            if not recvdata:
+                break
+            print(recvdata)
 
     def join(self):
         list = []

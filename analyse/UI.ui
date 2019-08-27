@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>902</width>
+    <width>888</width>
     <height>878</height>
    </rect>
   </property>
@@ -18,9 +18,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>150</y>
+      <y>710</y>
       <width>391</width>
-      <height>681</height>
+      <height>121</height>
      </rect>
     </property>
     <property name="html">
@@ -47,7 +47,7 @@ p, li { white-space: pre-wrap; }
    <widget class="QTableWidget" name="tableWidget">
     <property name="geometry">
      <rect>
-      <x>500</x>
+      <x>490</x>
       <y>40</y>
       <width>391</width>
       <height>791</height>
@@ -57,7 +57,7 @@ p, li { white-space: pre-wrap; }
      <bool>true</bool>
     </attribute>
     <attribute name="horizontalHeaderDefaultSectionSize">
-     <number>100</number>
+     <number>180</number>
     </attribute>
     <column>
      <property name="text">
@@ -105,9 +105,9 @@ p, li { white-space: pre-wrap; }
    <widget class="QTableWidget" name="tableWidget_2">
     <property name="geometry">
      <rect>
-      <x>900</x>
+      <x>890</x>
       <y>20</y>
-      <width>351</width>
+      <width>361</width>
       <height>811</height>
      </rect>
     </property>
@@ -138,11 +138,11 @@ p, li { white-space: pre-wrap; }
      <string>发  送</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_2">
+   <widget class="QTextEdit" name="textEdit_log">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>0</y>
+      <y>40</y>
       <width>471</width>
       <height>101</height>
      </rect>
@@ -158,7 +158,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="text">
-     <string>192.168.3.134</string>
+     <string>192.168.3.161</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -239,14 +239,14 @@ p, li { white-space: pre-wrap; }
    <zorder>lineEdit_port</zorder>
    <zorder>Button_conn</zorder>
    <zorder>Button_disconn</zorder>
-   <zorder>textEdit_2</zorder>
+   <zorder>textEdit_log</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>902</width>
+     <width>888</width>
      <height>23</height>
     </rect>
    </property>

@@ -2,10 +2,10 @@
 import json
 import collections
 import re
-from tool import exchange_B_D,exchange_B_H,exchange_H_B,exchange_D_H,exchange_H_D,exchange_bits,x_o_r
+from tool import exchange_B_D,exchange_B_H,exchange_H_B,exchange_D_H,exchange_H_D,exchange_bits,x_o_r,apart_str
 
-import analyse_head as head
-import analyse_body as body
+from analyse_h_b  import analyse
+
 
 def apart(str):
     '''
@@ -28,12 +28,12 @@ def apart(str):
             content = file.read()
             try:
                 dic = json.loads(content, object_pairs_hook=collections.OrderedDict)
-                result = []
+                # result = []
                 if id_str in dic:
                     body_dic = (dic[id_str])
-                    result_head = head.apart_head(head_str)
+                    result_head = analyse.apart_head(head_str)
                     result = result_head
-                    result_body = body.apart_body(body_str, body_dic)
+                    result_body = analyse.apart_body(body_str, body_dic)
                     result += result_body
                 else:
                     result = "请先配置"+id_str+"，再分析"
@@ -51,11 +51,22 @@ def join(list):
     :param list: 列表
     :return: 报文
     '''
+    list_head = []
+    list_body = []
     result = ''
+
     for i in range(len(list)):
+        if i < 5:
+            list_head.append(list[i])
+        else:
+            list_body.append(list[i])
         result += list[i]
-    jy = x_o_r(result, 2)
-    result = '7E' +result+jy+  '7E'
+    str_body = analyse.join_body(list_body)
+    list_head[1] = analyse.join_headattr(str_body)   # 更新消息体属性里的包长值
+    str_head = analyse.join_head(list_head)
+
+    jy = x_o_r(apart_str(str_head + str_body, 2))   # 校验码
+    result = '7E' + str_head + str_body + jy +  '7E'
     result = ' '.join(re.compile('.{2}').findall(result))  # 隔两位一个空格
     return result
 
