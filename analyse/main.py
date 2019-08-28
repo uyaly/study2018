@@ -7,6 +7,7 @@ import socket
 import threading
 flag = False
 from PyQt5.QtCore import Qt
+import re
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -25,13 +26,14 @@ class Demo(QMainWindow, Ui_MainWindow, QWidget):
         # self.tableWidget.clicked.connect(self.clicklist)
         self.Button_conn.clicked.connect(self.conn)
         self.Button_send.clicked.connect(self.sendmsg)
-        self.Button_send.processEvents()
+        self.Button_send.setEnabled(flag)
 
         # self.Button_conn.setCheckable(True)
     def Receve(self,s):
         global flag
         while flag:
             data = s.recv(1024).decode('utf8')
+            data = (' '.join(re.compile('.{2}').findall(data)))  # 每隔2 空格一次
             if data == 'quit':
                 flag = False
             # print('recevie news:%s' % data)
@@ -48,28 +50,31 @@ class Demo(QMainWindow, Ui_MainWindow, QWidget):
         hostport = (hostname, port)
         if flag:
             s.connect(hostport)
+            self.Button_send.setEnabled(flag)
             self.Button_conn.setText("断开")
             thrd = threading.Thread(target=self.Receve, args=(s,))
             thrd.start()
         else:
             s.close()
             self.Button_conn.setText("连接")
+            self.Button_send.setEnabled(flag)
 
     def sendmsg(self):
         global flag
         global s
-        send_msg = self.textEdit.toPlainText()
+        msg = self.textEdit.toPlainText()
+        send_msg = msg.replace(' ', '')
         while flag:
 
-            if send_msg == '':
+            if msg == '':
                 break
             else:
                 s.send(send_msg.encode('utf8'))
                 T = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
                 self.textEdit_log.insertPlainText('\n' + T + ' SEND :' + '\n')
-                self.textEdit_log.insertPlainText(send_msg)
-                send_msg = ''
-            if send_msg == 'quit':
+                self.textEdit_log.insertPlainText(msg)
+                msg = ''
+            if msg == 'quit':
                 flag = False
 
     def join(self):
