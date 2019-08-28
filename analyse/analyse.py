@@ -36,7 +36,7 @@ def apart(str):
                     result_body = analyse.apart_body(body_str, body_dic)
                     result += result_body
                 else:
-                    result = "请先配置"+id_str+"，再分析"
+                    result = "请先配置"+id_str
             except:
                 result = "配置文件读取失败"
                 pass

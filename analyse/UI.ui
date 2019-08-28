@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>888</width>
-    <height>878</height>
+    <width>866</width>
+    <height>777</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,10 +17,10 @@
    <widget class="QTextEdit" name="textEdit">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>710</y>
-      <width>391</width>
-      <height>121</height>
+      <x>20</x>
+      <y>620</y>
+      <width>331</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="html">
@@ -47,10 +47,10 @@ p, li { white-space: pre-wrap; }
    <widget class="QTableWidget" name="tableWidget">
     <property name="geometry">
      <rect>
-      <x>490</x>
+      <x>450</x>
       <y>40</y>
       <width>391</width>
-      <height>791</height>
+      <height>691</height>
      </rect>
     </property>
     <attribute name="horizontalHeaderCascadingSectionResizes">
@@ -79,8 +79,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QPushButton" name="Button_apart">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>710</y>
+      <x>360</x>
+      <y>620</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -92,8 +92,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QPushButton" name="Button_join">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>740</y>
+      <x>360</x>
+      <y>660</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -128,8 +128,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QPushButton" name="Button_send">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>770</y>
+      <x>360</x>
+      <y>700</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -141,17 +141,17 @@ p, li { white-space: pre-wrap; }
    <widget class="QTextEdit" name="textEdit_log">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>40</y>
-      <width>471</width>
-      <height>101</height>
+      <width>411</width>
+      <height>571</height>
      </rect>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_IP">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>40</x>
       <y>10</y>
       <width>113</width>
       <height>20</height>
@@ -164,7 +164,7 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>10</y>
       <width>21</width>
       <height>16</height>
@@ -203,7 +203,7 @@ p, li { white-space: pre-wrap; }
    <widget class="QPushButton" name="Button_conn">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>350</x>
       <y>10</y>
       <width>75</width>
       <height>23</height>
@@ -211,19 +211,6 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="text">
      <string>连接</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Button_disconn">
-    <property name="geometry">
-     <rect>
-      <x>360</x>
-      <y>10</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>断开</string>
     </property>
    </widget>
    <zorder>textEdit</zorder>
@@ -238,7 +225,6 @@ p, li { white-space: pre-wrap; }
    <zorder>label_3</zorder>
    <zorder>lineEdit_port</zorder>
    <zorder>Button_conn</zorder>
-   <zorder>Button_disconn</zorder>
    <zorder>textEdit_log</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -246,7 +232,7 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>888</width>
+     <width>866</width>
      <height>23</height>
     </rect>
    </property>

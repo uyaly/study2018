@@ -1,18 +1,22 @@
-import os
+import datetime
 import sys
-import threading
-import time
 from PyQt5.QtWidgets import *
 from UI import Ui_MainWindow
 import analyse
 import socket
+import threading
+flag = False
+from PyQt5.QtCore import Qt
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # 列表中的数字显示空白，xls中格式要设置为文本
 class Demo(QMainWindow, Ui_MainWindow, QWidget):
+
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        # self.init_create()
+        # self.init_socket()
         self.Button_apart.clicked.connect(self.apart)
         self.Button_join.clicked.connect(self.join)
         self.tableWidget.horizontalHeader().setStretchLastSection(True)   # 0827
@@ -20,47 +24,53 @@ class Demo(QMainWindow, Ui_MainWindow, QWidget):
         self.tableWidget_2.horizontalHeader().setStretchLastSection(True)   # 0827
         # self.tableWidget.clicked.connect(self.clicklist)
         self.Button_conn.clicked.connect(self.conn)
-        self.flag = False
-    #
-    # def clicklist(self):
-    #     items = self.tableWidget.selectRow()
-        # self.tableWidget.row(items.at(i))
+        self.Button_send.clicked.connect(self.sendmsg)
+        self.Button_send.processEvents()
+
+        # self.Button_conn.setCheckable(True)
+    def Receve(self,s):
+        global flag
+        while flag:
+            data = s.recv(1024).decode('utf8')
+            if data == 'quit':
+                flag = False
+            # print('recevie news:%s' % data)
+            T = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            self.textEdit_log.insertPlainText('\n' + T + ' RECV :' + '\n')
+            self.textEdit_log.insertPlainText(data)
 
     def conn(self):
+        global flag
+        global s
+        flag = bool(1 - flag)  # flag取反
         hostname = self.lineEdit_IP.text()
-        port = self.lineEdit_port.text()
-        if '' == hostname or '' == port:
-            print('请输入ip与端口')
+        port = int(self.lineEdit_port.text())
+        hostport = (hostname, port)
+        if flag:
+            s.connect(hostport)
+            self.Button_conn.setText("断开")
+            thrd = threading.Thread(target=self.Receve, args=(s,))
+            thrd.start()
         else:
-            addr = (hostname, int(port))
-            clientsock = socket.socket()
-            clientsock.connect(addr)
-            self.Button_send.clicked.connect(self.sendmsg(clientsock))
-            while True:
-                send_msg = self.textEdit.toPlainText()
-                if not send_msg:
-                    break
-                self.textEdit_log.insertPlainText(self.textEdit.toPlainText())
-                clientsock.send(bytes(send_msg, encoding='gbk'))
-                recvdata = clientsock.recv(1024)
-                if not recvdata:
-                    break
-                print(recvdata)
-        clientsock.close()
+            s.close()
+            self.Button_conn.setText("连接")
 
-    def sendmsg(self, clientsock):
-        flag = True
-        while True:
-            send_msg = self.textEdit.toPlainText()
+    def sendmsg(self):
+        global flag
+        global s
+        send_msg = self.textEdit.toPlainText()
+        while flag:
 
-            if not send_msg:
+            if send_msg == '':
                 break
-            self.textEdit_log.insertPlainText(self.textEdit.toPlainText())
-            clientsock.send(bytes(data, encoding='gbk'))
-            recvdata = clientsock.recv(1024)
-            if not recvdata:
-                break
-            print(recvdata)
+            else:
+                s.send(send_msg.encode('utf8'))
+                T = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                self.textEdit_log.insertPlainText('\n' + T + ' SEND :' + '\n')
+                self.textEdit_log.insertPlainText(send_msg)
+                send_msg = ''
+            if send_msg == 'quit':
+                flag = False
 
     def join(self):
         list = []
@@ -76,20 +86,27 @@ class Demo(QMainWindow, Ui_MainWindow, QWidget):
 
     def apart(self):
         content = self.textEdit.toPlainText()
+        self.tableWidget.clearContents()
         resultall = analyse.apart(content)
         result = resultall
         # result2 = resultall[1]
         # print(result)
-        for i in range(len(result)):
-            #在tablewidget中添加行
-            self.tableWidget.setRowCount(len(result)-1)
-            self.tableWidget.insertRow(len(result)-1)
-            #把数据写入tablewidget中
-            key = QTableWidgetItem(result[i][0])
-            value = QTableWidgetItem(result[i][1])
-            self.tableWidget.setItem(i, 0, key)   # i-1 首行不显示
-            self.tableWidget.setItem(i, 1, value)   # i-1 首行不显示
-            key.setFlags(Qt.ItemIsEnabled)      # 0827
+        if isinstance(result,list):
+            for i in range(len(result)):
+                #在tablewidget中添加行
+                self.tableWidget.setRowCount(len(result)-1)
+                self.tableWidget.insertRow(len(result)-1)
+                #把数据写入tablewidget中
+                key = QTableWidgetItem(result[i][0])
+                value = QTableWidgetItem(result[i][1])
+                self.tableWidget.setItem(i, 0, key)   # i-1 首行不显示
+                self.tableWidget.setItem(i, 1, value)   # i-1 首行不显示
+                key.setFlags(Qt.ItemIsEnabled)      # 0827
+        else:
+            self.tableWidget.setRowCount(0)
+            self.tableWidget.insertRow(0)
+            msg = QTableWidgetItem(result)
+            self.tableWidget.setItem(0, 1, msg)
         # for j in range(len(result2)):
         #     # print(result2[j])
         #     #在tablewidget1中添加行
