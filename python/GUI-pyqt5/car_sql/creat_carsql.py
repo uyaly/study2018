@@ -72,9 +72,12 @@ class Demo(Ui_MainWindow, QMainWindow):
             # sim卡号
             sim = str(simnum)
             simnum += 1
+            # IMEI
+            IMEI = str(IMEInum)
+            IMEInum += 1
 
             #生成sql的样式
-            strSim = "insert into T_SIMINFO (SIM_ID, ORG_CODE, DEPTCODE, STATE,PAY_MODLE, SIM_NUM) values({}, '{}', '中国移动', 1, '预付费', {});".format(id_sum+each+1,org_code,sim)
+            strSim = "insert into T_SIMINFO (SIM_ID, ORG_CODE, DEPTCODE, STATE,PAY_MODLE, SIM_NUM,IMEI) values({}, '{}', '中国移动', 1, '预付费', {});".format(id_sum+each+1,org_code,sim,IMEI)
 
             strTerminal = "insert into T_TERMINALINFO (TERMINAL_ID,TTYPE_ID,SIM_ID,TERMINAL_CODE,ORG_CODE,IS_VIDEO_TERMINAL,SP_SERVER_NAME,PROTOCOL_TYPE,CHANNELS,YT_PROTOCOL_TYPE) " \
                           "values({}, 4, {}, '{}', '{}',1,'1076测试服务器','4',8,'0');".format(id_sum*10+each+1,id_sum+each+1,terminal,org_code)
